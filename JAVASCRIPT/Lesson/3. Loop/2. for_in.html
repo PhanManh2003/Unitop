@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b3f69b04c0123721a6fb7dfbbf90638f54772d0d60167d1019e67cbf3396a435
-size 865
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu trúc vòng lặp For In</title>
+</head>
+
+<body>
+    <h1>Cấu trúc vòng lặp For In dùng cho object</h1>
+    <script>
+        // for (key in object){
+        // code;
+        // }
+        // for (key in array){
+        // code;
+        // }
+        let person = {
+            fullname: 'Phan Tiến Mạnh',
+            age: 22,
+            gender: 'male',
+        }
+        for (let key in person) {
+            document.write(key + ': ' + person[key] + "<br>");
+        }
+
+        let color = ['red', 'green', 'black'];
+        for (let key in color) {
+            document.write(key + ': ' + color[key] + "<br>")
+        }
+        
+    </script>
+</body>
+
+</html>

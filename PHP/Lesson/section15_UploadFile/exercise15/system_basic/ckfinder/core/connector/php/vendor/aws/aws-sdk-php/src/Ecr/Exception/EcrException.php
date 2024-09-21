@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:39e0512fdd554a60b9972d6e7ad077be5920a761b2ab4533b8e31851101d9b1f
-size 207
+<?php
+namespace Aws\Ecr\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Amazon EC2 Container Registry** service.
+ */
+class EcrException extends AwsException {}

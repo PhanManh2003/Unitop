@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eded89accaa8390ceefb4659db7e010cf22d7a6374c18c7edabf96f6d1a043b2
-size 370
+<?php
+// This file was auto-generated from sdk-root/src/data/cloudcontrol/2021-09-30/paginators-1.json
+return [ 'pagination' => [ 'ListResourceRequests' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListResources' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];

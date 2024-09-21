@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:59e25c2386d02a453cd769b60d36a41a321cc4505958171361d5eafd0e7cbcf8
-size 209
+<?php
+namespace Aws\QuickSight\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Amazon QuickSight** service.
+ */
+class QuickSightException extends AwsException {}

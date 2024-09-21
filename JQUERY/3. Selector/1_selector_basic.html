@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a619f4f3b86348ee777e8fd3084d7a034c0f11a1bced38812bf80fb2d3a13f79
-size 1493
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector cơ bản</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <!-- 
+Stt     Cách viết           Mô tả
+1       $(element)          Chọn tag html
+2       $('.className')     Chọn class
+3       $('#idName')        Chọn id
+4       $(*)                Chọn tất cả phần tử html
+5       $(F,G,H)            Hợp kết quả các bộ chọn thành phần F, G, H 
+-->
+    <script>
+        $(document).ready(function () {
+            // 1. Thiết lập text có màu đỏ
+            $('p').css('color', 'red');
+            // 2. Thiết lập css các box(width: 200px , height: 100px; margin: 20px; border: 1px solid #333)
+            $('.box').css({ 'width': '200px', 'height': '100px', 'margin': '20px', 'border': '1px solid #333' });
+            // 3.Thiết lập box1 có background: black
+            $('#box1').css('background', 'black');
+            // 4. Thiết lập box2, box3 có background: gold
+            $('#box2, #box3').css('background', 'gold');
+        })
+    </script>
+    <div id="box1" class="box">
+        <p>Nội dung khối 1</p>
+    </div>
+    <div id="box2" class="box">
+        <p>Nội dung khối 2</p>
+    </div>
+    <div id="box3" class="box">
+        <p>Nội dung khối 3</p>
+    </div>
+
+
+</body>
+
+</html>

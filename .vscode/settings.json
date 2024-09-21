@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f34dadb296d03d33a85dc54b7bc592432e71bca6bac7e7472eb197e0b5d301cc
-size 116
+{
+    "cmake.configureOnOpen": false,
+    "html-to-css-autocompletion.autocompletionFilesScope": "linked-files"
+}

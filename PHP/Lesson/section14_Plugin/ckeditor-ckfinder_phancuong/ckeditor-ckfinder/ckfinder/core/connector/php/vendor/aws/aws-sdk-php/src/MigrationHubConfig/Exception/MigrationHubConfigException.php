@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:96987c2983233a9a485482209127f2569a24a04f7e6ff02f2ad27cad6e50cccd
-size 232
+<?php
+namespace Aws\MigrationHubConfig\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **AWS Migration Hub Config** service.
+ */
+class MigrationHubConfigException extends AwsException {}

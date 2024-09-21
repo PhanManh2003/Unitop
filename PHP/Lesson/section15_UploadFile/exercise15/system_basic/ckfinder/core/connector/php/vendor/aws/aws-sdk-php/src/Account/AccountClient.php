@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:72bcc8ca4ef1c8aa81b266c4b77a47d445603b59de47b171e2e91aa87018af73
-size 603
+<?php
+namespace Aws\Account;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **AWS Account** service.
+ * @method \Aws\Result deleteAlternateContact(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteAlternateContactAsync(array $args = [])
+ * @method \Aws\Result getAlternateContact(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getAlternateContactAsync(array $args = [])
+ * @method \Aws\Result putAlternateContact(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise putAlternateContactAsync(array $args = [])
+ */
+class AccountClient extends AwsClient {}

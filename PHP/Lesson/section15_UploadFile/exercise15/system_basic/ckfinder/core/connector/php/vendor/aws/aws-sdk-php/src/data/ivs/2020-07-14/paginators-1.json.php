@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:962dcb94ac6d4b9b34ea13893dea50328d35d34a6ae938cacc16fdb0fbc11d3a
-size 834
+<?php
+// This file was auto-generated from sdk-root/src/data/ivs/2020-07-14/paginators-1.json
+return [ 'pagination' => [ 'ListChannels' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListPlaybackKeyPairs' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListRecordingConfigurations' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListStreamKeys' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListStreamSessions' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListStreams' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], ],];

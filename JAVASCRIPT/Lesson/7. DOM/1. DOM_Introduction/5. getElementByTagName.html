@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92675b75a5db9869ec351ceb87a86172b344962cd2b04ac08e825f348a827ca8
-size 1346
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truy cập element qua tagname</title>
+</head>
+
+<body>
+    <h1>Truy cập element qua tagname</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eaque sapiente! Cumque ipsum harum dolorum
+        optio fuga voluptatum reiciendis repudiandae molestias aliquam commodi praesentium rem eaque velit adipisci,
+        alias eius.</p>
+    <h2>Heading 2.1</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eaque sapiente! Cumque ipsum harum dolorum
+        optio fuga voluptatum reiciendis repudiandae molestias aliquam commodi praesentium rem eaque velit adipisci,
+        alias eius.</p>
+    <h2>Heading 2.2</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eaque sapiente! Cumque ipsum harum dolorum
+        optio fuga voluptatum reiciendis repudiandae molestias aliquam commodi praesentium rem eaque velit adipisci,
+        alias eius.</p>
+    <script>
+        const h2 = document.getElementsByTagName('h2');
+        // console.log(h2[0]); // lấy h2 đầu tiên
+        h2[0].style.color = 'red';
+        h2[1].style.color = 'green';
+    </script>
+</body>
+
+</html>

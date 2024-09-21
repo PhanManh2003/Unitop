@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:63c9628f5ca1ac06afa74207d3a2970f4ca0086e83a55a8b02bc23d07d65a6e2
-size 484
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This in event</title>
+</head>
+<body>
+    <h1>'This' in event js</h1>
+    <script>
+        const h1 = document.querySelector('h1');
+
+        h1.addEventListener('click',function () {
+           this.innerText = 'Clicked !'; 
+           // this chính là element const h1 
+        });
+    </script>
+</body>
+</html>

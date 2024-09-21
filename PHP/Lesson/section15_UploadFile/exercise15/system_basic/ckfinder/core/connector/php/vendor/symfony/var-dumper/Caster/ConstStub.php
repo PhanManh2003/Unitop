@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:080355748082ed4c91c1e46c6c0aea729abfcc4f9da68005a6a03c3fde34f689
-size 735
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\VarDumper\Caster;
+
+use Symfony\Component\VarDumper\Cloner\Stub;
+
+/**
+ * Represents a PHP constant and its value.
+ *
+ * @author Nicolas Grekas <p@tchwork.com>
+ */
+class ConstStub extends Stub
+{
+    public function __construct(string $name, string|int|float $value = null)
+    {
+        $this->class = $name;
+        $this->value = 1 < \func_num_args() ? $value : $name;
+    }
+
+    public function __toString(): string
+    {
+        return (string) $this->value;
+    }
+}

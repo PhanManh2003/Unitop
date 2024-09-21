@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:50ab6a9ed8dfe1af6333ebda31e22e37f8da5addccafc5b8a602b2a70079a4d6
-size 1510
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector next only</title>
+</head>
+
+<body>
+    <style>
+        /*Cú pháp: selector1+selector2{}
+         
+          Tác dụng: Chọn ra phần tử selector2 theo sau và liền kề với selector1 và cùng cha. 
+          */
+        article img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            /*3 dòng trên để căn giữa ảnh  */
+            width: 300px;
+            height: auto;
+
+        }
+
+        article img+p {
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+
+    <article>
+        <h1>selector next only</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore minima nesciunt optio aperiam rem expedita
+            animi perferendis, cumque ab quibusdam autem recusandae dignissimos ex nisi sint, ipsam praesentium dolores
+            dolor?</p>
+        <img src="../image/ggchad.jpg" alt="">
+        <p>Gigachad, the most attractive man in the world.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deleniti laborum vel architecto tenetur earum
+            explicabo ducimus deserunt! Quaerat commodi nostrum nulla quia suscipit ullam, necessitatibus exercitationem
+            quibusdam cumque error?</p>
+    </article>
+</body>
+
+</html>

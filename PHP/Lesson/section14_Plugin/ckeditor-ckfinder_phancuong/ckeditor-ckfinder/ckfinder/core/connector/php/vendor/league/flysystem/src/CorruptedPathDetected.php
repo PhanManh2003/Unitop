@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:230a15b21a1b5ef52c07b0cedad625629c7f6d5aff49d66c0dc7defc50d9c25a
-size 356
+<?php
+
+namespace League\Flysystem;
+
+use LogicException;
+
+class CorruptedPathDetected extends LogicException implements FilesystemException
+{
+    /**
+     * @param string $path
+     * @return CorruptedPathDetected
+     */
+    public static function forPath($path)
+    {
+        return new CorruptedPathDetected("Corrupted path detected: " . $path);
+    }
+}

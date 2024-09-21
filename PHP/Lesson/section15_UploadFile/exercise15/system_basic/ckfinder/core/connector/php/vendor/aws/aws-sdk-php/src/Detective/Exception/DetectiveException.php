@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:77318e9cc82126351c66b6db95ed981dad722cf09a323d66801df4f387f3dbde
-size 206
+<?php
+namespace Aws\Detective\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Amazon Detective** service.
+ */
+class DetectiveException extends AwsException {}

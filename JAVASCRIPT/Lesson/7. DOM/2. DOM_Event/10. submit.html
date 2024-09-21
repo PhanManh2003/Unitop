@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0aa89d2290a3362fea9133a335c4bd109328afb28ff9250141e8b3c888a8e31a
-size 1550
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit event js</title>
+</head>
+
+<body>
+    <h1>Submit event js</h1>
+    <form action="" id="register">
+        <fieldset>
+            <legend>Register form</legend>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" autocomplete="off"><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" autocomplete="off"><br>
+            <label for="city">City</label><br>
+            <select name="" id="city">
+                <option value="">--Chọn--</option>
+                <option value="1">Hà Nội</option>
+                <option value="2">Đà Nẵng</option>
+                <option value="3">TP.HCM</option>
+                <option value="4">Thành phố khác</option>
+            </select>
+            <br><br>
+            <input type="submit" name="" id="" value="Login now">
+        </fieldset>
+    </form>
+
+    <script>
+        const username = document.getElementById('username');
+        const registerForm = document.forms.register;
+        console.log(registerForm);
+        registerForm.addEventListener('submit', function (e) {
+            alert('Submit successfully!');
+            // Ngăn không cho trình duyệt load lại trang mặc định khi submit
+            e.preventDefault();
+        })
+
+    </script>
+</body>
+
+</html>

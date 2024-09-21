@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8053e37870ccf764f7e094b9d60fabc6c76f4b38d8680ea1d7664d05cd3fb984
-size 582
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global và Function scope</title>
+  </head>
+  <body>
+    <h1>Global và Function scope</h1>
+    <script>
+      /*
+Điểm khác biệt chính của let và const so với var là chúng có phạm vi khối (block scope) và không tái khai báo được.
+
+*/
+
+      var x = 10;
+      function test() {
+        x = 20;
+      }
+      test();
+      document.write(x);
+    </script>
+  </body>
+</html>

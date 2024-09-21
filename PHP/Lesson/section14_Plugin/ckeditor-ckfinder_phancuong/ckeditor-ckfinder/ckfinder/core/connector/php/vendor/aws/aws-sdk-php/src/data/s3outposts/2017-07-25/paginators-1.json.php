@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:640d9d31e06efb6c2c956425d9b6887de008eecc7de330369dcbedf43d89d40f
-size 276
+<?php
+// This file was auto-generated from sdk-root/src/data/s3outposts/2017-07-25/paginators-1.json
+return [ 'pagination' => [ 'ListEndpoints' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'Endpoints', ], ],];

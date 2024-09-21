@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:edbc21bde19d7cdbd3995702e9a253d438984fa5a945871cb95f1c2993f68376
-size 403
+<?php
+// This file was auto-generated from sdk-root/src/data/inspector/2016-02-16/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListAssessmentTemplates', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'ListTagsForResource', 'input' => [ 'resourceArn' => 'fake-arn', ], 'errorExpectedFromService' => true, ], ],];

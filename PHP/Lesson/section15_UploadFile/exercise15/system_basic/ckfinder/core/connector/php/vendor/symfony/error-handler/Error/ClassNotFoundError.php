@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ffdf29dfa460bfad4d2a972d6d9949baaafc9c364f0c305ff4c793dcf2b9b602
-size 893
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\ErrorHandler\Error;
+
+class ClassNotFoundError extends \Error
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function __construct(string $message, \Throwable $previous)
+    {
+        parent::__construct($message, $previous->getCode(), $previous->getPrevious());
+
+        foreach ([
+            'file' => $previous->getFile(),
+            'line' => $previous->getLine(),
+            'trace' => $previous->getTrace(),
+        ] as $property => $value) {
+            $refl = new \ReflectionProperty(\Error::class, $property);
+            $refl->setAccessible(true);
+            $refl->setValue($this, $value);
+        }
+    }
+}

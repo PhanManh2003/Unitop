@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:42e67db2f7aab6eaae71fc29724b04c9c19237f01f9687a35fac276f2a717d56
-size 1564
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import fontawesome từ máy tính -->
+    <!-- <link rel="stylesheet" href="fontAwesomeLib/css/all.css"> -->
+
+    <!-- có thể import fontawesome từ link CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css" integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Add Fontawesome</title>
+</head>
+
+<body>
+    <style>
+        /* Cách thêm fontawesome ( hoặc bằng link CDN):
+        1. Download free từ  fontawesome.com,
+        2. Thêm bộ font vào web  bằng cách  đưa 2 thư mục css và webfont vào thư mục dự án
+        3. Thêm file all.css định nghĩa font bằng thẻ link
+        4. Sử dụng thẻ i, :after , :before */
+
+        /* Cách 2 tùy chỉnh icon: https://fontawesome.com/docs/web/add-icons/pseudo-elements */
+        a::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f130";
+            font-size: 20px;
+            color: red;
+        }
+    </style>
+    <h1>Add Fontawesome</h1>
+    <!-- Cách 1 -->
+    <!-- <i class="fa-solid fa-house"></i>  -->
+
+    <a href="">Home</a>
+    <button type="button">
+        <i class="fa-solid fa-microphone"></i>
+    </button>
+</body>
+
+</html>

@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:195d7477f6a1f60a82367cbf261293bfd621995c30605339294f13932fe78171
-size 1200
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pc first</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <style>
+        /* Default code cho mọi thiết bị (default code này cho pc)*/
+        body {
+            background: black;
+        }
+
+        /* Large device (desktops, less than 1200px) */
+        @media (max-width: 1199.98px) {
+            body {
+                background: yellow;
+            }
+        }
+
+        /* Medium device (tablets, less than 992px) */
+        @media (max-width: 991.98px) {
+            body {
+                background: tomato;
+            }
+        }
+
+        /* Small device (landscape phones, less than 768px) */
+        @media (max-width: 767.98px) {
+            body {
+                background: grey;
+            }
+        }
+
+        /* Extra small device(portrait phone, less than 576px) */
+        @media (max-width: 575.98px) {
+            body {
+                background: pink;
+            }
+        }
+        
+    </style>
+    <h1>Pc First</h1>
+</body>
+
+</html>

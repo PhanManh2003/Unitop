@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:35c81b89b43eefccba56bfaae82d967b3fe289662c4829ea4ebf3a2bacee08b4
-size 394
+<?php
+// This file was auto-generated from sdk-root/src/data/sms/2016-10-24/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'GetConnectors', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'DeleteReplicationJob', 'input' => [ 'replicationJobId' => 'invalidId', ], 'errorExpectedFromService' => true, ], ],];

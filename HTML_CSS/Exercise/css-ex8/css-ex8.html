@@ -1,3 +1,89 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:efb058cb794fc53156f76b36bed63465c14e9442608d08add478d34c3f451a7f
-size 3763
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-css8.css">
+    <title>Css-Ex8</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1 class="text-center">BÀI TẬP 8 - ÁP DỤNG HIỆU ỨNG CSS</h1>
+        <ul class="list-product">
+            <li>
+                <div class="product-item">
+                    <a href="">
+                        <img src="image/product5.jpg" alt="">
+                    </a>
+                    <div class="price">499.000đ</div>
+                    <a href="" class="product-name">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now text-center">Mua ngay</a>
+                    <span class="discount">
+                        <img src="image/sale.png" alt="">
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="product-item"><a href="">
+                        <img src="image/product1.jpg" alt="">
+                    </a>
+                    <div class="price">499.000đ</div>
+                    <a href="" class="product-name">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now text-center">Mua ngay</a>
+                </div>
+            </li>
+            <li>
+                <div class="product-item"><a href="">
+                        <img src="image/product11.jpg" alt="">
+                    </a>
+                    <div class="price">499.000đ</div>
+                    <a href="" class="product-name">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now text-center">Mua ngay</a>
+                </div>
+            </li>
+            <li>
+                <div class="product-item"><a href="">
+                        <img src="image/product9.jpg" alt="">
+                    </a>
+                    <div class="price">499.000đ</div>
+                    <a href="" class="product-name">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now text-center">Mua ngay</a>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href="">
+                        <img src="image/product5.jpg" alt="">
+                    </a>
+                    <div class="price">499.000đ</div>
+                    <a href="" class="product-name">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now text-center">Mua ngay</a>
+                    <span class="discount">
+                        <img src="image/sale.png" alt="">
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="product-item"><a href="">
+                        <img src="image/product1.jpg" alt="">
+                    </a>
+                    <div class="price">499.000đ</div>
+                    <a href="" class="product-name">Lorem ipsum dolor sit amet.</a>
+                    <a href="" class="buy-now text-center">Mua ngay</a>
+                </div>
+            </li>
+        </ul>
+        <footer class="text-center">unitop.vn - Học web đi làm</footer>
+    </div>
+</body>
+
+</html>
+
+<!-- 
+    Ý tưởng hiệu ứng mua ngay:
+1. Cho khối buy-now thành absolute để trôi nổi trên khối cha product-item  đã dc set relative
+2. Đặt overflow:hidden  cho product-item để ẩn khối buy-now vì lúc này buy-now đã nằm ngoài product-item do thuộc tính absolute
+3. Set thuộc tính cho selector product-item:hover .buy-now để hiển thị khối buy-now khi hover chuột 
+-->

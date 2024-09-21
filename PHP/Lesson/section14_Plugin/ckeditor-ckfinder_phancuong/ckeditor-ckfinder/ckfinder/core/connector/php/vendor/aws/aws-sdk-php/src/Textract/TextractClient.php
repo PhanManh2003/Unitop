@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:02194bfe165c2b147c859820f0dba04b0fad3c08b9f23849b2a8948fddae8cfb
-size 1592
+<?php
+namespace Aws\Textract;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **Amazon Textract** service.
+ * @method \Aws\Result analyzeDocument(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise analyzeDocumentAsync(array $args = [])
+ * @method \Aws\Result analyzeExpense(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise analyzeExpenseAsync(array $args = [])
+ * @method \Aws\Result analyzeID(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise analyzeIDAsync(array $args = [])
+ * @method \Aws\Result detectDocumentText(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise detectDocumentTextAsync(array $args = [])
+ * @method \Aws\Result getDocumentAnalysis(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getDocumentAnalysisAsync(array $args = [])
+ * @method \Aws\Result getDocumentTextDetection(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getDocumentTextDetectionAsync(array $args = [])
+ * @method \Aws\Result getExpenseAnalysis(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getExpenseAnalysisAsync(array $args = [])
+ * @method \Aws\Result startDocumentAnalysis(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise startDocumentAnalysisAsync(array $args = [])
+ * @method \Aws\Result startDocumentTextDetection(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise startDocumentTextDetectionAsync(array $args = [])
+ * @method \Aws\Result startExpenseAnalysis(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise startExpenseAnalysisAsync(array $args = [])
+ */
+class TextractClient extends AwsClient {}

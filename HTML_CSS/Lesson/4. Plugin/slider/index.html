@@ -1,3 +1,78 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2a502b6a96bf1dbbba04ea919bdae092099ea449d4a9e73ed8d52d1b82476c4b
-size 2530
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <!-- js import  -->
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <title>Owl Slider</title>
+</head>
+
+<body>
+    <!-- tóm lại lên trang chủ owlcarousel vô phần demo nó hương dẫn rõ ràng -->
+    <!-- Các bước:
+    1. Download owlcarousel
+    2. Copy thư mục owlcarousel trong file download vào thư mục dự án
+    
+    3. Import css : 
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+
+    4. import js:   <script src="owlcarousel/owl.carousel.min.js"></script>
+    ( nhớ import cả jquery vào)
+    5. Lên cấu trúc html
+    6. Chạy plugin với demo: https://owlcarousel2.github.io/OwlCarousel2/demos/demos.html -->
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        });
+    </script>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="images/product1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/product11.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/product5.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/product9.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/product1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/product11.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/product5.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/product9.jpg" alt="">
+        </div>
+
+    </div>
+</body>
+
+</html>

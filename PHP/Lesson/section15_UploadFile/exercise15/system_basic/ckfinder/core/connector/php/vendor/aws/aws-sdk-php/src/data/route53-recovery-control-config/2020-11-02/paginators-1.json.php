@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:86ca0d4d98c98fae8cbe590f04472b70b2dfaa2d0a0bf379e36563094fb4a644
-size 755
+<?php
+// This file was auto-generated from sdk-root/src/data/route53-recovery-control-config/2020-11-02/paginators-1.json
+return [ 'pagination' => [ 'ListAssociatedRoute53HealthChecks' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListClusters' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListControlPanels' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListRoutingControls' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListSafetyRules' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];

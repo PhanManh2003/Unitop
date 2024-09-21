@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:51a06c25317a2ef5e966b5bb4fca84e9faa498f10b7f4c5a87a14338b0dd8f19
-size 275
+<?php
+// This file was auto-generated from sdk-root/src/data/batch/2016-08-10/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'DescribeComputeEnvironments', 'input' => [], 'errorExpectedFromService' => false, ], ],];

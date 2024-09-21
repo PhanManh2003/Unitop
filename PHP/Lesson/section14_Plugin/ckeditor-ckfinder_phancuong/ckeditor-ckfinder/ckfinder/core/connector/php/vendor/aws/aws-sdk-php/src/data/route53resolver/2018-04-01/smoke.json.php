@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6090fa309b5e5cbe1cccf99072e20b9639fe5385a93d68a0c036394b30f3d205
-size 405
+<?php
+// This file was auto-generated from sdk-root/src/data/route53resolver/2018-04-01/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListResolverEndpoints', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'GetResolverRule', 'input' => [ 'ResolverRuleId' => 'fake-id', ], 'errorExpectedFromService' => true, ], ],];

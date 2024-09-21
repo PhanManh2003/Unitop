@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c542e2d8e83429fe8dd1f968fceb774de536c4a5a03966763918179b18f2b5d6
-size 392
+<?php
+// This file was auto-generated from sdk-root/src/data/kinesis/2013-12-02/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListStreams', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'DescribeStream', 'input' => [ 'StreamName' => 'bogus-stream-name', ], 'errorExpectedFromService' => true, ], ],];

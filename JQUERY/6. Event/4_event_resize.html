@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4863a48980a7616dd7df9509939460341afb89c4046f2e6daf8c9de73a208764
-size 1044
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự kiện resize trong jquery</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+
+
+    <style>
+        input,
+        select,
+        textarea {
+            display: block;
+            margin-bottom: 15px;
+            outline: none;
+        }
+    </style>
+
+    <script>
+        // chỉ áp dụng cho textarea, input text, select
+        $(document).ready(function () {
+            var browser_width = $(window).width();
+            $('strong#result').text(browser_width + 'px');
+            $(window).resize(function () {
+                browser_width = $(window).width();
+                $('strong#result').text(browser_width + 'px');
+            })
+        })
+    </script>
+
+    <h1>Sự kiện resize trong jquery</h1>
+    <p id="browser_width">Độ rộng trình duyệt: <strong id="result"></strong></p>
+</body>
+
+</html>

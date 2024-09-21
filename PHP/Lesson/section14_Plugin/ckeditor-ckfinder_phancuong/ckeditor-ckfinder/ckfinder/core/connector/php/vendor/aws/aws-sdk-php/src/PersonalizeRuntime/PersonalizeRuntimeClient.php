@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2563e471d60a0b51be1c2f312b6dbbbed446940f17e23515846586c9788e784
-size 495
+<?php
+namespace Aws\PersonalizeRuntime;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **Amazon Personalize Runtime** service.
+ * @method \Aws\Result getPersonalizedRanking(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getPersonalizedRankingAsync(array $args = [])
+ * @method \Aws\Result getRecommendations(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getRecommendationsAsync(array $args = [])
+ */
+class PersonalizeRuntimeClient extends AwsClient {}

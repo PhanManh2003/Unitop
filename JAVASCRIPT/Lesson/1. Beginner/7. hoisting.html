@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b851a15a64b2514b61e10d514b97b2688c362b5f1fa8b684d70f818b22936c93
-size 485
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hoisting</title>
+</head>
+
+<body>
+    <h1>Hoisting html</h1>
+    <script>
+        // biến var có thể sử dụng trước khi khai báo, let và const thì không
+        a = 10;
+        console.log(a);
+        var a;
+
+        b = 20;
+        console.log(b);
+        let b;
+    </script>
+</body>
+
+</html>

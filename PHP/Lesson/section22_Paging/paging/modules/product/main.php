@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3fd22e8bce8bef8d1e82bbb0bb8d1249976c76953c0abb75e86c4a25069b9864
-size 204
+<?php
+$cat_id = (int)$_GET['cat_id'];
+?>
+<?php
+get_header('product');
+?>
+<div id="content">
+    <h1>Danh sách sản phẩm - Danh mục <?php echo $cat_id ?></h1>
+</div>
+<?php
+get_footer();
+?>

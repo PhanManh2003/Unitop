@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:499d8c27a292533e0cd17b8ad64c77d9ded14351e2cb7b6329946965c267ca4c
-size 747
+<?php
+
+namespace Spatie\Dropbox\Exceptions;
+
+use Exception;
+use Psr\Http\Message\ResponseInterface;
+
+class BadRequest extends Exception
+{
+    /**
+     * @var \Psr\Http\Message\ResponseInterface
+     */
+    public $response;
+
+    /**
+     * The dropbox error code supplied in the response.
+     *
+     * @var string|null
+     */
+    public $dropboxCode;
+
+    public function __construct(ResponseInterface $response)
+    {
+        $this->response = $response;
+
+        $body = json_decode($response->getBody(), true);
+
+        if ($body !== null) {
+            if (isset($body['error']['.tag'])) {
+                $this->dropboxCode = $body['error']['.tag'];
+            }
+
+            parent::__construct($body['error_summary']);
+        }
+    }
+}

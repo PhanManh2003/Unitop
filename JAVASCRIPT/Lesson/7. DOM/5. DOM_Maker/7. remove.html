@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:80e2c1ae29ce762655c39052a65b385c744d3111fb61e256f8354b20ec812d3d
-size 662
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xóa 1 element ra khỏi DOM</title>
+</head>
+
+<body>
+    <h1>Xóa 1 element ra khỏi DOM</h1>
+    <ul id="langs">
+        <li>Html</li>
+        <li class="current">Css</li>
+        <li>Javascript</li>
+    </ul>
+
+    <script>
+        const langs = document.getElementById('langs');
+        const current = document.querySelector('li.current');
+
+        // Cách 1: 
+        current.remove();
+
+        // Cách 2:
+        langs.removeChild(current);
+    </script>
+</body>
+
+</html>

@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:30169fa7a9eb9a798c20b5f581d5f8a5f56715b233da9bf4e92aada7356eeb36
-size 763
+const a = 15;
+
+let products = [
+    {
+        id: 1,
+        url: '#',
+        product_name: 'Iphone 13 Pro Max',
+        ram: '6GB',
+        price: '27.790.000đ',
+        product_thumb: 'https://cdn.tgdd.vn/Products/Images/42/223602/iphone-13-xanh-la-thumb-new-600x600.jpg'
+    },
+    {
+        id: 2,
+        url: '#',
+        product_name: 'Iphone 14 Pro Max',
+        ram: '6GB',
+        price: '33.990.000đ',
+        product_thumb: 'https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-tim-thumb-600x600.jpg'
+    }
+];
+
+function show(){
+    console.log('function show');
+}
+
+class Product{
+    constructor(){
+
+    }
+    render(){
+        console.log('class Product');
+    }
+}
+export  {a,products,show, Product} ;

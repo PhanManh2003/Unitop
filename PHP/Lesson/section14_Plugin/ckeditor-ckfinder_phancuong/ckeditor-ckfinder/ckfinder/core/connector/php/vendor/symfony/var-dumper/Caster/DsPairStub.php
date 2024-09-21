@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c396d7b2adaad808e02b17a65cdf56d4a6d89789a4f2624ed470f410d7f0c13
-size 630
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\VarDumper\Caster;
+
+use Symfony\Component\VarDumper\Cloner\Stub;
+
+/**
+ * @author Nicolas Grekas <p@tchwork.com>
+ */
+class DsPairStub extends Stub
+{
+    public function __construct(string|int $key, mixed $value)
+    {
+        $this->value = [
+            Caster::PREFIX_VIRTUAL.'key' => $key,
+            Caster::PREFIX_VIRTUAL.'value' => $value,
+        ];
+    }
+}

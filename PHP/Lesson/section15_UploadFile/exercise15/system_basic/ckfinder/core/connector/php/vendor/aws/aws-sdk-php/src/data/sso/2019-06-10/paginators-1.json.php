@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d8052c0594a6f8ec6df05df55f7d13ef211d4c56e5394400576c5b3fe2034e3c
-size 415
+<?php
+// This file was auto-generated from sdk-root/src/data/sso/2019-06-10/paginators-1.json
+return [ 'pagination' => [ 'ListAccountRoles' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'roleList', ], 'ListAccounts' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'accountList', ], ],];

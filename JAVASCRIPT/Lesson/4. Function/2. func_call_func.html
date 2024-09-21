@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1faae3c04007a77d0d261bfae4295a8f482614b9e29ed36a2495cbde6e3e9349
-size 747
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 hàm gọi nhau cùng làm việc</title>
+</head>
+
+<body>
+    <h1>2 hàm gọi nhau cùng làm việc</h1>
+    <script>
+        function check_even(k) {
+            if (k % 2 == 0)
+                return true;
+            return false;
+
+        }
+        function total_even_numbers(n) {
+            let t = 0;
+            for (let i = 1; i <= n; i++) {
+                if (check_even(i)) {
+                    t += i;
+                }
+            }
+            return t;
+        }
+        document.write(total_even_numbers(5));
+    </script>
+</body>
+
+</html>

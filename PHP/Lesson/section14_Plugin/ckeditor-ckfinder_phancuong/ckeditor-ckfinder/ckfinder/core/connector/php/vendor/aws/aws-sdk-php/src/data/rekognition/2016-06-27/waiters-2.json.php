@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c930b24b012b0157396ff8c568585697494e9a73711e2e30325445db30ff741f
-size 1082
+<?php
+// This file was auto-generated from sdk-root/src/data/rekognition/2016-06-27/waiters-2.json
+return [ 'version' => 2, 'waiters' => [ 'ProjectVersionTrainingCompleted' => [ 'description' => 'Wait until the ProjectVersion training completes.', 'operation' => 'DescribeProjectVersions', 'delay' => 120, 'maxAttempts' => 360, 'acceptors' => [ [ 'state' => 'success', 'matcher' => 'pathAll', 'argument' => 'ProjectVersionDescriptions[].Status', 'expected' => 'TRAINING_COMPLETED', ], [ 'state' => 'failure', 'matcher' => 'pathAny', 'argument' => 'ProjectVersionDescriptions[].Status', 'expected' => 'TRAINING_FAILED', ], ], ], 'ProjectVersionRunning' => [ 'description' => 'Wait until the ProjectVersion is running.', 'delay' => 30, 'maxAttempts' => 40, 'operation' => 'DescribeProjectVersions', 'acceptors' => [ [ 'state' => 'success', 'matcher' => 'pathAll', 'argument' => 'ProjectVersionDescriptions[].Status', 'expected' => 'RUNNING', ], [ 'state' => 'failure', 'matcher' => 'pathAny', 'argument' => 'ProjectVersionDescriptions[].Status', 'expected' => 'FAILED', ], ], ], ],];

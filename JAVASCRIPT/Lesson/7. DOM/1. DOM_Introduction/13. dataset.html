@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:424dc0b1d6831fe04dc7ff4d2cced6caf3a2706e967e5197c4efae1678df8fa1
-size 769
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Html Dom dataset</title>
+</head>
+
+<body>
+    <div id="user" data-age="23" data-date-of-birth="">Phan Tiến Mạnh</div>
+    <script>
+        // Phần tử HTML có thể được gán thêm các thuộc tính mới để phục vụ cho 
+        // nhiều mục đích bằng cách sử dụng data attribute và các thuộc tính này
+        // được truy cập qua dataset  
+        const user = document.getElementById('user');
+        // Xóa thuộc tính data attribute
+        delete user.dataset.dateOfBirth;
+        console.log(user.dataset);
+    </script>
+</body>
+
+</html>

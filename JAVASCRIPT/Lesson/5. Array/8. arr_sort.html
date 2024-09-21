@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7d56077bb1f8aac949aedba45a72d3ea0de3671a0679c805ff7bd02173becb23
-size 1337
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sắp xếp phần tử trong mảng + tìm min max</title>
+</head>
+
+<body>
+    <h1>Sắp xếp phần tử trong mảng + tìm min max</h1>
+    <script>
+        // array.sort();
+        // - sắp xếp theo thứ tự alphabet
+        // - nếu mảng là số thì cần sử dụng hàm so sánh đi kèm
+
+        let list_number = [112, 4, 1, 3, 99, 7, 8];
+        let result = list_number.sort(function (a, b) {
+            return a - b;
+        });
+        
+        let min = result[0];
+        let max = result[result.length - 1];
+        // The sort function takes a comparator function as an argument. 
+        // This comparator function is used to determine the sorting order of elements.
+        // In this case, the comparator function subtracts b from a, which sorts the elements in ascending order.
+        // If the result of the subtraction is negative, it means a should come before b,
+        // and if it's positive, it means b should come before a.
+        console.log(result);
+        console.log(min, max);
+
+        // array.reverse(): đảo ngược thứ tự các phần tử trong mảng
+    </script>
+</body>
+
+</html>

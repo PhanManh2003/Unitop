@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9af74522ea79d67bcac79a6f3e0eb689473a223d0ab677bace5b44bdbecc1131
-size 864
+<?php
+namespace Aws\Arn;
+
+/**
+ * Amazon Resource Names (ARNs) uniquely identify AWS resources. Classes
+ * implementing ArnInterface parse and store an ARN object representation.
+ *
+ * Valid ARN formats include:
+ *
+ *   arn:partition:service:region:account-id:resource-id
+ *   arn:partition:service:region:account-id:resource-type/resource-id
+ *   arn:partition:service:region:account-id:resource-type:resource-id
+ *
+ * Some components may be omitted, depending on the service and resource type.
+ *
+ * @internal
+ */
+interface ArnInterface
+{
+    public static function parse($string);
+
+    public function __toString();
+
+    public function getPrefix();
+
+    public function getPartition();
+
+    public function getService();
+
+    public function getRegion();
+
+    public function getAccountId();
+
+    public function getResource();
+
+    public function toArray();
+}

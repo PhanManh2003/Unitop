@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:363db6d0ebd328472aa31f641d1a705f963186c99db157c983b74ef4fea7a459
-size 993
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="./phpunit.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="true"
+         verbose="true"
+>
+    <testsuites>
+        <testsuite name="flysystem/tests">
+            <directory suffix=".php">./tests/</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src/</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-text" target="php://stdout" showUncoveredFiles="true"/>
+        <log type="coverage-html" target="coverage" showUncoveredFiles="true"/>
+        <log type="coverage-clover" target="clover/phpunit.xml" showUncoveredFiles="true"/>
+    </logging>
+</phpunit>

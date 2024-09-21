@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:315c98795e9e019f4d67a6cd6a84ef009dd42a629fcce2a98e347c1f9c8aefc4
-size 1098
+<?php
+namespace Aws\ApplicationCostProfiler;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **AWS Application Cost Profiler** service.
+ * @method \Aws\Result deleteReportDefinition(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteReportDefinitionAsync(array $args = [])
+ * @method \Aws\Result getReportDefinition(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getReportDefinitionAsync(array $args = [])
+ * @method \Aws\Result importApplicationUsage(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise importApplicationUsageAsync(array $args = [])
+ * @method \Aws\Result listReportDefinitions(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listReportDefinitionsAsync(array $args = [])
+ * @method \Aws\Result putReportDefinition(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise putReportDefinitionAsync(array $args = [])
+ * @method \Aws\Result updateReportDefinition(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateReportDefinitionAsync(array $args = [])
+ */
+class ApplicationCostProfilerClient extends AwsClient {}

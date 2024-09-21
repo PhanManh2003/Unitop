@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:77cc15b18382157ee485ee4c2bec33d0fc4d0aa6440341774f5ebcbd8c54dbe5
-size 1459
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức xử lí class</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <!-- 
+STT        CÁCH VIẾT                              MÔ TẢ 
+1       .addClass(className)        Thêm 1 hoặc nhiều class vào mỗi phần tử của bộ chọn  
+2       .removeClass(className)     Xóa 1, nhiều hoặc tất cả class của các phần tử của bộ chọn
+3       .toggleClass(className)     Thêm hoặc bỏ 1, nhiều class của các phần tử trong bộ chọn
+4       .hasClass(className)        Kiểm tra sự có mặt của class trong đối tượng chọn
+-->
+
+    <style>
+        .highlight{
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+    <script>
+        // Click vào phần tử để highlight
+        $(document).ready(function () {
+            $('p').click(function () {
+                // Cách 1
+                // $('p.highlight').removeClass('highlight');
+                // $(this).addClass('highlight');
+                // Cách 2: 
+                $(this).toggleClass('highlight');
+            })
+        });
+    </script>
+    <p>Passage 1</p>
+    <p>Passage 2</p>
+    <p>Passage 3</p>
+    <p>Passage 4</p>
+    <p>Passage 5</p>
+
+</body>
+
+</html>

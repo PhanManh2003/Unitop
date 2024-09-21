@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:189aad17073fe5330974491a08709189c8c0fdcbac946387a1d6f31aa319fc50
-size 1213
+<?php
+// This file was auto-generated from sdk-root/src/data/elasticbeanstalk/2010-12-01/waiters-2.json
+return [ 'version' => 2, 'waiters' => [ 'EnvironmentExists' => [ 'delay' => 20, 'maxAttempts' => 20, 'operation' => 'DescribeEnvironments', 'acceptors' => [ [ 'state' => 'success', 'matcher' => 'pathAll', 'argument' => 'Environments[].Status', 'expected' => 'Ready', ], [ 'state' => 'retry', 'matcher' => 'pathAll', 'argument' => 'Environments[].Status', 'expected' => 'Launching', ], ], ], 'EnvironmentUpdated' => [ 'delay' => 20, 'maxAttempts' => 20, 'operation' => 'DescribeEnvironments', 'acceptors' => [ [ 'state' => 'success', 'matcher' => 'pathAll', 'argument' => 'Environments[].Status', 'expected' => 'Ready', ], [ 'state' => 'retry', 'matcher' => 'pathAll', 'argument' => 'Environments[].Status', 'expected' => 'Updating', ], ], ], 'EnvironmentTerminated' => [ 'delay' => 20, 'maxAttempts' => 20, 'operation' => 'DescribeEnvironments', 'acceptors' => [ [ 'state' => 'success', 'matcher' => 'pathAll', 'argument' => 'Environments[].Status', 'expected' => 'Terminated', ], [ 'state' => 'retry', 'matcher' => 'pathAll', 'argument' => 'Environments[].Status', 'expected' => 'Terminating', ], ], ], ],];

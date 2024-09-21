@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:78468932d1dc78922c98abb9b78e710a3ec9524997192932f96bd1878c514a58
-size 262
+<?php
+// This file was auto-generated from sdk-root/src/data/iotfleethub/2020-11-03/paginators-1.json
+return [ 'pagination' => [ 'ListApplications' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'result_key' => 'applicationSummaries', ], ],];

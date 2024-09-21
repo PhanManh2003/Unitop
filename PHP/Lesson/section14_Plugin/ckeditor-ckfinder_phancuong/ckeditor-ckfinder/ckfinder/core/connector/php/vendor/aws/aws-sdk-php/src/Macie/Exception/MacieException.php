@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:df58822dff7fe782fc465261c8ea264feab520cc84281edf4068af6c69c29f68
-size 194
+<?php
+namespace Aws\Macie\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Amazon Macie** service.
+ */
+class MacieException extends AwsException {}

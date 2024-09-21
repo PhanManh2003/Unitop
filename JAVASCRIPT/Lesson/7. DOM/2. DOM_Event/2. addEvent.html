@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bfb9eb36d2f23e3aba4dbcf69d2031c9c15208fddaf117e2007450cb1ed87696
-size 1135
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add event to element</title>
+</head>
+
+<body>
+    <h1>Add event to element</h1>
+    <!-- Cách 1: Inline -->
+    <!-- <button id="btn" onclick="show();">Click me</button> -->
+    <button id="btn">Click me</button>
+
+    <script>
+        function show() {
+            alert('hello !');
+        }
+        // Cách 2: Js
+        const btnElement = document.getElementById('btn');
+        // console.log(btnElement);
+        // btnElement.onclick = show; // chỉ viết duy nhất tên function
+
+        // Cách 3: Js AddEventListener (dùng để kích hoạt nhiều sự kiện trên cùng 1 element)
+        btnElement.addEventListener('dblclick',function(e){ // từ khóa: "click" hoặc "dblclick"
+            console.log(e); // tham số này hiển thị các thông tin của sự kiện  
+            alert('click cách 3');
+        })
+        // hoặc
+        // btnElement.addEventListener('click',show);
+
+    </script>
+</body>
+
+</html>

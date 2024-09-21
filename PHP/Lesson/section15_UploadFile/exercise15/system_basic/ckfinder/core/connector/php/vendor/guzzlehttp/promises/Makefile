@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:99c84fe176d6135d3025a7e1946ba3610acf38648321c538a790fd207969cf0f
-size 189
+all: clean test
+
+test:
+	vendor/bin/phpunit
+
+coverage:
+	vendor/bin/phpunit --coverage-html=artifacts/coverage
+
+view-coverage:
+	open artifacts/coverage/index.html
+
+clean:
+	rm -rf artifacts/*

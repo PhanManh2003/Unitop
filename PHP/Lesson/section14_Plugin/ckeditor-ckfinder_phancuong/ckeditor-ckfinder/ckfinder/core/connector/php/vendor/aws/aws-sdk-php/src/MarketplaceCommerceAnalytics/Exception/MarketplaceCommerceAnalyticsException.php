@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:19aff6f5039e8657a48bffe521ff334d994cbbd178b17046a6b7dbc25a6a4011
-size 262
+<?php
+namespace Aws\MarketplaceCommerceAnalytics\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **AWS Marketplace Commerce Analytics** service.
+ */
+class MarketplaceCommerceAnalyticsException extends AwsException {}

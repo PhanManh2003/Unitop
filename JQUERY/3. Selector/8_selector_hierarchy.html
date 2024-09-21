@@ -1,3 +1,61 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ead8566dbefce6f152bdf60c7bdc4dc4a0ff6b11829a4829967bc4cf999eab12
-size 2176
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector theo cấp bậc</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <!-- 
+STT        CÁCH VIẾT                              MÔ TẢ 
+1       $("parent > child")        Chọn tất cả phần tử child là con trực tiếp của parent
+2       $("ancestor descendant")   Chọn tất cả phần tử descendant là con cháu xác định bởi ancestor
+3       $("prev + next")           Chọn phần tử next cùng cấp đứng ngay sau prev
+4       $("prev ~ next")           Chọn tất cả phần tử next cùng cấp đằng sau prev
+-->
+    <style>
+        form * {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            //1. Toàn bộ menu cấp 1 sang màu đỏ
+            // $("#main-menu > li > a").css('color', 'red');
+            //2. Toàn bộ menu sang màu gold
+            // $("#main-menu a").css('color', 'gold');
+            //3. In vào giá trị của input "đã có label" nếu nó có label phía trên
+            $("form label + input").val('Đã có label');
+            //4. Toàn bộ input phía sau label có value "Đứng sau label"
+            // $("form label ~ input").val('Tất cả Đứng sau label');
+        })
+
+
+    </script>
+
+    <ul id="main-menu">
+        <li><a href="">Menu 1</a></li>
+        <li><a href="">Menu 2</a>
+            <ul class="sub-menu">
+                <li><a href="">Menu 2.1</a></li>
+                <li><a href="">Menu 2.2</a></li>
+                <li><a href="">Menu 2.3</a></li>
+            </ul>
+        </li>
+        <li><a href="">Menu 3</a></li>
+        <li><a href="">Menu 4</a></li>
+        <li><a href="">Menu 5</a></li>
+    </ul>
+
+    <form action="">
+        <label for="Username">Username</label>
+        <input type="text" name="Username" id="Username">
+        <input type="email" name="email" id="email">
+    </form>
+</body>
+
+</html>

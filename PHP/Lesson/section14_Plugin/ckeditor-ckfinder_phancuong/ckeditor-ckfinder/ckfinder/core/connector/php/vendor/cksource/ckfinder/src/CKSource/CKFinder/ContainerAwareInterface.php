@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:463f20b471922ce54842176528634e9ce354ab367f50a615f3105502741ecfce
-size 596
+<?php
+
+/*
+ * CKFinder
+ * ========
+ * https://ckeditor.com/ckfinder/
+ * Copyright (c) 2007-2021, CKSource - Frederico Knabben. All rights reserved.
+ *
+ * The software, this file and its contents are subject to the CKFinder
+ * License. Please read the license.txt file before using, installing, copying,
+ * modifying or distribute this file or part of its contents. The contents of
+ * this file is part of the Source Code of CKFinder.
+ */
+
+namespace CKSource\CKFinder;
+
+/**
+ * The ContainerAware interface.
+ */
+interface ContainerAwareInterface
+{
+    public function setContainer(CKFinder $app);
+}

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb3b302e70b50676526b8fc056bb0689bf20aef777f1a6fc4f3e912c6e78af35
-size 691
+<?php
+namespace Aws\SSO;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **AWS Single Sign-On** service.
+ * @method \Aws\Result getRoleCredentials(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getRoleCredentialsAsync(array $args = [])
+ * @method \Aws\Result listAccountRoles(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listAccountRolesAsync(array $args = [])
+ * @method \Aws\Result listAccounts(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listAccountsAsync(array $args = [])
+ * @method \Aws\Result logout(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise logoutAsync(array $args = [])
+ */
+class SSOClient extends AwsClient {}

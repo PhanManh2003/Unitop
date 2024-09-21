@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9f11a0d6f3342f0adf5c8f3e37a62d2aef496907fa89f1d5c792fa340b4c22b3
-size 529
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpFoundation\Exception;
+
+/**
+ * Raised when a user has performed an operation that should be considered
+ * suspicious from a security perspective.
+ */
+class SuspiciousOperationException extends \UnexpectedValueException implements RequestExceptionInterface
+{
+}

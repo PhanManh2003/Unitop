@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:54bf0ab87c2fcdc8abedede72521c833701c96f969869fc7d75ec75632ef8a23
-size 1222
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id selector</title>
+</head>
+
+<body>
+
+    <style>
+        /* Chọn và định dạng duy nhất 1 phần tử html dựa trên id của nó */
+        #wraper {
+            width: 960px;
+            margin: 2px auto;
+        }
+
+        #header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+        }
+
+        #footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+        }
+
+        #content {
+            min-height: 500px;
+            background-color: blue;
+            color: red;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+    <div id="wrapper">
+        <div id="header">
+            <h2>Header</h2>
+        </div>
+        <div id="content">
+            <p>Content</p>
+        </div>
+        <div id="footer" class="text-center">
+            <h2>Footer</h2>
+        </div>
+    </div>
+</body>
+
+</html>

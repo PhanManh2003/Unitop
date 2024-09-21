@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6e43d1a14e2ac27030c657a4cb188f9672b8640fd574efe1f6721c1c1383add4
-size 134
+<?php
+// This file was auto-generated from sdk-root/src/data/cognito-sync/2014-06-30/paginators-1.json
+return [ 'pagination' => [],];

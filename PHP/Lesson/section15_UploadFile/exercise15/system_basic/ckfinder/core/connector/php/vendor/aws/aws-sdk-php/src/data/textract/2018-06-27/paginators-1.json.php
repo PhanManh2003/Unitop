@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92acea10078bc273a5c4a79eadc663985d02656a0fc289f8df013354d911182d
-size 130
+<?php
+// This file was auto-generated from sdk-root/src/data/textract/2018-06-27/paginators-1.json
+return [ 'pagination' => [],];

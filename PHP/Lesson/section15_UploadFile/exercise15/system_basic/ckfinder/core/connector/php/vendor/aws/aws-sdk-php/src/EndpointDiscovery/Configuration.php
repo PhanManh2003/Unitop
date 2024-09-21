@@ -1,3 +1,48 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ddbaf5fe603b064b1eb200ad8ac3007bd11743abf14a7473c6a0b340347b70f
-size 1097
+<?php
+namespace Aws\EndpointDiscovery;
+
+class Configuration implements ConfigurationInterface
+{
+    private $cacheLimit;
+    private $enabled;
+
+    public function __construct($enabled, $cacheLimit = 1000)
+    {
+        $this->cacheLimit = filter_var($cacheLimit, FILTER_VALIDATE_INT);
+        if ($this->cacheLimit == false || $this->cacheLimit < 1) {
+            throw new \InvalidArgumentException(
+                "'cache_limit' value must be a positive integer."
+            );
+        }
+
+        // Unparsable $enabled flag errs on the side of disabling endpoint discovery
+        $this->enabled = filter_var($enabled, FILTER_VALIDATE_BOOLEAN);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function isEnabled()
+    {
+        return $this->enabled;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getCacheLimit()
+    {
+        return $this->cacheLimit;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function toArray()
+    {
+        return [
+            'enabled' => $this->isEnabled(),
+            'cache_limit' => $this->getCacheLimit()
+        ];
+    }
+}

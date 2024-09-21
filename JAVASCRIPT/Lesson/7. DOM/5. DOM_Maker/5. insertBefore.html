@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:662e8db3549982e8e4cb46cae0b2944b8c666e4c386c0786f8d302c99a37e15b
-size 1115
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertBefore()</title>
+</head>
+
+<body>
+    <h1>insertBefore() Chèn một element vào trước hoặc sau một phần tử con xác định</h1>
+    <ul id="langs">
+        <li>Html</li>
+        <li class="current">Css</li>
+        <li>Javascript</li>
+    </ul>
+
+    <script>
+        const langs = document.getElementById('langs');
+        const current = document.querySelector('li.current');
+
+        // Chèn một element vào trước một phần tử con xác định
+        const liBeforeCurrent = document.createElement('li');
+        liBeforeCurrent.textContent = 'Php';
+        langs.insertBefore(liBeforeCurrent, current);
+
+        // Chèn một element vào sau một phần tử con xác định
+        const liAfterCurrent = document.createElement('li');
+        liAfterCurrent.textContent = 'Python';
+        langs.insertBefore(liAfterCurrent, current.nextElementSibling);
+
+
+    </script>
+</body>
+
+</html>

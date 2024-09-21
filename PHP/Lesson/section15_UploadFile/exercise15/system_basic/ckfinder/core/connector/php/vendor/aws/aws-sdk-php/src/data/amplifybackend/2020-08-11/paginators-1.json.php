@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb9b2c8165382128fa6e398b06d99c77552273318f1cd72a3ae1ab97dff01702
-size 277
+<?php
+// This file was auto-generated from sdk-root/src/data/amplifybackend/2020-08-11/paginators-1.json
+return [ 'pagination' => [ 'ListBackendJobs' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', 'result_key' => 'Jobs', ], ],];

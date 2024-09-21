@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:599747e0f428353a87e55a1949b9102b669f1cae3ceb06d16b1c0d1673818d67
-size 790
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-ex2</title>
+</head>
+
+<body>
+    <h1>Xếp loại học lực theo thang điểm 10</h1>
+    <script>
+        let mark;
+        mark = 5;
+        if (0 <= mark <= 10) {
+            if (mark >= 8) {
+                document.write('Giỏi');
+            } else if (mark >= 6.5) {
+                document.write('Khá');
+            } else if (mark >= 4) {
+                document.write('Trung bình');
+            } else {
+                document.write('Kém');
+            }
+        } else {
+            document.write('Điểm phải trong khoảng [0,10] ');
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b0ffc703f0906d91e55e9a89baf375b2a0e045e112270db46bdffbeb0fa5aea9
-size 216
+<?php
+namespace Aws\AppConfigData\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **AWS AppConfig Data** service.
+ */
+class AppConfigDataException extends AwsException {}

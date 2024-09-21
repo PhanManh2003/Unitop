@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7fba935e746494921003857d6062e2e3cd8fdd726b644a7d8a2833a69f60beac
-size 1039
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hệ thống điều hướng cơ bản</title>
+        <link href="public/css/reset.css" rel="stylesheet" type="text/css"/>
+        <link href="public/css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <ul id="main-menu" class="mod-product">
+                    <li><a href="?">Trang chủ</a></li>
+                    <li><a href="?mod=page&act=detail&id=1">Giới thiệu</a></li>
+                    <li><a href="?mod=post&act=main">Tin tức</a></li>
+                    <li><a href="?mod=product&act=main&cat_id=1">Điện thoại</a></li>
+                    <li><a href="?mod=product&act=main&cat_id=2">Máy tính</a></li>
+                    <li><a href="?mod=page&act=detail&id=2">Liên hệ</a></li>
+                </ul>
+            </div>

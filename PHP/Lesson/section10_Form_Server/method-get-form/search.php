@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a055b4e50770b09e982840470b733773d78f8f2e5913a012e6d1a51e7fb7c1a1
-size 227
+<?php
+// xử lí GET ở file riêng
+function showArray($data){
+    if(is_array($data)){
+        echo "<pre>";
+        print_r($data);
+        echo "</pre>";
+    }
+}
+
+showArray($_GET);
+
+$q = $_GET['q'];
+echo $q;

@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a546b0d0a87e9b78a51cb0838419cf9738e714524019e5b76517674e021ab6ad
-size 434
+Symfony Polyfill / Intl: Normalizer
+===================================
+
+This component provides a fallback implementation for the
+[`Normalizer`](https://php.net/Normalizer) class provided
+by the [Intl](https://php.net/intl) extension.
+
+More information can be found in the
+[main Polyfill README](https://github.com/symfony/polyfill/blob/master/README.md).
+
+License
+=======
+
+This library is released under the [MIT license](LICENSE).

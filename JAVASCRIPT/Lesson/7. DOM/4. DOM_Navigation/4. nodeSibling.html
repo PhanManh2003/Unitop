@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e87f59609a11b7b64bb4a430e56d3477e1a76ff68d2f55a8007681151c21045
-size 812
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next, Prev Sibling Element</title>
+</head>
+<body>
+    <h1>Trỏ đến phần tử anh em Next, Prev Sibling Element </h1>
+    <ul id="menu">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li class="current">item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+
+    <script>
+        // Làm thế nào từ item 3 ( current ) có thể truy cập dc item 1, 2, 4, 5 ?
+        const current = document.querySelector('.current');
+        console.log(current.previousElementSibling.innerHTML);
+        console.log(current.nextElementSibling.nextElementSibling.innerHTML);
+        
+    </script>
+</body>
+</html>

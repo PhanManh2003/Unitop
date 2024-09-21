@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:570df26c028d6eba1d3423bc6896c75bbdc8810629ef15fe4b2a6a58433f90c3
-size 792
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức trong object</title>
+</head>
+
+<body>
+    <h1>Phương thức trong object</h1>
+    <script>
+        // 1. Định nghĩa một phương thức
+        // 2. Toán tử this trong object
+        // 3. Thêm 1 phương thức vào object
+        let number = {
+            a: 2,
+            b: 5,
+            sum: function (a, b) {
+                return this.a + this.b;
+            }
+        };
+        number.product = function () {
+            return this.a * this.b;
+        }
+        document.writeln(number.sum());
+        document.write(number.product());
+    </script>
+</body>
+
+</html>

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ffd2415fa095cbe3de96090eae4a6de688ca46c499423ff59da49a30ae1ef0e2
-size 369
+<?php
+namespace Aws\Endpoint\UseDualstackEndpoint;
+
+interface ConfigurationInterface
+{
+    /**
+     * Returns whether or not to use a DUALSTACK endpoint
+     *
+     * @return bool
+     */
+    public function isUseDualstackEndpoint();
+
+    /**
+     * Returns the configuration as an associative array
+     *
+     * @return array
+     */
+    public function toArray();
+}

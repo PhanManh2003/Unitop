@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:22b58cff49826cfe51452eaf975fbd4d83f9b6fdd321bb90ddcfe3ba8435d7c9
-size 1111
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex order</title>
+</head>
+<body>
+    <style>
+        /* Cú pháp: order: value (... -1, 0, 1, 2, 3,...); mặc định là 0. 
+        Tác dụng: Thay đổi vị trí hiển thị của các item phía trong phần tử display flex
+         mà không cần tác động đến cấu trúc html. */
+        .container{
+            display: flex;
+            background-color: gray;
+        }
+        .flex-item{
+            background-color: greenyellow;
+            padding: 40px;
+            width: 100px;
+            margin: 10px;
+            font-size: 20px;
+        }
+        .item-1{
+            order: 1;
+        }
+
+    </style>
+    <h1>Display flex order</h1>
+    <div class="container">
+        <div class="flex-item item-1">1</div>
+        <div class="flex-item item-2">2</div>
+        <div class="flex-item item-3">3</div>
+        <div class="flex-item item-4">4</div>
+    </div>
+
+</body>
+</html>

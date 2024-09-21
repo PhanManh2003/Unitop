@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2492318443c74a9012074e2b554557130ada51e2d66dc63f2243189b195f201
-size 968
+<?php
+namespace Aws\S3\Crypto;
+
+use Aws\AwsClientInterface;
+use Aws\Middleware;
+use Psr\Http\Message\RequestInterface;
+
+trait UserAgentTrait
+{
+    private function appendUserAgent(AwsClientInterface $client, $agentString)
+    {
+        $list = $client->getHandlerList();
+        $list->appendBuild(Middleware::mapRequest(
+            function(RequestInterface $req) use ($agentString) {
+                if (!empty($req->getHeader('User-Agent'))
+                    && !empty($req->getHeader('User-Agent')[0])
+                ) {
+                    $userAgent = $req->getHeader('User-Agent')[0];
+                    if (strpos($userAgent, $agentString) === false) {
+                        $userAgent .= " {$agentString}";
+                    };
+                } else {
+                    $userAgent = $agentString;
+                }
+
+                $req =  $req->withHeader('User-Agent', $userAgent);
+                return $req;
+            }
+        ));
+    }
+}

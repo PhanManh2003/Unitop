@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:67dd8b0a1cac647d642124991ea7523c06b2578d54d3f228bf6d17c88cb0042f
-size 290
+## Building and enabling the Common Run Time
+
+1. **Follow instructions on crt repo** – Clone and build the repo as shown [here][https://github.com/awslabs/aws-crt-php].
+1. **Enable the CRT** – add the following line to your php.ini file `extension=path/to/aws-crt-php/modules/awscrt.so`

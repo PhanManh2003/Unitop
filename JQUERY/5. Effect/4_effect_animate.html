@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:809db694c2a52390553e0fde6ca4740ccb1fb470d23f79de3e8d0d1d88a1c20b
-size 1340
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoạt cảnh trong jquery</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <!-- 
+STT        CÁCH VIẾT                              MÔ TẢ 
+1       .animate()                      Hoạt cảnh lên css
+
+-->
+
+    <style>
+        #box {
+            background: #e67e22;
+            width: 400px;
+            padding: 40px;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+        }
+
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $('#effect_animate').click(function () {
+                $('#box').animate({
+                    width: '100px',
+                    padding: '20px'
+                }, 1000, 'linear'/* or 'swing'*/, function () {
+                    alert('ok');
+                });
+                return false
+            })
+
+        })
+    </script>
+
+    <div id="wrapper">
+        <h1>Hoạt cảnh trong jquery</h1>
+        <a href="" id="effect_animate">Animate</a>
+        <div id="box">BOX</div>
+    </div>
+</body>
+
+</html>

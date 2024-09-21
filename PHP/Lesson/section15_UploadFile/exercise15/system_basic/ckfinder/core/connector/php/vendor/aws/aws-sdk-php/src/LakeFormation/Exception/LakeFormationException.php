@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:795531e61608e6227881f71024360bec65a4f7eb8ed25ad2d379a8423476bcae
-size 216
+<?php
+namespace Aws\LakeFormation\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **AWS Lake Formation** service.
+ */
+class LakeFormationException extends AwsException {}

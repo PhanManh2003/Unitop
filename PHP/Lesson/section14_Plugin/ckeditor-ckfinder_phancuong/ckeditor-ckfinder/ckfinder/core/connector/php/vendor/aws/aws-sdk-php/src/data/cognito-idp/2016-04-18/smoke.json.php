@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:91b6942b7235757caee593fe17eef709508b4032a342288204e733e0c7acb8a0
-size 450
+<?php
+// This file was auto-generated from sdk-root/src/data/cognito-idp/2016-04-18/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListUserPools', 'input' => [ 'MaxResults' => 10, ], 'errorExpectedFromService' => false, ], [ 'operationName' => 'DescribeUserPool', 'input' => [ 'UserPoolId' => 'us-east-1:aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee', ], 'errorExpectedFromService' => true, ], ],];

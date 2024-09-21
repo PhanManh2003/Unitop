@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d918c880601a05d5f539327461b2be5760b5de588105ecd49ab4e7bc1fe448e6
-size 1221
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box margin</title>
+</head>
+<body>
+    <style>
+        /* margin-left, margin-top, margin-right, margin-bottom */
+        .box{
+            width: 400px;
+            padding: 30px 20px;
+            border: 1px solid red;
+            background-color: beige;
+            
+            /* giống hệt padding (top-bottom: 15px, right-left: auto) */
+            margin: 15px auto; 
+
+        }
+        .bg-aqua{
+            background-color: aquamarine;
+        }
+    </style>
+    <h1>Box margin: xác định khoảng cách giữa 2 khối</h1>
+    <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, omnis?
+    </div>
+    <div class="box bg-aqua">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, omnis?
+    </div>
+    <div class="box ">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, omnis?
+    </div>
+    <div class="box bg-aqua">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, omnis?
+    </div>
+</body>
+</html>

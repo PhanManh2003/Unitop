@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:21a80b81463770d6dc95b90f7a902f9042b732e7884a8aac6cb8aac3605a9514
-size 441
+<?php
+// This file was auto-generated from sdk-root/src/data/config/2014-11-12/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'DescribeConfigurationRecorders', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'GetResourceConfigHistory', 'input' => [ 'resourceType' => 'fake-type', 'resourceId' => 'fake-id', ], 'errorExpectedFromService' => true, ], ],];

@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:225e7a4789d6a96ad7e47e8b078408a6dda4e349ab045288fc26cfda951f1767
-size 881
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu trúc vòng lặp For Of</title>
+</head>
+
+<body>
+    <h1>Cấu trúc vòng lặp For Of dùng cho mảng</h1>
+    <script>
+        // for (let value of array){
+        //      code;
+        // }
+        
+        // Truy cập Giá Trị: Trong mỗi vòng lặp, biến điều khiển 
+        // (thường được gọi là biến tạm thời) được gán giá trị của phần tử mảng thay vì chỉ số của nó.
+        let list_numbers = [2, 4, 6, 7, 9];
+        let total = 0;
+        for (let value of list_numbers) {
+            if (value % 2 == 0) {
+                total += value;
+            }
+        }
+        document.write(total);
+
+    </script>
+</body>
+
+</html>

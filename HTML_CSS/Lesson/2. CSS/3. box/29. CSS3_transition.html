@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:23391db4cc0131d15719313aa8a941168e75f4e2f877d7584528407ee33b0552
-size 927
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+</head>
+<body>
+    <!-- transition: property1 time1, property2 time2,...
+    Tác dụng: Làm chậm quá trình thay đổi thuộc tính của 1 phần tử html -->
+    <style>
+        .box{
+            width: 200px;
+            padding: 50px;
+            text-align: center;
+            background-color: tomato;
+            /* Để transition ở class .box để khi di chuột ra khỏi khối thì hiệu ứng 
+            transtion vẫn dc áp dụng */
+            transition: width 0.8s, background-color 0.7s;
+        }
+        .box:hover{
+            width: 400px;
+            background-color: aqua;
+        }
+    </style>
+    <h1>Transition</h1>
+    <div class="box">
+        Box
+    </div>
+</body>
+</html>

@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb1ea3b2210f5d6089103893d730d783d7bd9e8dbf86d3573884dae4bef19b65
-size 2329
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector theo thuộc tính</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+
+    <!-- 
+STT        CÁCH VIẾT                                              MÔ TẢ 
+1       $("[attrName |= 'value']")      Chọn tất cả phần tử với thuộc tính attrName có giá trị là value hoặc theo sau value là 1 dấu -
+2       $("[attrName *= 'value']")      ... chứa value
+3       $("[attrName ~= 'value']")      ... chứa value và cách phần giá trị cạnh nó bởi 1 khoảng trắng
+4       $("[attrName ^= 'value']")      ... bắt đầu là value
+5       $("[attrName $= 'value']")      ... kết thúc là value
+6       $("[attrName = 'value']")       ... chính xác bằng value
+7       $("[attrName != 'value']")      ... không phải value
+8       $("[attrName]")                 Chọn tất cả phần tử có thuộc tính attrName
+9       $("[attrName1][attrName2]..")   Chọn tất cả các phần tử bao gồm tất cả các thuộc tính attrName1, attrName2 -->
+    <script>
+        $(document).ready(function () {
+            //1. Tô màu đỏ cho trang chủ
+            // $("a[href = 'home.html']").css('color', 'red');
+            //2. Tô màu #333 các phần tử menu không phải trang chủ
+            // $("a[href != 'home.html']").css('color', '#333');
+            //3. Lấy menu có tên product theo sau là dấu gạch ngang và cho màu gold
+            // $("a[href |= 'product']").css('color', 'gold');
+            //4. Lấy các menu có href
+            // $("a[href]").css('color', 'red');
+            //5. Lấy menu product có title chứa 2 từ trở lên và cho nó màu cam
+            $("a[href*='product'][title *= ' ']").css('color','orange');
+        });
+    </script>
+    <h1>Menu website</h1>
+    <a href="home.html" title="Trang chủ">Trang chủ</a><br>
+    <a href="about.html" title="Giới thiệu">Giới thiệu</a><br>
+    <a href="product-clothes.html" title="Quần áo">Quần áo</a><br>
+    <a href="product-shoes.html" title="Giày">Giày</a><br>
+    <a title="Liên hệ">Liên hệ</a>
+</body>
+
+</html>

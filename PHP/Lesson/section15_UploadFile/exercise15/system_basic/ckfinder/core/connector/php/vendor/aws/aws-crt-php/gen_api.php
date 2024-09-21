@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6883a1c28567d3bc57e272c9786d6a256abd5cc7a7eb207ca928c1266a67b518
-size 452
+<?php
+
+$source = "php://stdin";
+if (isset($argv[1])) {
+    $source = $argv[1];
+}
+
+$input_lines = file($source);
+foreach ($input_lines as $line) {
+    // Strip AWS_EXTERN_C_BEGIN/END
+    if (preg_match('/AWS_EXTERN_C/', $line)) {
+        continue;
+    }
+
+    // Strip macros/includes
+    if (preg_match('/^#/', $line)) {
+        continue;
+    }
+
+    // Strip visibility attributes
+    $line = str_replace('AWS_CRT_API ', '', $line);
+
+    echo($line);
+}

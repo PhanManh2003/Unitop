@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:79292073989fee11d20b2cd7aeefe2c03c6a8a5c56cdf5600a7e8aa6babb3beb
-size 877
+<?php
+namespace Aws\AugmentedAIRuntime;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **Amazon Augmented AI Runtime** service.
+ * @method \Aws\Result deleteHumanLoop(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteHumanLoopAsync(array $args = [])
+ * @method \Aws\Result describeHumanLoop(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeHumanLoopAsync(array $args = [])
+ * @method \Aws\Result listHumanLoops(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listHumanLoopsAsync(array $args = [])
+ * @method \Aws\Result startHumanLoop(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise startHumanLoopAsync(array $args = [])
+ * @method \Aws\Result stopHumanLoop(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise stopHumanLoopAsync(array $args = [])
+ */
+class AugmentedAIRuntimeClient extends AwsClient {}

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:50b27f9c445278e69697674b0f14e64a558ae8d5cfb17380ed46864dfd2e2398
-size 490
+<?php
+namespace Aws\SagemakerEdgeManager;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **Amazon Sagemaker Edge Manager** service.
+ * @method \Aws\Result getDeviceRegistration(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getDeviceRegistrationAsync(array $args = [])
+ * @method \Aws\Result sendHeartbeat(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise sendHeartbeatAsync(array $args = [])
+ */
+class SagemakerEdgeManagerClient extends AwsClient {}

@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e0652e687d41e3f880dd3dcf94459cd62a46b5b8e3dde93b422f157c072fe770
-size 1453
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spread operator for array</title>
+  </head>
+
+  <body>
+    <h1>spread operator for array</h1>
+    <script>
+      // spread operator ...
+      // 1. Array embeded in array
+      let first_array = [4, 6, 10];
+      let second_array = [1, 3, ...first_array, 20, 25];
+      console.log(second_array);
+
+      let myString = "Unitop.vn";
+      let arrayString = [...myString, "P", "Q", "R"]; // Tách myString thành từng kí tự và add vào mảng arrayString
+      console.log(arrayString);
+
+      // 2. Copy array, object
+      let new_arr = [...first_array];
+      console.log(new_arr);
+
+      let new_arr2 = [...first_array, ...second_array];
+      console.log(new_arr2);
+
+      // object
+      const obj1 = { name: "Alice", age: 25 };
+      const obj2 = { ...obj1 }; // Sao chép obj1 sang obj2
+      console.log(obj2); // Output: { name: "Alice", age: 25 }
+
+      const obj = { name: "Alice", age: 25 };
+      const newObj = { ...obj, job: "Developer" }; // Thêm key 'job' vào đối tượng
+      console.log(newObj); // Output: { name: "Alice", age: 25, job: "Developer" }
+
+      const updatedObj = { ...obj, age: 30 }; // Ghi đè key 'age'
+      console.log(updatedObj); // Output: { name: "Alice", age: 30 }
+    </script>
+  </body>
+</html>

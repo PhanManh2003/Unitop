@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1dc382f16ee7ef316893551ba5517a7c1854b084f5521a80bc4b4265c5ca09c9
-size 1060
+<?php
+namespace Aws\ElasticInference;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **Amazon Elastic  Inference** service.
+ * @method \Aws\Result describeAcceleratorOfferings(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeAcceleratorOfferingsAsync(array $args = [])
+ * @method \Aws\Result describeAcceleratorTypes(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeAcceleratorTypesAsync(array $args = [])
+ * @method \Aws\Result describeAccelerators(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeAcceleratorsAsync(array $args = [])
+ * @method \Aws\Result listTagsForResource(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listTagsForResourceAsync(array $args = [])
+ * @method \Aws\Result tagResource(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise tagResourceAsync(array $args = [])
+ * @method \Aws\Result untagResource(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise untagResourceAsync(array $args = [])
+ */
+class ElasticInferenceClient extends AwsClient {}

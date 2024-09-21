@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:22346374abe1af52d34444c112870de2cabe934c3520c9728e9403bb437ae740
-size 424
+<?php
+namespace Aws\Sts\RegionalEndpoints;
+
+/**
+ * Provides access to STS regional endpoints configuration options: endpoints_type
+ */
+interface ConfigurationInterface
+{
+    /**
+     * Returns the endpoints type
+     *
+     * @return string
+     */
+    public function getEndpointsType();
+
+    /**
+     * Returns the configuration as an associative array
+     *
+     * @return array
+     */
+    public function toArray();
+}

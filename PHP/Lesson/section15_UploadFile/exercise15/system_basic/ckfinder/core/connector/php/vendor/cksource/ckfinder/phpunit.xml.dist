@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e4cba8e43ea9a56c3c1f8a5e8005757cdf34bea6cb3df3a0dbd053433c35ac4d
-size 241
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<phpunit bootstrap="tests/bootstrap.php">
+    <testsuites>
+        <testsuite name="CKFinder Test Suite">
+            <directory>./tests/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

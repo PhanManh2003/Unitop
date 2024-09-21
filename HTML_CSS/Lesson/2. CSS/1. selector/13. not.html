@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f217d13d6d97ebe1c4c5435c3161cff8fa19f7c4c133852416c234d7559e60e
-size 623
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not selector</title>
+</head>
+<body>
+    <style>
+        /* Cú pháp selector1:not(selector2){} 
+        -> Chọn tất cả selector1 mà không có selector2 */
+        p:not(.active){
+            color: red;
+        }
+        .active{
+            color: green;
+        }
+    </style>
+    <div id="wrapper">
+        <p>item 1<p>
+        <p class="active">item 2</p>
+        <p>item 3</p>
+        <p>item 4</p>
+    </div>
+    
+</body>
+</html>

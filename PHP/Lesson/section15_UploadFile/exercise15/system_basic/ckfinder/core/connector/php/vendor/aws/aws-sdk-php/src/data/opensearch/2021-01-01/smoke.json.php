@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1aae120329acf1b44e883028e68c934781692714073294205525d840d4c8ede1
-size 394
+<?php
+// This file was auto-generated from sdk-root/src/data/opensearch/2021-01-01/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListDomainNames', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'DescribeDomain', 'input' => [ 'DomainName' => 'not-a-domain', ], 'errorExpectedFromService' => true, ], ],];

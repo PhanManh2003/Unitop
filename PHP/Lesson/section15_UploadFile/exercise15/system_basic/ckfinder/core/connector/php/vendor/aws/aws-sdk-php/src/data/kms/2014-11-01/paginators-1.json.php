@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2fe942bb96b035e19b9346aeda02622e01f523a9fdc3061a7752b6a82b186ddd
-size 778
+<?php
+// This file was auto-generated from sdk-root/src/data/kms/2014-11-01/paginators-1.json
+return [ 'pagination' => [ 'ListAliases' => [ 'input_token' => 'Marker', 'limit_key' => 'Limit', 'more_results' => 'Truncated', 'output_token' => 'NextMarker', 'result_key' => 'Aliases', ], 'ListGrants' => [ 'input_token' => 'Marker', 'limit_key' => 'Limit', 'more_results' => 'Truncated', 'output_token' => 'NextMarker', 'result_key' => 'Grants', ], 'ListKeyPolicies' => [ 'input_token' => 'Marker', 'limit_key' => 'Limit', 'more_results' => 'Truncated', 'output_token' => 'NextMarker', 'result_key' => 'PolicyNames', ], 'ListKeys' => [ 'input_token' => 'Marker', 'limit_key' => 'Limit', 'more_results' => 'Truncated', 'output_token' => 'NextMarker', 'result_key' => 'Keys', ], ],];

@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f492b3ff2b10a06a092c45465b8a17536d51930a766b114a7403f0dbd028b491
-size 550
+<?php
+$fullname = "Phan Văn Cương";
+$username = "unitop";
+$email = "phancuong.qt@gmail.com";
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ex3 PHP</title>
+    </head>
+
+    <body>
+        <p>Họ và tên: <strong><?php echo $fullname ?></strong></p>
+        <p>Username: <strong><?php echo $username ?></strong></p>
+        <p>Email: <strong><?php echo $email ?></strong></p>
+    </body>
+
+</html>

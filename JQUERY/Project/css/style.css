@@ -1,3 +1,61 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9dc4eb3b5b2a27e0ff380891b20153df9bfd715591d46312f81b7a5ef516a4ef
-size 956
+#wrapper{
+    margin: 0px auto;
+    width: 960px;
+    padding: 50px 0px;
+}
+
+#wp-slider{
+    width: 400px;
+    margin: 0px auto;
+}
+img{
+    display: block;
+    max-width: 100%; 
+}
+ul.thumb-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.next-btn,.prev-btn{
+    position: absolute;
+}
+.show-picture{
+    height: 300px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.thumb-item{
+    width: 80px;
+    opacity: 60%;
+}
+.thumb-item.active{
+    border: 2px solid #FB9393;
+    opacity: 100%;
+}
+
+.thumb-item:hover{
+    cursor: pointer;
+}
+
+/* NEXT PREV BUTTON */
+.prev-btn{
+    padding: 6px 8px;
+    background-color: #E5E5E5;
+    top: 140px;
+}
+.prev-btn:hover,.next-btn:hover{
+    cursor: pointer;
+    background-color: #9B0C0C;
+}
+
+.next-btn{
+    top: 140px;
+    right: 0px;
+    padding: 6px 8px;
+    background-color: #E5E5E5;
+}

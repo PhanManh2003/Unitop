@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b192dc6755e2ab50c82171abb6c5338132b6b84d00d8beca65a398cf91b704f5
-size 370
+# HỆ THỐNG ĐA GIAO DIỆN
+Xử lí website có giao diện phức tạp cao, nhiều lớp giao diện khác biệt trên cùng một website
+- Tùy biến header
+- Tùy biến footer
+- Tùy biến sidebar
+- Tùy biến khối giao diện
+
+# XÂY DỰNG HÀM
+Xây dựng hàm nâng cao
+- get_header()
+- get_footer()
+- get_sidebar()
+- get_template_part()

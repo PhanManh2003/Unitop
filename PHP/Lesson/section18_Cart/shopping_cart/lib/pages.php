@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7395dd75e308304091f6a927e2a13ee3299f25061e07e6e1848b848d040ed841
-size 385
+<?php
+# Hàm lấy dữ liệu page theo id
+/* Trả về mảng thông tin trang tương ứng */
+function get_page_item_by_id($id)
+{
+    global $list_page; // cần require data/pages.php vô index.php để hàm get_page_by_id hoạt động được với $list_page
+    if (array_key_exists($id, $list_page)) {
+        return $list_page[$id];
+    }
+    return false;
+}

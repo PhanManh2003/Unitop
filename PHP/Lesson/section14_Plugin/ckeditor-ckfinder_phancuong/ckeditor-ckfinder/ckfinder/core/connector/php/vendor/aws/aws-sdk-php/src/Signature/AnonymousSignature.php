@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ecc157500f7e96bb05e33ed70ce961b83ddb2c9f731900cc07120c798e0c7d9a
-size 667
+<?php
+namespace Aws\Signature;
+
+use Aws\Credentials\CredentialsInterface;
+use Psr\Http\Message\RequestInterface;
+
+/**
+ * Provides anonymous client access (does not sign requests).
+ */
+class AnonymousSignature implements SignatureInterface
+{
+    /**
+     * /** {@inheritdoc}
+     */
+    public function signRequest(
+        RequestInterface $request,
+        CredentialsInterface $credentials
+    ) {
+        return $request;
+    }
+
+    /**
+     * /** {@inheritdoc}
+     */
+    public function presign(
+        RequestInterface $request,
+        CredentialsInterface $credentials,
+        $expires,
+        array $options = []
+    ) {
+        return $request;
+    }
+}

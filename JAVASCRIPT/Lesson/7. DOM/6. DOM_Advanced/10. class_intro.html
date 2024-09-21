@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6e79fff2848f60a1bae636bd612f202b4ff85cf3f76788045fe275aec66a0e19
-size 865
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class JS</title>
+</head>
+
+<body>
+    <h1>Class</h1>
+    <div id="divText"></div>
+    <script>
+        // Tên class bắt đầu bằng kí tự viết hoa
+        class User {
+            // Thuộc tính
+            constructor(fullname) {
+                this.fullname = fullname;
+            }
+
+            // Phương thức
+            show() {
+                return `Xin chào: ${this.fullname}`;
+            }
+
+            render() {
+                document.getElementById('divText').innerHTML = this.show();
+            }
+        }
+        // Tạo 1 object từ class
+        let myInfo = new User('Mạnh');
+        myInfo.render();
+    </script>
+</body>
+
+</html>

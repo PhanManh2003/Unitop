@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6949ea1fb7cb8916ddba95a054e1245cd1a39683cb0c9537092eccd2724f095
-size 257
+<?php
+$id = (int)$_GET['id'];
+
+// $sql = "DELETE FROM `tbl_users` WHERE `user_id` = $id";
+// if (mysqli_query($conn, $sql)) {
+//     echo "Xóa thành công";
+// } 
+
+db_delete('tbl_users', "`user_id` = $id");
+
+redirect_to("?mod=users&act=main");

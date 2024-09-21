@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3592a6c15e0a9b40ac785d368ba7111de7b72f9fea1b85be83bde454b9fca6e0
-size 868
+<?php
+// This file was auto-generated from sdk-root/src/data/pinpoint-email/2018-07-26/paginators-1.json
+return [ 'pagination' => [ 'GetDedicatedIps' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'PageSize', ], 'ListConfigurationSets' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'PageSize', ], 'ListDedicatedIpPools' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'PageSize', ], 'ListDeliverabilityTestReports' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'PageSize', ], 'ListDomainDeliverabilityCampaigns' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'PageSize', ], 'ListEmailIdentities' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'PageSize', ], ],];

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:42871d08635b413f41a1794aad9c10a7001505547d59f2b9e5bf5df17f7de120
-size 404
+<?php
+/**
+ * Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0.
+ */
+namespace AWS\CRT\Auth;
+
+class SignatureType {
+    const HTTP_REQUEST_HEADERS = 0;
+    const HTTP_REQUEST_QUERY_PARAMS = 1;
+    const HTTP_REQUEST_CHUNK = 2;
+    const HTTP_REQUEST_EVENT = 3;
+    const CANONICAL_REQUEST_HEADERS = 4;
+    const CANONICAL_REQUEST_QUERY_PARAMS = 5;
+}

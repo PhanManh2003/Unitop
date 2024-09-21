@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e56ea7630eacb77414e87c2921bace1eda5d3acbda303561c6488659aba795d7
-size 584
+<?php
+namespace Aws\Pricing;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **AWS Price List Service** service.
+ * @method \Aws\Result describeServices(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeServicesAsync(array $args = [])
+ * @method \Aws\Result getAttributeValues(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getAttributeValuesAsync(array $args = [])
+ * @method \Aws\Result getProducts(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getProductsAsync(array $args = [])
+ */
+class PricingClient extends AwsClient {}

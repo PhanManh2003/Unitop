@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b2245dfdfe03e2b5622d81dd9c0d35fa4656ab1d9c29de2e4e11b34fa577c38d
-size 295
+<?php
+// This file was auto-generated from sdk-root/src/data/elastic-inference/2017-07-25/paginators-1.json
+return [ 'pagination' => [ 'DescribeAccelerators' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'acceleratorSet', ], ],];

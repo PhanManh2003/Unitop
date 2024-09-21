@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1dc9c163d567199eacfe527067fd6cddc7336c13025d52b72b67bf1ab65acba8
-size 209
+<?php
+namespace Aws\Transfer\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **AWS Transfer for SFTP** service.
+ */
+class TransferException extends AwsException {}

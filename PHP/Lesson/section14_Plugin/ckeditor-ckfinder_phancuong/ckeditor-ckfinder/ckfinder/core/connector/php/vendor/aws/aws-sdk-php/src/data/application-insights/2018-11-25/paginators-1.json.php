@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fa702cb9cdc024486cc620f933cdca1e2895404847d5680be4f68fb9bbe56086
-size 848
+<?php
+// This file was auto-generated from sdk-root/src/data/application-insights/2018-11-25/paginators-1.json
+return [ 'pagination' => [ 'ListApplications' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListComponents' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListConfigurationHistory' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListLogPatternSets' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListLogPatterns' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListProblems' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];

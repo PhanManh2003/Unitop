@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a58200b0760e90a93afa96b9713644aed228df0c2c0da8231fc300920410155
-size 744
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay thế element trên DOM</title>
+</head>
+
+<body>
+    <h1>Thay thế element trên DOM</h1>
+    <ul id="langs">
+        <li>Html</li>
+        <li class="current">Css</li>
+        <li>Javascript</li>
+    </ul>
+
+    <script>
+        const langs = document.getElementById('langs');
+        const current = document.querySelector('li.current');
+        const liNew = document.createElement('li');
+        liNew.textContent = 'Php';
+
+        // replace
+        current.replaceWith(liNew);
+        langs.replaceChild(liNew, current);
+    </script>
+</body>
+
+</html>

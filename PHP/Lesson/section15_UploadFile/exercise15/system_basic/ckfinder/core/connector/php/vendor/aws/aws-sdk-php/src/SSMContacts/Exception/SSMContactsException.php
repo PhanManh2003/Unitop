@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9729c7512e1a8a927074fa3f6dfc6c66331dfce5b1fab3a0673931bbe2f188a7
-size 239
+<?php
+namespace Aws\SSMContacts\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **AWS Systems Manager Incident Manager Contacts** service.
+ */
+class SSMContactsException extends AwsException {}

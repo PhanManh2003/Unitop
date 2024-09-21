@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f359ad6ac4b3ce7b9e0758711421867fd3a01a0c61800ace103a785ccd2f881
-size 1858
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+</head>
+
+<body>
+    <style>
+        /* 2 trường hợp:
+        th1: kích thước khối nở ra khi sử dụng padding, border: box-sizing: content-box;
+        th1: kích thước khối ko thay đổi khi sử dụng padding, border: box-sizing: border-box; 
+        */
+        .box-1 {
+            width: 400px;
+            height: 200px;
+            padding: 15px;
+            border: 2px solid #f00;
+            margin-bottom: 20px;
+        }
+
+        .box-2 {
+            width: 400px;
+            height: 200px;
+            padding: 15px;
+            border: 2px solid #f00;
+            box-sizing: border-box;
+        }
+    </style>
+    <h1>2 cách xác định kích thước khối bằng box-sizing</h1>
+    <div class="box-1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sapiente, deleniti iure a itaque quaerat
+            corrupti ut! Natus repudiandae autem eligendi aspernatur architecto similique expedita itaque assumenda qui
+            illum soluta cum maiores debitis temporibus numquam ipsam deserunt sit minima ut quas, ratione officiis
+            pariatur. Deserunt minus similique nam a! Maiores?</p>
+    </div>
+    <div class="box-2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sapiente, deleniti iure a itaque quaerat
+            corrupti ut! Natus repudiandae autem eligendi aspernatur architecto similique expedita itaque assumenda qui
+            illum soluta cum maiores debitis temporibus numquam ipsam deserunt sit minima ut quas, ratione officiis
+            pariatur. Deserunt minus similique nam a! Maiores?</p>
+    </div>
+</body>
+
+</html>

@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db7afc105f09a0ddae58a57637bef93684d0d39257e447497fa06d0e839a87c0
-size 294
+<?php
+// This file was auto-generated from sdk-root/src/data/kinesis-video-archived-media/2017-09-30/paginators-1.json
+return [ 'pagination' => [ 'ListFragments' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'Fragments', ], ],];

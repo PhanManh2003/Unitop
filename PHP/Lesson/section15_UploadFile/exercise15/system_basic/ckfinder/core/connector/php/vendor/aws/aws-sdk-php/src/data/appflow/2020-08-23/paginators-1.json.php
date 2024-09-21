@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5d4050900572c8e7e4107111ce617f527865c54464cfc0ea2a07892ede05122
-size 585
+<?php
+// This file was auto-generated from sdk-root/src/data/appflow/2020-08-23/paginators-1.json
+return [ 'pagination' => [ 'DescribeConnectorProfiles' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'DescribeConnectors' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', ], 'DescribeFlowExecutionRecords' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListFlows' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], ],];

@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4dc963d984e99a5b62611fde10b50f5b7ee2aa1daddc90d89849d4c56862ed9c
-size 786
+<?php
+namespace Aws\Api;
+
+/**
+ * Represents a list shape.
+ */
+class ListShape extends Shape
+{
+    private $member;
+
+    public function __construct(array $definition, ShapeMap $shapeMap)
+    {
+        $definition['type'] = 'list';
+        parent::__construct($definition, $shapeMap);
+    }
+
+    /**
+     * @return Shape
+     * @throws \RuntimeException if no member is specified
+     */
+    public function getMember()
+    {
+        if (!$this->member) {
+            if (!isset($this->definition['member'])) {
+                throw new \RuntimeException('No member attribute specified');
+            }
+            $this->member = Shape::create(
+                $this->definition['member'],
+                $this->shapeMap
+            );
+        }
+
+        return $this->member;
+    }
+}

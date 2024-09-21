@@ -1,3 +1,74 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:18aec7c9d5ff222af849e40056dc61067719f816cc7a0f0c67948288bdf136af
-size 2273
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clearfix</title>
+</head>
+
+<body>
+    <style>
+        /* When we use the float property, and we want the next element below (not on right or left),
+         we will have to use the clear property.
+
+        The clear property specifies what should happen with the element that is next to a floating element.
+
+        The clear property can have one of the following values:
+
+            none - The element is not pushed below left or right floated elements. This is default
+            left - The element is pushed below left floated elements
+            right - The element is pushed below right floated elements
+            both - The element is pushed below both left and right floated elements
+            inherit - The element inherits the clear value from its parent */
+
+        /* 
+        Tại sao box-parent bị sập độ cao xuống 0?
+        vì cả boxleft và boxright đều float:left nên chúng coi như ko tồn tại.
+        Khi nào tất cả các phần tử con của 1 khối đều float thì khối cha sẽ bị sập độ cao xuống 0.
+        */
+        
+        h1 {
+            text-align: center;
+        }
+
+        .box-parent {
+            width: 960px;
+            margin: 0px auto;
+            background-color: antiquewhite;
+        }
+
+        .box-left {
+            min-height: 600px;
+            width: 600px;
+            background-color: burlywood;
+            float: left;
+        }
+
+        .box-right {
+            min-height: 600px;
+            width: 360px;
+            background-color: rgb(134, 134, 209);
+            float: left;
+        }
+
+        /* reset độ cao .box-parent */
+        .clearfix:after {
+            content: "abc";
+            display: block;
+            clear: both;
+            visibility: hidden; 
+            height: 0;
+        }
+    </style>
+    <h1>Class clearfix</h1>
+    <div class="box-parent clearfix">
+        <div class="box-left">
+            left
+        </div>
+        <div class="box-right">
+            right
+        </div>
+    </div>
+</body>
+</html>

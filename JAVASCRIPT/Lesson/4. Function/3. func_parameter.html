@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4771fd56a2323ac4c5c6cfc14a5bfe37e7aae6972ece8f9a2b4eb8b97b2f143e
-size 796
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tham số hàm trong js</title>
+</head>
+
+<body>
+    <ul>
+        <li>Tham số hàm trong js</li>
+        <li>Tham số hàm có thể là 1 chuỗi, số, mảng, object, boolean...</li>
+        <li>Có thể khai báo giá trị mặc định của tham số khi gọi hàm</li>
+    </ul>
+
+    <script>
+        function sayHello(fullname) {
+            document.write('Xin chào ' + fullname);
+        }
+        sayHello('Mạnh');
+
+        function sayGoodbye(fullname = 'Quý khách') {
+            document.write('<br>Tạm biệt ' + fullname);
+        }
+        sayGoodbye();
+    </script>
+</body>
+
+</html>

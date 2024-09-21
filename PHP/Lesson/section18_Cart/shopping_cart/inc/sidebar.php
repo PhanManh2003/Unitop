@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:556d827e0929a682102d1452ff3a9a291c9c720025b2b47b4159abb0e1c10adf
-size 903
+<div id="sidebar" class="fl-left">
+            <div id="main-menu-wp">
+                <ul class="list-item">
+                    <li class="active">
+                        <a href="?" title="Trang chủ">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="?mod=page&act=detail&id=1" title="Giới thiệu">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="?mod=product&act=main&cat_id=2" title="">Macbook</a>
+                    </li>
+                    <li>
+                        <a href="?mod=product&act=main&cat_id=1" title="">Điện thoại</a>
+                    </li>
+                    <li>
+                        <a href="?mod=page&act=detail&id=2" title="Liên hệ">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>

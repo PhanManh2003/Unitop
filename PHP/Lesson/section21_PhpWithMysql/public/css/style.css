@@ -1,3 +1,96 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:87ff8c0b9b98645467fc34b81a44cb478d843ec486fb33cb3a3d9ed7fcfc3f9b
-size 1180
+body {
+    font-size: 14px;
+    font-family: arial;
+    line-height: 23px;
+}
+
+
+#wrapper {
+    width: 960px;
+    margin: 0px auto;
+}
+
+#header,
+#footer {
+    background: #029ef3;
+}
+
+ul#main-menu {
+    text-align: center;
+
+}
+
+ul#main-menu li {
+    display: inline-block;
+
+}
+
+ul#main-menu li a {
+    display: block;
+    padding: 8px 15px;
+    color: #fff;
+}
+
+#content {
+    min-height: 600px;
+    padding: 20px 0px;
+}
+
+#footer {
+    text-align: center;
+    color: #fff;
+    padding: 8px 0;
+}
+
+
+/* MULTI TEMPLATE  */
+.mod-page {
+    background: #b7b88b !important;
+}
+
+.mod-product {
+    background: #df392d !important;
+}
+
+.add-new {
+    color: #b4764d;
+}
+
+.add-new:hover {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+
+/* NAVI-PAGE */
+#info {
+    min-height: 160px;
+}
+
+#pagenavi-wp {
+    width: 65px;
+    margin: 0px auto;
+    margin-top: 400px;
+}
+
+ul#list-pagenavi {
+    display: flex;
+}
+
+ul#list-pagenavi li a {
+    display: block;
+    color: #333;
+    margin: 0px 2px;
+    padding: 0px 4px;
+    background: #838699;
+    border: 1px solid #333;
+}
+
+ul#list-pagenavi li a.active {
+    background: #f5ed7b;
+}
+
+.next-page {
+    width: 18px !important;
+    text-align: center;
+}

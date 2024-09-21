@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6caceff67af45306697fbedb438bb4a8aea55f0741a83c76f33e6fde5d9ed10e
-size 204
+<?php
+namespace Aws\IoTEvents\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **AWS IoT Events** service.
+ */
+class IoTEventsException extends AwsException {}

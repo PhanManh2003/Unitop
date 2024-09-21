@@ -1,3 +1,48 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ef96468f69f63310b292397b53ff7c648b977133a4d1e38ad79fb7d3e1d22600
-size 895
+﻿/**
+ * Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
+ * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+ */
+
+CKEDITOR.dialog.add( 'myDialog', function() {
+	return {
+		title: 'My Dialog',
+		minWidth: 400,
+		minHeight: 200,
+		contents: [
+			{
+				id: 'tab1',
+				label: 'First Tab',
+				title: 'First Tab',
+				elements: [
+					{
+						id: 'input1',
+						type: 'text',
+						label: 'Text Field'
+					},
+					{
+						id: 'select1',
+						type: 'select',
+						label: 'Select Field',
+						items: [
+							[ 'option1', 'value1' ],
+							[ 'option2', 'value2' ]
+						]
+					}
+				]
+			},
+			{
+				id: 'tab2',
+				label: 'Second Tab',
+				title: 'Second Tab',
+				elements: [
+					{
+						id: 'button1',
+						type: 'button',
+						label: 'Button Field'
+					}
+				]
+			}
+		]
+	};
+} );
+

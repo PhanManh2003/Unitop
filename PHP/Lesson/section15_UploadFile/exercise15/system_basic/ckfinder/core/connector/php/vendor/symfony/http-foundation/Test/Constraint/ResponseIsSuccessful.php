@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d06aea5dc2c577c54ea32d143393429d0724493b40924dc7fcc0c18fdd0b9229
-size 1145
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpFoundation\Test\Constraint;
+
+use PHPUnit\Framework\Constraint\Constraint;
+use Symfony\Component\HttpFoundation\Response;
+
+final class ResponseIsSuccessful extends Constraint
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function toString(): string
+    {
+        return 'is successful';
+    }
+
+    /**
+     * @param Response $response
+     *
+     * {@inheritdoc}
+     */
+    protected function matches($response): bool
+    {
+        return $response->isSuccessful();
+    }
+
+    /**
+     * @param Response $response
+     *
+     * {@inheritdoc}
+     */
+    protected function failureDescription($response): string
+    {
+        return 'the Response '.$this->toString();
+    }
+
+    /**
+     * @param Response $response
+     *
+     * {@inheritdoc}
+     */
+    protected function additionalFailureDescription($response): string
+    {
+        return (string) $response;
+    }
+}

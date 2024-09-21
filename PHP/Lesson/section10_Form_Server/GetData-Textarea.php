@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:60d772638acc50153ae37df31c0485c2b1f9e0823dc9ff012ad815853efeacfd
-size 812
+<?php
+if (isset($_POST['btn_add'])) {
+    if (empty($_POST['post_detail'])) {
+        echo "Bạn cần nhập chi tiết bài viết";
+    } else{
+        $post_detail = $_POST['post_detail'];
+        echo $post_detail;
+    }
+}
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lấy dữ liệu form từ textarea</title>
+    </head>
+
+    <body>
+        <h1>Thêm bài viết</h1>
+        <form action="" method="POST">
+            <label>Chi tiết</label><br>
+            <textarea name="post_detail" cols="50" rows="10"></textarea><br>
+            <input type="submit" name="btn_add" value="Thêm bài viết"> 
+        </form>
+    </body>
+
+</html>

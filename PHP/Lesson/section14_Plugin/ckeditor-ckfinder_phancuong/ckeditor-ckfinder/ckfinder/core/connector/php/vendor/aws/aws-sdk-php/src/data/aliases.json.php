@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7311ceb739886a577edb95c18dc6e5f5da4c939f52ce880fb096eed7ab3fbd24
-size 512
+<?php
+// This file was auto-generated from sdk-root/src/data/aliases.json
+return [ 'operations' => [ 'ApiGatewayV2' => [ '2018-11-29' => [ 'GetApi' => 'GetApiResource', ], ], 'CloudHSM' => [ '2014-05-30' => [ 'GetConfig' => 'GetConfigFiles', ], ], 'GroundStation' => [ '2019-05-23' => [ 'GetConfig' => 'GetMissionProfileConfig', ], ], 'Pinpoint' => [ '2016-12-01' => [ 'GetEndpoint' => 'GetUserEndpoint', 'UpdateEndpoint' => 'UpdateUserEndpoint', 'UpdateEndpointsBatch' => 'UpdateUserEndpointsBatch', ], ], ],];

@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:754ea3a4269986f4701785790bbd8ead2c2b06c07f6be1d21b542b00f889a1f8
-size 513
+{
+    "name": "psr/cache",
+    "description": "Common interface for caching libraries",
+    "keywords": ["psr", "psr-6", "cache"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "PHP-FIG",
+            "homepage": "http://www.php-fig.org/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Psr\\Cache\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

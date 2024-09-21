@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a51cefa8d88a32ffd8d0965b7bd0b2a31c9b24d2df14eacf5a6e2bfc6266232e
-size 660
+<?php
+// This file was auto-generated from sdk-root/src/data/codeguruprofiler/2019-07-18/paginators-1.json
+return [ 'pagination' => [ 'GetFindingsReportAccountSummary' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListFindingsReports' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListProfileTimes' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'profileTimes', ], 'ListProfilingGroups' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], ],];

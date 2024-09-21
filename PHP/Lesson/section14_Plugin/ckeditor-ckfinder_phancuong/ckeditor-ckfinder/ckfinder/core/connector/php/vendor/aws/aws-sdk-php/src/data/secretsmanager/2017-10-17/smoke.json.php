@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:88aa90372eb9414b2d3efa9f0a71a0cff3c6990a2803a839e50a0bac56595275
-size 394
+<?php
+// This file was auto-generated from sdk-root/src/data/secretsmanager/2017-10-17/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListSecrets', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'DescribeSecret', 'input' => [ 'SecretId' => 'fake-secret-id', ], 'errorExpectedFromService' => true, ], ],];

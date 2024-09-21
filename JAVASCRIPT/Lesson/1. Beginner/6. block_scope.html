@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11b4d394330639a1bfc531d1225fb8d386a5958ee912cd4acdc5770a9373dbdd
-size 626
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block scope js</title>
+</head>
+
+<body>
+    <h1>Block scope js</h1>
+    <script>
+        var x = 20;
+        {
+            // Block: Biến chỉ có phạm vi trong khối {}, khai báo bằng từ khóa let
+            let x = 10;
+        }
+        for (let i = 1; i <= 4; i++) {
+            console.log(i);
+        }
+        // ở cùng 1 scope,  var có thể khai báo lại cùng 1 biến nhưng let thì không
+    </script>
+</body>
+
+</html>

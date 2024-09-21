@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aaa52cba5eeab629830195baa64d6a42bb9d32c53b514e181a043982240994d8
-size 1478
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duyệt mảng bằng phương thức foreach</title>
+</head>
+
+<body>
+    <h1>Duyệt mảng bằng phương thức foreach</h1>
+    <script>
+        // array.forEach(function(currentValue, index, arr)){
+        //     Khối lệnh bên trong vòng lặp
+        // }
+        // - currentValue : giá trị của phần tử mảng tại lần lặp hiện tại
+        // - index: chỉ số của phần tử trong mảng
+        // - arr: mảng thực hiện vòng lặp
+
+
+        let list_number = [1, 2, 3, 4, 5, 6];
+        let t = 0;
+        // DUYỆT MẢNG
+        list_number.forEach(function (currentValue, index) {
+            t += currentValue;
+            document.write(index + ': ' + currentValue + '<br>');
+        });
+        document.write('Tổng: ' + t + '<br>');
+
+
+
+        // CẬP NHẬT GIÁ TRỊ CHO MẢNG
+        // Cách 1:
+        // list_number.forEach(function(currentValue, index, arr) {
+        //     arr[index] = currentValue * 2;
+        // });
+        // console.log(list_number);
+        //
+
+        // Cách 2: 
+        list_number.forEach(update_func);
+        function update_func(currentValue, index, arr) {
+            arr[index] = currentValue * 3;
+        };
+        console.log(list_number);
+
+    </script>
+</body>
+
+</html>

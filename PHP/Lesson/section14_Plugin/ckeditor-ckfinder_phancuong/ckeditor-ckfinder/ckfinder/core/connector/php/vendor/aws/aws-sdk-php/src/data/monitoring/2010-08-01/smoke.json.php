@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bd6443a9cec5d533f3e81fc9512ded703cfdbcd71219be5cc37a4894dc2ade8a
-size 453
+<?php
+// This file was auto-generated from sdk-root/src/data/monitoring/2010-08-01/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListMetrics', 'input' => [ 'Namespace' => 'AWS/EC2', ], 'errorExpectedFromService' => false, ], [ 'operationName' => 'SetAlarmState', 'input' => [ 'AlarmName' => 'abc', 'StateValue' => 'mno', 'StateReason' => 'xyz', ], 'errorExpectedFromService' => true, ], ],];

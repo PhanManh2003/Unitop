@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:46500475e78df18b441bca6d4b4df8a352919059757357923635d30b082fd1e6
-size 767
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Scale</title>
+</head>
+
+<body>
+    <!-- transform: scale(2,2) 
+    Tác dụng: Giúp thay đổi kích thước theo 1 tỉ lệ (ngang, dọc) so với kích thước cũ-->
+    <style>
+        .box {
+            width: 200px;
+            padding: 50px;
+            text-align: center;
+            margin: 300px 500px;
+            background-color: tomato;
+            transition: all 1s;
+        }
+
+        .box:hover {
+            transform: Scale(2, 1);
+        }
+    </style>
+    <h1>Transform Scale</h1>
+    <div class="box">
+        Box
+    </div>
+</body>
+
+</html>

@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f3a52eee66fb3858e963321eef8cb509633c15eda538f650b9b166cd33dfb9a5
-size 1493
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event focus and blur</title>
+</head>
+
+<body>
+    <h1>Event focus and blur</h1>
+    <form action="" id="register">
+        <fieldset>
+            <legend>Register form</legend>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" autocomplete="off"><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" autocomplete="off"><br>
+            <label for="city">City</label><br>
+            <select name="" id="city">
+                <option value="">--Chọn--</option>
+                <option value="1">Hà Nội</option>
+                <option value="2">Đà Nẵng</option>
+                <option value="3">TP.HCM</option>
+                <option value="4">Thành phố khác</option>
+            </select>
+            <br><br>
+            <input type="submit" name="" id="" value="Login now">
+        </fieldset>
+    </form>
+
+    <script>
+        const username = document.getElementById('username');
+
+        username.addEventListener('focus',function(){
+            console.log("focus"); // chọn vào form username
+        });
+        username.addEventListener('blur',function(){
+            console.log("blur"); // bỏ chọn vào form username
+        });
+    </script>
+</body>
+
+</html>

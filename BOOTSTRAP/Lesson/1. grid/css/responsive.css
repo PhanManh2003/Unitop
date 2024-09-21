@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:73e8f114fd980b95dbe99d1b7d89c687a5699c2d18c51da33f581ece059acdc9
-size 344
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}

@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:32ccd781e99a779e1eb0f7d42769cf2b1ba8ba01dae823e695e36bd7dcbe3f62
-size 886
+<?php
+// This file was auto-generated from sdk-root/src/data/codedeploy/2014-10-06/paginators-1.json
+return [ 'pagination' => [ 'ListApplicationRevisions' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'result_key' => 'revisions', ], 'ListApplications' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'result_key' => 'applications', ], 'ListDeploymentConfigs' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'result_key' => 'deploymentConfigsList', ], 'ListDeploymentGroups' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'result_key' => 'deploymentGroups', ], 'ListDeploymentInstances' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'result_key' => 'instancesList', ], 'ListDeployments' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'result_key' => 'deployments', ], ],];

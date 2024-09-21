@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c9ff70a454d6681363d6439f35ec45119a3603102e5615050693e35e11505b75
-size 231
+<?php
+namespace Aws\TranscribeService\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Amazon Transcribe Service** service.
+ */
+class TranscribeServiceException extends AwsException {}

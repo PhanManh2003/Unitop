@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:00a625d3e585a6cea04a35188d180df151660e2fbcc49ac6b25452804826fdd3
-size 418
+# Ý nghĩa: Select, Update, Delete theo điều kiện sau WHERE với các toán tử
+
+1. AND: Lọc bản ghi thỏa mãn 2 hoặc nhiều điều kiện
+2. OR: Kiểm tra sự tồn tại của tài khoản qua username hoặc email khi đăng kí, đăng nhập
+3. NOT: Lấy danh sách bài viết liên quan của 1 bài viết có post_id cho trước (NOT để loại bỏ select chính bài viết đó)

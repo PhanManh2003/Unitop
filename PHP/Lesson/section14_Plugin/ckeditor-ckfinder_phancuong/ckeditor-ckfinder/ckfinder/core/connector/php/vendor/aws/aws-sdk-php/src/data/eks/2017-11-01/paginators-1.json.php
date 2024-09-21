@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1af9a6624f27857be8cb562d57cc45e722ebadc1beb3b01fe8d0f567ad43ee9a
-size 1168
+<?php
+// This file was auto-generated from sdk-root/src/data/eks/2017-11-01/paginators-1.json
+return [ 'pagination' => [ 'DescribeAddonVersions' => [ 'input_token' => 'nextToken', 'limit_key' => 'maxResults', 'output_token' => 'nextToken', 'result_key' => 'addons', ], 'ListAddons' => [ 'input_token' => 'nextToken', 'limit_key' => 'maxResults', 'output_token' => 'nextToken', 'result_key' => 'addons', ], 'ListClusters' => [ 'input_token' => 'nextToken', 'limit_key' => 'maxResults', 'output_token' => 'nextToken', 'result_key' => 'clusters', ], 'ListFargateProfiles' => [ 'input_token' => 'nextToken', 'limit_key' => 'maxResults', 'output_token' => 'nextToken', 'result_key' => 'fargateProfileNames', ], 'ListIdentityProviderConfigs' => [ 'input_token' => 'nextToken', 'limit_key' => 'maxResults', 'output_token' => 'nextToken', 'result_key' => 'identityProviderConfigs', ], 'ListNodegroups' => [ 'input_token' => 'nextToken', 'limit_key' => 'maxResults', 'output_token' => 'nextToken', 'result_key' => 'nodegroups', ], 'ListUpdates' => [ 'input_token' => 'nextToken', 'limit_key' => 'maxResults', 'output_token' => 'nextToken', 'result_key' => 'updateIds', ], ],];

@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f9fd636b3b6d253476bd30e424e7d7aec2a8488ada29e218d823ccd23cf1217
-size 925
+<?php
+namespace Aws\DynamoDb;
+
+/**
+ * Special object to represent a DynamoDB set (SS/NS/BS) value.
+ */
+class SetValue implements \JsonSerializable, \Countable, \IteratorAggregate
+{
+    /** @var array Values in the set as provided. */
+    private $values;
+
+    /**
+     * @param array  $values Values in the set.
+     */
+    public function __construct(array $values)
+    {
+        $this->values = $values;
+    }
+
+    /**
+     * Get the values formatted for PHP and JSON.
+     *
+     * @return array
+     */
+    public function toArray()
+    {
+        return $this->values;
+    }
+
+    #[\ReturnTypeWillChange]
+    public function count()
+    {
+        return count($this->values);
+    }
+
+    #[\ReturnTypeWillChange]
+    public function getIterator()
+    {
+        return new \ArrayIterator($this->values);
+    }
+
+    #[\ReturnTypeWillChange]
+    public function jsonSerialize()
+    {
+        return $this->toArray();
+    }
+}

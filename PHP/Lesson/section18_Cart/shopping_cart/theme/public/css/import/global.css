@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3426386b41effed14fae2eb2a72f1d8408505237380bfe4e2f312dc3417025ce
-size 463
+body{
+    font-family: "Roboto Regular";
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+}
+.fl-left{ float: left;}
+.fl-right{ float: right;}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.wp-inner{
+    width: 1170px;
+    margin: 0px auto;
+    background: #fff;
+}
+#btn-respon, #menu-respon{ display: none;}
+/*RESET BOOTSTRAP*/
+a{ text-decoration: none!important;}
+.table{ margin-bottom: 0;}
+.table-responsive{ overflow-x: inherit;}

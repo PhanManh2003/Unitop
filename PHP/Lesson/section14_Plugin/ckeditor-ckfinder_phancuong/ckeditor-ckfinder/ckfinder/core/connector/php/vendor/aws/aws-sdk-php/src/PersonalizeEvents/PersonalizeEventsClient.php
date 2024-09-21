@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5810ba6584790b77026790f9a2087c9c0822f7c7ce95dd6f5aca64aa38c26a9a
-size 567
+<?php
+namespace Aws\PersonalizeEvents;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **Amazon Personalize Events** service.
+ * @method \Aws\Result putEvents(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise putEventsAsync(array $args = [])
+ * @method \Aws\Result putItems(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise putItemsAsync(array $args = [])
+ * @method \Aws\Result putUsers(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise putUsersAsync(array $args = [])
+ */
+class PersonalizeEventsClient extends AwsClient {}

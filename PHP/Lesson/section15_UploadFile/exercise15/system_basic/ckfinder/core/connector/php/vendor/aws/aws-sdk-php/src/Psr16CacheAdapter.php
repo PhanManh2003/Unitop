@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b40cb53abc95531297dce747f62d0e6073f650879d0c5c32d988b2a6e3865ee
-size 572
+<?php
+namespace Aws;
+
+use Psr\SimpleCache\CacheInterface as SimpleCacheInterface;
+
+class Psr16CacheAdapter implements CacheInterface
+{
+    /** @var SimpleCacheInterface */
+    private $cache;
+
+    public function __construct(SimpleCacheInterface $cache)
+    {
+        $this->cache = $cache;
+    }
+
+    public function get($key)
+    {
+        return $this->cache->get($key);
+    }
+
+    public function set($key, $value, $ttl = 0)
+    {
+        $this->cache->set($key, $value, $ttl);
+    }
+
+    public function remove($key)
+    {
+        $this->cache->delete($key);
+    }
+}

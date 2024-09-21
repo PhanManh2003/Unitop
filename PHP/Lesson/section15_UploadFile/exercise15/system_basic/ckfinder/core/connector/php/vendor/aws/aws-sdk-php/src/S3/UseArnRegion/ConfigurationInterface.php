@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ba6b717ea24a501638a2d8aacfd952d088c1211278b6e034754b2a4778253188
-size 367
+<?php
+namespace Aws\S3\UseArnRegion;
+
+interface ConfigurationInterface
+{
+    /**
+     * Returns whether or not to use the ARN region if it differs from client
+     *
+     * @return bool
+     */
+    public function isUseArnRegion();
+
+    /**
+     * Returns the configuration as an associative array
+     *
+     * @return array
+     */
+    public function toArray();
+}

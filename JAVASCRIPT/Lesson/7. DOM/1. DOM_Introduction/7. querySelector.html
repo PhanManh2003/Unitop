@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bbb9a91d1b48610740eac4bac7645ffe96b6ec89329a3cc9d46f71a4ba7c5134
-size 2158
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truy cập element qua selector</title>
+</head>
+
+<body>
+    <h1>Truy cập element qua selector</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eaque sapiente! Cumque ipsum harum dolorum
+        optio fuga voluptatum reiciendis repudiandae molestias aliquam commodi praesentium rem eaque velit adipisci,
+        alias eius.</p>
+    <h2>Heading 2.1</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eaque sapiente! Cumque ipsum harum dolorum
+        optio fuga voluptatum reiciendis repudiandae molestias aliquam commodi praesentium rem eaque velit adipisci,
+        alias eius.</p>
+    <h2>Heading 2.2</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eaque sapiente! Cumque ipsum harum dolorum
+        optio fuga voluptatum reiciendis repudiandae molestias aliquam commodi praesentium rem eaque velit adipisci,
+        alias eius.</p>
+    <ul>
+        <li><a href="">Html</a></li>
+        <li><a href="">Css</a></li>
+        <li><a href="">JavaScript</a></li>
+    </ul>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eaque sapiente! Cumque ipsum harum dolorum
+        optio fuga voluptatum reiciendis repudiandae molestias aliquam commodi praesentium rem eaque velit adipisci,
+        alias eius.</p>
+    <h2>Heading 2.3</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eaque sapiente! Cumque ipsum harum dolorum
+        optio fuga voluptatum reiciendis repudiandae molestias aliquam commodi praesentium rem eaque velit adipisci,
+        alias eius.</p>
+    <script>
+        // querySelector
+        document.querySelector('p').style.color = 'red';
+        // querySelectorAll
+        const pElements = document.querySelectorAll('p');
+        console.log(pElements);
+        for (let element of pElements) {
+            element.style.color = 'green';
+        }
+    </script>
+</body>
+
+</html>

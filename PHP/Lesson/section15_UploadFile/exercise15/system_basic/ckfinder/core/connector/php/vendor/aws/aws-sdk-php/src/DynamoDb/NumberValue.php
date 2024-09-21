@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:649e68d0860dc597a0aef41f1e55914210a23431f8fce5d1a58b83d3a613c56a
-size 552
+<?php
+namespace Aws\DynamoDb;
+
+/**
+ * Special object to represent a DynamoDB Number (N) value.
+ */
+class NumberValue implements \JsonSerializable
+{
+    /** @var string Number value. */
+    private $value;
+
+    /**
+     * @param string|int|float $value A number value.
+     */
+    public function __construct($value)
+    {
+        $this->value = (string) $value;
+    }
+
+    #[\ReturnTypeWillChange]
+    public function jsonSerialize()
+    {
+        return $this->value;
+    }
+
+    public function __toString()
+    {
+        return $this->value;
+    }
+}

@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:60d1ffd0ab773ec89bca12e832421ce8097250172224eaee4c7f21daf6044281
-size 827
+# Attach multiple event handlers to a <p> element:
+$("p").on({
+  mouseenter: function(){
+    $(this).css("background-color", "lightgray");
+  },
+  mouseleave: function(){
+    $(this).css("background-color", "lightblue");
+  },
+  click: function(){
+    $(this).css("background-color", "yellow");
+  }
+});
+
+# Common events in JQUERY
+Mouse Events	        Keyboard Events	              Form Events	            Document/Window Events
+  click	                    keypress	                 submit	                     load
+  dblclick	                keydown	                   change	                    resize
+  mouseenter	              keyup	                     focus	                    scroll
+  mouseleave		                                       blur	                      unload
+  hover (mouseenter + mouseleave)

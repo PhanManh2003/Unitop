@@ -1,3 +1,93 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8f1732d111fbaa17545d6a3ea42bc8ea93371962081fb18de533297e6f647958
-size 1531
+#wrapper {
+    width: 960px;
+    margin: 0px auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a {
+    display: block;
+    /*!*/
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ------------- Định dạng Khối flex--------------------- */
+ul.list-product {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+    justify-content: space-between;
+}
+
+ul.list-product li {
+    flex-basis: 33.33%;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+    height: 350px;
+}
+
+/* ---------------- Căn chỉnh nội dung ------------------  */
+.product-item {
+    border: 1px solid rgb(236, 235, 219);
+    position: relative;
+    overflow: hidden;
+}
+
+.product-item:hover {
+    border: 1px solid rgb(211, 155, 51);
+}
+
+/* can chinh img  */
+.product-item img {
+    transition: all 1s;
+}
+
+.product-item:hover img {
+    transform: rotate(1deg);
+}
+/* can chinh mua ngay */
+.buy-now {
+    position: absolute;
+    width: 100%;
+    display: block;
+    transition: all 0.5s;
+}
+.product-item:hover .buy-now {
+    width: 100%;
+    padding: 15px;
+    bottom: 0;
+    background-color: orange;
+    color: white;
+}
+
+
+
+.discount {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.price {
+    font-weight: bold;
+    padding: 20px;
+    color: rgb(235, 176, 66);
+}
+
+.product-name {
+    padding: 10px;
+    color: rgb(48, 44, 44);
+}

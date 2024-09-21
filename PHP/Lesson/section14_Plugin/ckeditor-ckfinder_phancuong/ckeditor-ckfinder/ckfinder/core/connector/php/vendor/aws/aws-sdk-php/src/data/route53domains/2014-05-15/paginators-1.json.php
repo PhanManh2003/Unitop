@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8f7bfe0a292b3c4ec474b618a0e208bbfbb7a8716f382e1f2cb758bb3172d260
-size 704
+<?php
+// This file was auto-generated from sdk-root/src/data/route53domains/2014-05-15/paginators-1.json
+return [ 'pagination' => [ 'ListDomains' => [ 'input_token' => 'Marker', 'limit_key' => 'MaxItems', 'output_token' => 'NextPageMarker', 'result_key' => 'Domains', ], 'ListOperations' => [ 'input_token' => 'Marker', 'limit_key' => 'MaxItems', 'output_token' => 'NextPageMarker', 'result_key' => 'Operations', ], 'ListPrices' => [ 'input_token' => 'Marker', 'limit_key' => 'MaxItems', 'output_token' => 'NextPageMarker', 'result_key' => 'Prices', ], 'ViewBilling' => [ 'input_token' => 'Marker', 'limit_key' => 'MaxItems', 'output_token' => 'NextPageMarker', 'result_key' => 'BillingRecords', ], ],];

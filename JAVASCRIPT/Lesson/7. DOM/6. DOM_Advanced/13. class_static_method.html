@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f253241b0f3477e9af15856cb31baf030d164d7fc204926bdb61d06d704fc754
-size 778
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức tĩnh</title>
+</head>
+
+<body>
+    <h1>Phương thức tĩnh</h1>
+    <script>
+        // gọi phương thức mà không cần tạo object(ít dùng)
+        class Person {
+            constructor(name) {
+                this.name = name;
+            }
+
+            static sayHi(x) {
+                // x có thể hiểu là 1 tham số dạng object
+                return `Xin chào ${x.name}`;     
+            }
+        }
+
+        let myInfo = new Person('Mạnh'); // Tạo tham số dạng object
+        console.log(Person.sayHi(myInfo));
+    </script>
+</body>
+
+</html>

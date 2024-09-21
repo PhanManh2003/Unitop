@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:24dfb0517074028b04025152bff64bd216edc03f0bf9a0e2b1bb2ddec341a6ba
-size 1575
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\Mime\DependencyInjection;
+
+use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Reference;
+
+/**
+ * Registers custom mime types guessers.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class AddMimeTypeGuesserPass implements CompilerPassInterface
+{
+    private $mimeTypesService;
+    private $mimeTypeGuesserTag;
+
+    public function __construct(string $mimeTypesService = 'mime_types', string $mimeTypeGuesserTag = 'mime.mime_type_guesser')
+    {
+        if (0 < \func_num_args()) {
+            trigger_deprecation('symfony/mime', '5.3', 'Configuring "%s" is deprecated.', __CLASS__);
+        }
+
+        $this->mimeTypesService = $mimeTypesService;
+        $this->mimeTypeGuesserTag = $mimeTypeGuesserTag;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function process(ContainerBuilder $container)
+    {
+        if ($container->has($this->mimeTypesService)) {
+            $definition = $container->findDefinition($this->mimeTypesService);
+            foreach ($container->findTaggedServiceIds($this->mimeTypeGuesserTag, true) as $id => $attributes) {
+                $definition->addMethodCall('registerGuesser', [new Reference($id)]);
+            }
+        }
+    }
+}

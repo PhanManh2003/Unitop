@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e3c4f1a222aab6ccb14e4659cf65ca6bf1243a37fd71e965c9bc71e1c187d93
-size 1228
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data type js</title>
+</head>
+
+<body>
+    <h1>Data type:</h1>
+    <script>
+        /**
+ * Kiểu dữ liệu nguyên thủy:
+ * 1. Number
+ * 2. String
+ * 3. Boolean
+ * 4. Undefined
+ * 5. Null 
+ * 6. Symbol (ES6)
+ * 7. BigInt (ES2020)
+ * Kiểu dữ liệu phức tạp:
+ * 1. Function 
+ * 2. Object (Array, Date, Error, OOP)
+ */
+        // #1. số
+        var num = 20;
+        // #2. chuỗi
+        var fullname = "Phan Tiến Mạnh";
+        // #3. boolean
+        let flag = false; //(0, false, '', null, undefined, NaN) đều mang giá trị false
+        // #4. undefined: ko gán giá trị gì cho biến thì dc undefined
+        let n;
+        console.log(n);
+        // #5. Null
+        let a = null;
+        console.log(a);
+        // #6. Array
+        let my_friends = ['Mạnh', 'Dũng', 'Quang'];
+        console.log(my_friends);
+        // #7. Object
+        let person = {
+            'fullname': 'Phan Manh',
+            'age': 24
+        }
+        console.log(person.age)
+
+    </script>
+</body>
+
+</html>

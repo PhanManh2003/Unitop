@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:99832add5976d407418e99be82ea3cdea41dec6785ac8cc20b2234310c0e0125
-size 394
+<?php
+// This file was auto-generated from sdk-root/src/data/ec2/2016-11-15/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'DescribeRegions', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'DescribeInstances', 'input' => [ 'InstanceIds' => [ 'i-12345678', ], ], 'errorExpectedFromService' => true, ], ],];

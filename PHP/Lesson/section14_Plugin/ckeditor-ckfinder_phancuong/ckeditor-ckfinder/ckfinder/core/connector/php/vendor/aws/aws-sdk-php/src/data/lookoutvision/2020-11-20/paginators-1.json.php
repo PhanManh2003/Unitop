@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d269ad270af10e287e1de826d60f82010d6b76f7ed0d8056272d3d953f3e908e
-size 728
+<?php
+// This file was auto-generated from sdk-root/src/data/lookoutvision/2020-11-20/paginators-1.json
+return [ 'pagination' => [ 'ListDatasetEntries' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', 'result_key' => 'DatasetEntries', ], 'ListModelPackagingJobs' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', 'result_key' => 'ModelPackagingJobs', ], 'ListModels' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', 'result_key' => 'Models', ], 'ListProjects' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', 'result_key' => 'Projects', ], ],];

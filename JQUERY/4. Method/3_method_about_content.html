@@ -1,3 +1,61 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d96ad97948b09208e2a36485e1f1f04c95a42a66a190124df2a6b737675032ee
-size 2502
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức xử lí giá trị</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <!-- 
+STT        CÁCH VIẾT                              MÔ TẢ 
+1       .val()                  Lấy giá trị của phần tử đầu tiên trong bộ chọn(áp dụng cho form: input, select, checkbox)
+2       .val(value)             Thiết lập giá trị cho phần tử đầu tiên trong bộ chọn
+3       .text                   Lấy và kết hợp các text của các phần tử trong bộ chọn
+4       .text(value)            Thiết lập cho mỗi phần tử trong bộ chọn nội dung value
+5       .html                   Lấy nội dung thẻ html của phần tử đầu tiên trong bộ chọn
+6       .html(stringHtml)       Thiết lập nội dung html(stringHtml) cho tất cả phần tử trong bộ chọn
+-->
+
+    <style>
+        input {
+            display: block;
+            margin-top: 5px 0px 10px 0px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            // val, val(value)
+            $('#username').val('Tên đăng nhập');
+            $('#form_login').submit(() => {
+                var username = $('#username').val();
+                var password = $('#password').val();
+                $('#val_username').text(username);
+                $('#val_password').text(password);
+                str_result = "<p>Username: <strong id='val_username'>" + username + "</strong></p><p>Password: <strong id='val_password'>" + password + "</strong></p>";
+                $('#result').html(str_result);
+
+                return false; // Hủy reload trang sau khi submit, link của thẻ a
+            })
+
+        });
+    </script>
+    <h1>Form đăng nhập</h1>
+    <form action="" id="form_login" method="post">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <input type="submit" name="submit_login" value="Đăng nhập">
+        <p>Username: <strong id="val_username"></strong></p>
+        <p>Password: <strong id="val_password"></strong></p>
+        <div id="result">
+
+        </div>
+
+    </form>
+</body>
+
+</html>

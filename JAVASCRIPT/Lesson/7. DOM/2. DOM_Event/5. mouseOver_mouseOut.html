@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:00a55d1c99f6c78cca86916a2f518be5c5a645aaf12a4f81c86665a618569c38
-size 761
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover and Mouseout Event Js</title>
+</head>
+
+<body>
+    <style>
+        h2{
+            display: inline-block;
+        }
+    </style>
+    <h2 onmouseover="console.log('mouse over');" onmouseout="console.log('mouse out')">Mouseover and Mouseout Event Js
+    </h2>
+    <script>
+        // Cách 2
+        const h2 = document.querySelector('h2');
+        h2.addEventListener('mouseover',function () {
+            alert('Mouse over!');
+        });
+
+        h2.addEventListener('mouseout',function () {
+            alert('Mouse out!');
+        });
+    </script>
+</body>
+
+</html>

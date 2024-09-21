@@ -1,3 +1,66 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dece559cab4b79ee0e0150fa0366525a1dfce20c442cdc6995d7b9020eff1dad
-size 1308
+<?php
+namespace Aws;
+
+/**
+ * Trait implementing ToArrayInterface, \ArrayAccess, \Countable, and
+ * \IteratorAggregate
+ */
+trait HasDataTrait
+{
+    /** @var array */
+    private $data = [];
+
+    #[\ReturnTypeWillChange]
+    public function getIterator()
+    {
+        return new \ArrayIterator($this->data);
+    }
+
+    /**
+     * This method returns a reference to the variable to allow for indirect
+     * array modification (e.g., $foo['bar']['baz'] = 'qux').
+     *
+     * @param $offset
+     *
+     * @return mixed|null
+     */
+    #[\ReturnTypeWillChange]
+    public function & offsetGet($offset)
+    {
+        if (isset($this->data[$offset])) {
+            return $this->data[$offset];
+        }
+
+        $value = null;
+        return $value;
+    }
+
+    #[\ReturnTypeWillChange]
+    public function offsetSet($offset, $value)
+    {
+        $this->data[$offset] = $value;
+    }
+
+    #[\ReturnTypeWillChange]
+    public function offsetExists($offset)
+    {
+        return isset($this->data[$offset]);
+    }
+
+    #[\ReturnTypeWillChange]
+    public function offsetUnset($offset)
+    {
+        unset($this->data[$offset]);
+    }
+
+    public function toArray()
+    {
+        return $this->data;
+    }
+
+    #[\ReturnTypeWillChange]
+    public function count()
+    {
+        return count($this->data);
+    }
+}

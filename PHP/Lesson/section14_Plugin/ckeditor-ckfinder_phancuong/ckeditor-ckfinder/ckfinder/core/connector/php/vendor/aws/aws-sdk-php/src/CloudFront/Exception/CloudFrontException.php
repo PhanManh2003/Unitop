@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ab893d81e8ffd00ed5301b44b72fff2061f84098af81afe04a2a274219141bea
-size 205
+<?php
+namespace Aws\CloudFront\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the Amazon CloudFront service.
+ */
+class CloudFrontException extends AwsException {}

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fce8400ba123d4854c1841c4eb8ecc9116cdf1f87b3d89db62e7ace19a044390
-size 401
+<div id="content">
+    <h1>Sản phẩm</h1>
+    <ul>
+        <?php
+        if (!empty($list_product)) {
+            foreach ($list_product as $item) {
+                ?>
+                <li>
+                    <a href=""><?php echo $item['prod_name'] ?></a>
+                    <p><?php echo $item['prod_price'] ?></p>
+                </li>
+            <?php } ?>
+        <?php } ?>
+    </ul>
+</div>

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b95c511ef4f914ac12a15bb751b468e35cb96c770fd00190753ac4a4f5472e54
-size 445
+# CÚ PHÁP JQUERY
+Câu lệnh Jquery được tạo bởi 1 bộ chọn các phần tử HTML và hành động tác động lên các phần tử đó:
+
+Cú pháp: $(selector).action();
+
+
+$(document).ready(function(){
+    // code jquery
+})
+
+Chú ý: Các thao tác jquery đc xử lí bên trong sự kiện document.ready
+(Tránh mã JavaScript dc thực thi trước khi các phần tử HTML cần thiết đã được tạo ra)

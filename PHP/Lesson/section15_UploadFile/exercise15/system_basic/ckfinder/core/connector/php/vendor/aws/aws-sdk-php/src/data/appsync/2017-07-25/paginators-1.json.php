@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4798ecd99793bb9139bbeeeaa90b1ecec926529f89de5daedd712b715b312ea7
-size 129
+<?php
+// This file was auto-generated from sdk-root/src/data/appsync/2017-07-25/paginators-1.json
+return [ 'pagination' => [],];

@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:77c18fff2f4d4ca032bee427bb49f486565d188c067eef79af0850bf290a1306
-size 1017
+<?php
+namespace Aws\DynamoDb;
+
+/**
+ * The session connection provides the underlying logic for interacting with
+ * Amazon DynamoDB and performs all of the reading and writing operations.
+ */
+interface SessionConnectionInterface
+{
+    /**
+     * Reads session data from DynamoDB
+     *
+     * @param string $id Session ID
+     *
+     * @return array
+     */
+    public function read($id);
+
+    /**
+     * Writes session data to DynamoDB
+     *
+     * @param string $id        Session ID
+     * @param string $data      Serialized session data
+     * @param bool   $isChanged Whether or not the data has changed
+     *
+     * @return bool
+     */
+    public function write($id, $data, $isChanged);
+
+    /**
+     * Deletes session record from DynamoDB
+     *
+     * @param string $id Session ID
+     *
+     * @return bool
+     */
+    public function delete($id);
+
+    /**
+     * Performs garbage collection on the sessions stored in the DynamoDB
+     *
+     * @return bool
+     */
+    public function deleteExpired();
+}

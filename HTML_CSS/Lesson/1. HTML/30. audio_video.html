@@ -1,3 +1,52 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8f8387f58698be081c2948e1e80255f73f774f9738fcafcad4bfbd822aa8868d
-size 2516
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Thẻ <source> phải được đặt bên trong phần tử <audio> hoặc <video>.
+        thẻ <source> có 2 thuộc tính:
+        + src: đường dẫn đến file audio/video
+
+        + type: kiểu file audio/video
+            + audio: audio/mpeg (mp3), audio/ogg, audio/wav
+            + video: video/mp4, video/webm, video/ogg
+    -->
+    <!--
+    Thẻ audio có 6 thuộc tính cơ bản:
+        + src: Xác định đường dẫn đến tập tin âm thanh (thay bằng thẻ <source>)
+        + controls:  Xác định việc "trình phát nhạc sẽ được hiển thị trên màn hình"
+        + autoplay: Xác định việc "nhạc sẽ tự động phát khi trang web được tải"
+        + loop: Xác định việc "nhạc sẽ được phát lại khi kết thúc"
+        + muted: Xác định việc "nhạc sẽ được tắt tiếng"
+        + preload: Xác định việc tập tin âm thanh có được tải cùng với lúc tải
+         trang hay không (sẽ làm chậm trang): có 2 giá trị là "auto" và "none"
+    -->
+    <!--
+    Thẻ video có thuộc tính như sau:
+        + src: Xác định đường dẫn đến tập tin video (thay bằng thẻ <source>)
+        + controls: Xác định việc "thanh điều khiển của trình xem phim sẽ được hiển thị"
+        + autoplay: Xác định việc "video sẽ tự động phát khi trang web được tải"
+        + loop: Xác định việc "video sẽ được phát lại khi kết thúc"
+        + muted: Xác định việc "video sẽ được tắt tiếng"
+        + preload: Xác định việc tập tin video có được tải cùng với lúc tải trang hay không
+        + poster: Xác định ảnh đại diện cho video
+        + width: Xác định chiều rộng của video
+        + height: Xác định chiều cao của video
+    -->
+
+    <audio controls autoplay loop muted>
+        <source src="https://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"
+            type="">
+    </audio>
+    <br>
+    <video controls width="30%" height="300px">
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="">
+    </video>
+</body>
+
+</html>

@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:79c5a63f92da63c52db52ca92d3c49c65c34a17304f9ba9ec1401263748afbb3
-size 865
+<?php
+// This file was auto-generated from sdk-root/src/data/appconfig/2019-10-09/paginators-1.json
+return [ 'pagination' => [ 'ListApplications' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListConfigurationProfiles' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListDeploymentStrategies' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListDeployments' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListEnvironments' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListHostedConfigurationVersions' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];

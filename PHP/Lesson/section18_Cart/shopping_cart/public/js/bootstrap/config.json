@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d7777bf1fc47aa444e07712758751a6df04e09b08d90f4c79fbfc352ac734e25
-size 378
+{
+  "vars": {},
+  "css": [
+    "tables.less",
+    "component-animations.less",
+    "dropdowns.less",
+    "tooltip.less",
+    "modals.less"
+  ],
+  "js": [
+    "dropdown.js",
+    "modal.js",
+    "tooltip.js",
+    "tab.js",
+    "collapse.js",
+    "scrollspy.js",
+    "transition.js"
+  ],
+  "customizerUrl": "http://getbootstrap.com/customize/?id=b4196a9fd93da52ecb59ab811db4b200"
+}

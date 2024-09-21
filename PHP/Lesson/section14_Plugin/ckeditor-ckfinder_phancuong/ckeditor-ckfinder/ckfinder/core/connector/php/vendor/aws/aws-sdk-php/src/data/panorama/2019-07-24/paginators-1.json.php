@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:266d72304f5227d78fd88822d61bb57c91e9b4d145083799a6678ac55e46ccf5
-size 1227
+<?php
+// This file was auto-generated from sdk-root/src/data/panorama/2019-07-24/paginators-1.json
+return [ 'pagination' => [ 'ListApplicationInstanceDependencies' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListApplicationInstanceNodeInstances' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListApplicationInstances' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListDevices' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListDevicesJobs' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListNodeFromTemplateJobs' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListNodes' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListPackageImportJobs' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListPackages' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];

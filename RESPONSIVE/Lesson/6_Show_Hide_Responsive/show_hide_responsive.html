@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11e901075ef108866c91ea289d642e209600cc8127ff647d70102da8e608e372
-size 1376
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show hidden responsive</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .box {
+            padding: 30px 20px;
+            background-color: yellow;
+            margin-bottom: 30px;
+        }
+
+        .box_not_important {
+            background-color: grey;
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .box_not_important {
+                display: block;
+            }
+        }
+    </style>
+    <div id="wrapper">
+        <h1>Show hidden responsive</h1>
+        <div class="box box_important">Khối quan trọng</div>
+        <div class="box box_not_important">Khối không quan trọng</div>
+        <div class="box box_important">Khối quan trọng</div>
+        <div class="box box_important">Khối quan trọng</div>
+        <div class="box box_important">Khối quan trọng</div>
+        <div class="box box_not_important">Khối không quan trọng</div>
+        <div class="box box_important">Khối quan trọng</div>
+    </div>
+</body>
+
+</html>

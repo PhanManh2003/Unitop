@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8e4e48332e97248cde754ced772c189a1de2bd35e218257d1be3fb84f46ad6b
-size 758
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template String</title>
+</head>
+
+<body>
+    
+    <h1>Template String</h1>
+    <div id="result"></div>
+    <script>
+        // "template string" thường được hiểu là một chuỗi mà bạn có thể chèn các giá trị 
+        // hoặc biểu thức vào .
+        const resultElement = document.getElementById('result');
+        // Xuất dữ liệu chuỗi kèm dữ liệu thông minh bằng template string
+
+        let a = 10, b = 20, result;
+        result = `Tổng của ${a} và ${b} là ${a + b}`;
+        console.log(result);
+    </script>
+</body>
+</html>

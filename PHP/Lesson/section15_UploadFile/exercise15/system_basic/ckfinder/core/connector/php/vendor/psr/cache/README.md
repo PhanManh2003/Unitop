@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b655686f30694905bdac049361065198a5c413e4e27e56067905bd1e2f6c3f5
-size 277
+PSR Cache
+=========
+
+This repository holds all interfaces defined by
+[PSR-6](http://www.php-fig.org/psr/psr-6/).
+
+Note that this is not a Cache implementation of its own. It is merely an
+interface that describes a Cache implementation. See the specification for more 
+details.

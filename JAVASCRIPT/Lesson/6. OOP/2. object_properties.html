@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3baa9bef707369500273699e987887b63618d3d4ec7e97fcb23264a7a271535
-size 1438
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Làm việc với thuộc tính trong object</title>
+</head>
+
+<body>
+    <h1>Làm việc với thuộc tính trong object</h1>
+    <script>
+        let person = {
+            name: 'Mạnh',
+            age: '20',
+            gender: 'male',
+        }
+
+        /* Summary:
+            1. Truy xuất vào thuộc tính của object
+            2. Truy xuất vào thuộc tính qua vòng lặp
+            3. Cập nhật giá trị thuộc tính của object
+            4. Tạo thuộc tính mới cho object
+            5. Delete thuộc tính trong object
+        */
+
+        // 1. Hai cách truy xuất vào thuộc tính của object
+        console.log(person.name);
+        console.log(person['name']);
+        // 2. Truy xuất vào thuộc tính qua vòng lặp
+        for (let key in person) {
+            console.log(key + ': ' + person[key]);
+
+        };
+        // 3. Cập nhật giá trị thuộc tính của object
+        person.age = 22;
+        console.log(person);
+        // 4. Tạo thuộc tính mới cho object
+        person.weight = 62;
+        // 5. Delete thuộc tính trong object
+        delete person.age;
+        delete person.weight;
+        console.log(person);
+
+
+
+    </script>
+</body>
+
+</html>

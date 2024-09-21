@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f44c224a8f458102c48dcbb24439f6821c5da06fe764311486286ea969fc3bd
-size 211
+<?php
+namespace Aws\DAX\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Amazon DynamoDB Accelerator (DAX)** service.
+ */
+class DAXException extends AwsException {}

@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a1fb5879d7520de78d448c1f7adc93a51625688a2123a30b46a529f1230750b
-size 351
+<?php
+namespace Aws\Endpoint\UseDualstackEndpoint\Exception;
+
+use Aws\HasMonitoringEventsTrait;
+use Aws\MonitoringEventsInterface;
+
+/**
+ * Represents an error interacting with configuration for useDualstackRegion
+ */
+class ConfigurationException extends \RuntimeException implements
+    MonitoringEventsInterface
+{
+    use HasMonitoringEventsTrait;
+}

@@ -1,3 +1,48 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4f1a8721aff11c592068aa3b2717415a0b1d2a687180296a3ea2b1f5b0154a55
-size 2193
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector theo định vị</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <!-- 
+STT        CÁCH VIẾT                              MÔ TẢ 
+1       $(":eq(index)")         Chọn phần tử tại vị trí có chỉ số index trong tập hợp các phần tử của bộ chọn
+2       $(":first")             Chọn phần tử tại vị trí đầu tiên trong tập hợp của bộ chọn
+3       $(":last")              Chọn phần tử tại vị trí cuối cùng trong tập hợp của bộ chọn
+4       $(":gt(index)")         Chọn tất cả phần tử trong bộ chọn có chỉ số > index
+5       $(":lt(index)")         Chọn tất cả phần tử trong bộ chọn có chỉ số < index
+6       $(":odd")               Chọn tất cả phần tử trong bộ chọn có chỉ số lẻ
+7       $(":even")              Chọn tất cả phần tử trong bộ chọn có chỉ số chẵn
+8       $(":not(selector)")     Chọn tất cả phần tử trong bộ chọn không thuộc vào selector chỉ định -->
+    <script>
+        $(document).ready(function () {
+            // 1. Chọn phần tử p chỉ số 8 và cho màu đỏ
+            $("p:eq(8)").css('color','red');   
+            // 2. Chọn p đầu tiên và cho màu đỏ
+            // $("p:first").css('color','red');   
+            // 3. Chọn p có chỉ số lớn hơn 2 => màu đỏ (chỉ số bắt đầu từ 0)
+            // $("p:gt(2)").css('color','red');  
+            // 4. Chọn p ngoại trừ p có chỉ số 2 => màu đỏ
+            // $("p:not('p:eq(2)')").css('color','red');  
+        })
+    </script>
+    <p>Đoạn văn 0</p>
+    <p>Đoạn văn 1</p>
+    <p>Đoạn văn 2</p>
+    <p>Đoạn văn 3</p>
+    <p>Đoạn văn 4</p>
+    <p>Đoạn văn 5</p>
+    <p>Đoạn văn 6</p>
+    <div class="box">
+        <p>Đoạn văn 7</p>
+        <p>Đoạn văn 8</p>
+        <p>Đoạn văn 9</p>
+    </div>
+</body>
+
+</html>

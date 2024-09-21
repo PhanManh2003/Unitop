@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a53c9c861e9ed9eeda9495afec68e47ef2cba285761b6c25656b9a97750884bc
-size 475
+<?php
+// This file was auto-generated from sdk-root/src/data/cloudhsmv2/2017-04-28/paginators-1.json
+return [ 'pagination' => [ 'DescribeBackups' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'DescribeClusters' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListTags' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];

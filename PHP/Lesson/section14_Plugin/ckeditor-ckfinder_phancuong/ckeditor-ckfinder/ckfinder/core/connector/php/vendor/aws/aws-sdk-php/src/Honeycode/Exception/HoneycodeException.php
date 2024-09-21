@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:edc093600521592f98fe66ccb71a7f8746ce6d79a00314c6f7e795a0d4116f5e
-size 206
+<?php
+namespace Aws\Honeycode\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Amazon Honeycode** service.
+ */
+class HoneycodeException extends AwsException {}

@@ -1,3 +1,72 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:36ff2689aa4fb919a8aa3cfe2630cc73998670ce3f70904ba385644d061232d3
-size 2571
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js ex6</title>
+</head>
+
+<body>
+    <h1>js ex6</h1>
+    <form action="" id="register">
+        <fieldset>
+            <legend>Register form</legend>
+            <label for="fullname">Fullname</label><br>
+            <input type="text" id="fullname" autocomplete="off"><br>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" autocomplete="off"><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" autocomplete="off"><br>
+            <label for="city">City</label><br>
+            <select name="" id="city">
+                <option value="0">--Chọn--</option>
+                <option value="1">Hà Nội</option>
+                <option value="2">Đà Nẵng</option>
+                <option value="3">TP.HCM</option>
+                <option value="4">Thành phố khác</option>
+            </select>
+            <br><br>
+            <input type="submit" name="" id="" value="Register Now">
+        </fieldset>
+    </form>
+    <br>
+    <!-- Output -->
+    <div id="result"></div>
+    <script>
+        const registerForm = document.forms.register;
+        registerForm.addEventListener('submit', function (e) {
+            const result = document.getElementById('result');
+            //  Lấy giá trị
+            const fullname = document.getElementById('fullname').value;
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const city_id = document.getElementById('city').value;
+
+            // Lấy giá trị cho city
+            function getCityName(id) {
+                let cityName = [];
+                cityName[1] = 'Hà Nội';
+                cityName[2] = 'Đà Nẵng';
+                cityName[3] = 'TP.HCM';
+                cityName[4] = 'Thành phố khác';
+                return cityName[id]
+            };
+
+            // Định dạng giá trị in ra
+            let data;
+            data = `
+            Fullname: <b>${fullname}</b> <br>
+            Username: <b>${username}</b> <br>
+            Password: <b>${password}</b> <br>
+            City: <b>${getCityName(city_id)} </b>
+            `;
+
+            result.innerHTML = data;
+            e.preventDefault();
+        })
+
+    </script>
+</body>
+
+</html>

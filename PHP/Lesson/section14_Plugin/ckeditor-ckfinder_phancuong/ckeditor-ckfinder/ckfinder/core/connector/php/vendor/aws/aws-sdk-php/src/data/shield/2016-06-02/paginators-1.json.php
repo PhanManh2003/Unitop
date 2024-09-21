@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9560e74c0941ca6fac51387edf6979cc367263dd340e7401b054c90a4ac3083b
-size 675
+<?php
+// This file was auto-generated from sdk-root/src/data/shield/2016-06-02/paginators-1.json
+return [ 'pagination' => [ 'ListAttacks' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'AttackSummaries', ], 'ListProtectionGroups' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', ], 'ListProtections' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'Protections', ], 'ListResourcesInProtectionGroup' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', ], ],];

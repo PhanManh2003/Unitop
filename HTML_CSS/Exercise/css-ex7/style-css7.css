@@ -1,3 +1,72 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:80fbbfd85d7a0794dd2ece81d43c795196fcfc3d9c533ebf1f782c2b8000e351
-size 987
+#wrapper {
+    width: 960px;
+    margin: 0px auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+ul.list-product {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+    justify-content: space-between;
+}
+
+ul.list-product li {
+    flex-basis: 33.33%;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+    height: 350px;
+
+
+}
+
+.product-item {
+    border: 1px solid rgb(236, 235, 219);
+    position: relative;
+}
+
+.product-item:hover {
+    border: 1px solid rgb(211, 155, 51);
+}
+
+
+
+.discount {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+}
+
+.price {
+    font-weight: bold;
+    color: rgb(235, 176, 66);
+    padding: 10px;
+}
+
+.product-name {
+    color: rgb(48, 44, 44);
+}
+
+.buy-now {
+    color: rgb(190, 126, 5);
+}

@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7ff12806a5d7c65e4230f88cde5e2452fea258b86b3680fea03d7881317228eb
-size 1034
+<?php
+// This file was auto-generated from sdk-root/src/data/appstream/2016-12-01/waiters-2.json
+return [ 'version' => 2, 'waiters' => [ 'FleetStarted' => [ 'delay' => 30, 'maxAttempts' => 40, 'operation' => 'DescribeFleets', 'acceptors' => [ [ 'state' => 'success', 'matcher' => 'pathAll', 'argument' => 'Fleets[].State', 'expected' => 'ACTIVE', ], [ 'state' => 'failure', 'matcher' => 'pathAny', 'argument' => 'Fleets[].State', 'expected' => 'PENDING_DEACTIVATE', ], [ 'state' => 'failure', 'matcher' => 'pathAny', 'argument' => 'Fleets[].State', 'expected' => 'INACTIVE', ], ], ], 'FleetStopped' => [ 'delay' => 30, 'maxAttempts' => 40, 'operation' => 'DescribeFleets', 'acceptors' => [ [ 'state' => 'success', 'matcher' => 'pathAll', 'argument' => 'Fleets[].State', 'expected' => 'INACTIVE', ], [ 'state' => 'failure', 'matcher' => 'pathAny', 'argument' => 'Fleets[].State', 'expected' => 'PENDING_ACTIVATE', ], [ 'state' => 'failure', 'matcher' => 'pathAny', 'argument' => 'Fleets[].State', 'expected' => 'ACTIVE', ], ], ], ],];

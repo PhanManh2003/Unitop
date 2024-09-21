@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:acf07b39ead4045564dd3a62c092a9604311ca4ac623b125196e340cc6417c59
-size 484
+<?php
+
+namespace League\Flysystem\Plugin;
+
+use League\Flysystem\FilesystemInterface;
+use League\Flysystem\PluginInterface;
+
+abstract class AbstractPlugin implements PluginInterface
+{
+    /**
+     * @var FilesystemInterface
+     */
+    protected $filesystem;
+
+    /**
+     * Set the Filesystem object.
+     *
+     * @param FilesystemInterface $filesystem
+     */
+    public function setFilesystem(FilesystemInterface $filesystem)
+    {
+        $this->filesystem = $filesystem;
+    }
+}

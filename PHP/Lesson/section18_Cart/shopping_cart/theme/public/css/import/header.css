@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cd0fe6a5a513b60f51af51e022c3aadb17b6eac4a699a5c0202f92da37b92791
-size 452
+/*HEADER*/
+#header-wp{ border-bottom: 1px solid #bdbdbd;}
+#logo{
+    display: block;
+    font-family: 'Roboto Bold';
+    text-transform: uppercase;
+    font-size: 21px;
+    color: #333;
+    padding: 20px 10px;
+}
+#btn-cart{ position: relative;}
+#btn-cart{ 
+    position: relative;
+    display: block;
+    padding: 20px 10px;
+}
+#btn-cart #num{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: #b70000;
+    font-family: 'Roboto Medium';
+}

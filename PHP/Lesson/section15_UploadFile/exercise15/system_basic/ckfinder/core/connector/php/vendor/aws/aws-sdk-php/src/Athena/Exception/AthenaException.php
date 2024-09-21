@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d1109543bf63d3cfdeef473f6047028b1f5489399f6a3332c7455783ec9bfb52
-size 197
+<?php
+namespace Aws\Athena\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Amazon Athena** service.
+ */
+class AthenaException extends AwsException {}

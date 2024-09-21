@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:248dbbf1598bf8db575e18cf19c38b8b1142abf48ee7bd364cc95e30967081d8
-size 1233
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\EventListener;
+
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Symfony\Component\HttpFoundation\StreamedResponse;
+use Symfony\Component\HttpKernel\Event\ResponseEvent;
+use Symfony\Component\HttpKernel\KernelEvents;
+
+/**
+ * StreamedResponseListener is responsible for sending the Response
+ * to the client.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ *
+ * @final
+ */
+class StreamedResponseListener implements EventSubscriberInterface
+{
+    /**
+     * Filters the Response.
+     */
+    public function onKernelResponse(ResponseEvent $event)
+    {
+        if (!$event->isMainRequest()) {
+            return;
+        }
+
+        $response = $event->getResponse();
+
+        if ($response instanceof StreamedResponse) {
+            $response->send();
+        }
+    }
+
+    public static function getSubscribedEvents(): array
+    {
+        return [
+            KernelEvents::RESPONSE => ['onKernelResponse', -1024],
+        ];
+    }
+}

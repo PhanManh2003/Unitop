@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0c32483b419440e2d946906b1165827fc3209a959a3f48b9609872473d0e35f4
-size 421
+<?php
+// This file was auto-generated from sdk-root/src/data/snowball/2016-06-30/paginators-1.json
+return [ 'pagination' => [ 'DescribeAddresses' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'Addresses', ], 'ListJobs' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'JobListEntries', ], ],];

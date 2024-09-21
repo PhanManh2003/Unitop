@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e8143d8292884727cccd4bfd78d8350b03f6eddeff05017a443725286e3f17c
-size 286
+<?php
+// This file was auto-generated from sdk-root/src/data/data.iot/2015-05-28/paginators-1.json
+return [ 'pagination' => [ 'ListRetainedMessages' => [ 'input_token' => 'nextToken', 'limit_key' => 'maxResults', 'output_token' => 'nextToken', 'result_key' => 'retainedTopics', ], ],];

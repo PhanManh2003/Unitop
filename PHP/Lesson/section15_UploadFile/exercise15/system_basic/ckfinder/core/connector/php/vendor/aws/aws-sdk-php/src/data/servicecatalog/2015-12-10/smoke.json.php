@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:385c2062fd94bccec905ec759abfaa0f2d262fbce34f9a115adcfe3c104e91e9
-size 284
+<?php
+// This file was auto-generated from sdk-root/src/data/servicecatalog/2015-12-10/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListAcceptedPortfolioShares', 'input' => [], 'errorExpectedFromService' => false, ], ],];

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bf8f64beb3baf1ec54ec88d941c075ef2a9e8a1ee9972f3e9c7761b26c24844b
-size 249
+<?php
+namespace Aws\IoT1ClickDevicesService\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **AWS IoT 1-Click Devices Service** service.
+ */
+class IoT1ClickDevicesServiceException extends AwsException {}

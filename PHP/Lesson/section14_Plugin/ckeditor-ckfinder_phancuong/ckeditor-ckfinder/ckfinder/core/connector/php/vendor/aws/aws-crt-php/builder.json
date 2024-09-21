@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ca797256f23372e15581d5a2b1b9b4e6f3a91d7f03f4f2e5e0a5987e960be5a
-size 761
+{
+    "name": "aws-crt-php",
+    "hosts": {
+        "ubuntu": {
+            "pkg_setup": [
+                "add-apt-repository -y ppa:ondrej/php"
+            ],
+            "packages": [
+                "autotools-dev",
+                "autoconf",
+                "libtool",
+                "clang",
+                "php5.6-dev"
+            ]
+        },
+        "al2": {
+            "packages": [
+                "autoconf",
+                "automake",
+                "libtool",
+                "clang",
+                "php-devel"
+            ]
+        }
+    },
+    "build_steps": [
+        ["phpize"],
+        ["./configure"],
+        ["make"]
+    ],
+    "test_env": {
+        "NO_INTERACTION": "1"
+    },
+    "test_steps": [
+        ["./run_tests"]
+    ]
+}

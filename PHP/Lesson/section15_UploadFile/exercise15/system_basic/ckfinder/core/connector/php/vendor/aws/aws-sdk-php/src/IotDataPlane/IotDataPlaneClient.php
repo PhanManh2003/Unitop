@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e143c2effae9d427e605fbb9d785449960a2e40d63772b314fa4f04eeaa87a0
-size 1157
+<?php
+namespace Aws\IotDataPlane;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **AWS IoT Data Plane** service.
+ *
+ * @method \Aws\Result deleteThingShadow(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteThingShadowAsync(array $args = [])
+ * @method \Aws\Result getRetainedMessage(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getRetainedMessageAsync(array $args = [])
+ * @method \Aws\Result getThingShadow(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getThingShadowAsync(array $args = [])
+ * @method \Aws\Result listNamedShadowsForThing(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listNamedShadowsForThingAsync(array $args = [])
+ * @method \Aws\Result listRetainedMessages(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listRetainedMessagesAsync(array $args = [])
+ * @method \Aws\Result publish(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise publishAsync(array $args = [])
+ * @method \Aws\Result updateThingShadow(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateThingShadowAsync(array $args = [])
+ */
+class IotDataPlaneClient extends AwsClient {}

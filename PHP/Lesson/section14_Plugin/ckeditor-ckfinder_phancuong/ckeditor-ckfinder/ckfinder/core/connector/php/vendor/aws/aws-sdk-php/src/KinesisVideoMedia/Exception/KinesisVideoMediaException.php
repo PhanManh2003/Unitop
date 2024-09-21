@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:67cdf0b285462559df92b264ce1dac50e33bdba3fad48202f635b60b1f97e19b
-size 240
+<?php
+namespace Aws\KinesisVideoMedia\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Amazon Kinesis Video Streams Media** service.
+ */
+class KinesisVideoMediaException extends AwsException {}

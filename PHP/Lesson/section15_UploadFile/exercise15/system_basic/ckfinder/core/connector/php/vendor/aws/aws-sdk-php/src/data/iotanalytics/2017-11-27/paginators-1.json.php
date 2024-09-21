@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34f29a1de2dbfb65091ff03ec2b4d3bb6ce56fba51fca8f2c0dd31116b03224d
-size 710
+<?php
+// This file was auto-generated from sdk-root/src/data/iotanalytics/2017-11-27/paginators-1.json
+return [ 'pagination' => [ 'ListChannels' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListDatasetContents' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListDatasets' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListDatastores' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListPipelines' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], ],];

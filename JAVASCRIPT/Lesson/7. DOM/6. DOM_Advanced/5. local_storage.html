@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a57a6cb37788733f3ae741b2ac62e53bc5268ad3870aeb47ee04d8db3f4875e
-size 983
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localstorage Js</title>
+</head>
+
+<body>
+    <h1>Localstorage Js</h1>
+
+    <script>
+        // Bạn có thể lưu trữ thông tin tạm thời trên trình duyệt của người dùng mà không cần gửi dữ liệu đó lên máy chủ. 
+        /* Mỗi domain mỗi file localStorage
+        Dữ liệu được chuyển sang string khi lưu
+        */
+
+        // setItem
+        localStorage.setItem('fullname', 'Phan Tiến Mạnh');
+        localStorage.setItem('age', 20);
+
+        // getItem
+        console.log(localStorage.getItem('fullname'));
+        console.log(localStorage.getItem('age')); 
+
+        // removeItem
+        // localStorage.removeItem('fullname');
+       
+        //clear: remove all key-value 
+        // localStorage.clear();
+    </script>
+</body>
+
+</html>

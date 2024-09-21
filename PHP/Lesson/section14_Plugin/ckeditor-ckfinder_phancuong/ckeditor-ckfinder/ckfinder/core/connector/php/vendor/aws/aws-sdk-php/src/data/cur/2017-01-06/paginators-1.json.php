@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4c605637d473484ae21f841b704f2d45399aa26aece07ccd6e772978246bbdfc
-size 252
+<?php
+// This file was auto-generated from sdk-root/src/data/cur/2017-01-06/paginators-1.json
+return [ 'pagination' => [ 'DescribeReportDefinitions' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];

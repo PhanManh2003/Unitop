@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7b9384c169a46e7fed632f689a4110bc4168bc32d9083ccaf3dcfa3028cc74cd
-size 395
+<?php
+// This file was auto-generated from sdk-root/src/data/codedeploy/2014-10-06/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListApplications', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'GetDeployment', 'input' => [ 'deploymentId' => 'd-USUAELQEX', ], 'errorExpectedFromService' => true, ], ],];

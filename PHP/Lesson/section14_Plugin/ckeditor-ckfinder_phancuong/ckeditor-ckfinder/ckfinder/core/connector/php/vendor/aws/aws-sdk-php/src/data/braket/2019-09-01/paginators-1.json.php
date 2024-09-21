@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:008529e038fafc0b2220845e747e208ce580edad58a551852d92e00539b88a48
-size 556
+<?php
+// This file was auto-generated from sdk-root/src/data/braket/2019-09-01/paginators-1.json
+return [ 'pagination' => [ 'SearchDevices' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'devices', ], 'SearchJobs' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'jobs', ], 'SearchQuantumTasks' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'quantumTasks', ], ],];

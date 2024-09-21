@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb9e71488fe289dda14db23cdbb83f6c9d2ceee09b09f32e228794509de6bffc
-size 696
+{
+    "name": "pimple/pimple",
+    "type": "library",
+    "description": "Pimple, a simple Dependency Injection Container",
+    "keywords": ["dependency injection", "container"],
+    "homepage": "https://pimple.symfony.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabien Potencier",
+            "email": "fabien@symfony.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "psr/container": "^1.1 || ^2.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^5.4@dev"
+    },
+    "autoload": {
+        "psr-0": { "Pimple": "src/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.4.x-dev"
+        }
+    }
+}

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:69cd23a9c7dbb5499ca1609f861fb861886ea362ca99d4d99e99457a6c591083
-size 608
+<?php
+namespace Aws\PI;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **AWS Performance Insights** service.
+ * @method \Aws\Result describeDimensionKeys(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeDimensionKeysAsync(array $args = [])
+ * @method \Aws\Result getDimensionKeyDetails(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getDimensionKeyDetailsAsync(array $args = [])
+ * @method \Aws\Result getResourceMetrics(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getResourceMetricsAsync(array $args = [])
+ */
+class PIClient extends AwsClient {}

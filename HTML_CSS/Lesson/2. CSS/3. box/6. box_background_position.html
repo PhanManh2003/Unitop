@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6fb7d006ba762b499b8280adf915f25d54ba0e6402537aa1792f0dde8fc92fd
-size 1026
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background position: Xác định vị trí của hình nền bên trong phần tử</title>
+</head>
+
+<body>
+
+    <style>
+        /*
+            Các giá trị của background-position: px, center, top, bottom, left, right
+        */
+        #wrapper {
+            width: 960px;
+            margin: auto;
+        }
+
+        .box {
+            min-height: 200px;
+            background-color: rgb(216, 224, 142);
+            background-image: url("../image/setting\ icon.png");
+            background-size: 50px;
+            background-repeat: no-repeat;
+            /* cách left, cách top  */
+            background-position: 100px 100px;
+           /* background-position: center top; */
+        }
+    </style>
+    <div id="wrapper">
+        <h1>background position</h1>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

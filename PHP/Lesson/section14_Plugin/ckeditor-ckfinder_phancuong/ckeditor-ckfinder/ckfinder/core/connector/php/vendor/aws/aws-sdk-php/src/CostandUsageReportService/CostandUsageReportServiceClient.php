@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:09c6ede84a03cb54ebb39c7e22c8cece9f8d04541fa28ed35e9e2e700aebebd1
-size 822
+<?php
+namespace Aws\CostandUsageReportService;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **AWS Cost and Usage Report Service** service.
+ * @method \Aws\Result deleteReportDefinition(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteReportDefinitionAsync(array $args = [])
+ * @method \Aws\Result describeReportDefinitions(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeReportDefinitionsAsync(array $args = [])
+ * @method \Aws\Result modifyReportDefinition(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise modifyReportDefinitionAsync(array $args = [])
+ * @method \Aws\Result putReportDefinition(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise putReportDefinitionAsync(array $args = [])
+ */
+class CostandUsageReportServiceClient extends AwsClient {}

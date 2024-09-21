@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:848070876c8a08ccc3a87d09b86f5b92438c46b89c03a21010efa8c837a640ca
-size 241
+<?php
+namespace Aws\PinpointSMSVoice\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Amazon Pinpoint SMS and Voice Service** service.
+ */
+class PinpointSMSVoiceException extends AwsException {}

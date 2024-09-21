@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:748c69a9997ed12136ba28f6eef28de13103799ed7d216fc290d1d6337fc3fd6
-size 587
+<?php
+namespace Aws\Retry;
+
+/**
+ * Provides access to retry configuration
+ */
+interface ConfigurationInterface
+{
+    /**
+     * Returns the retry mode. Available modes include 'legacy', 'standard', and
+     * 'adapative'.
+     *
+     * @return string
+     */
+    public function getMode();
+
+    /**
+     * Returns the maximum number of attempts that will be used for a request
+     *
+     * @return string
+     */
+    public function getMaxAttempts();
+
+    /**
+     * Returns the configuration as an associative array
+     *
+     * @return array
+     */
+    public function toArray();
+}

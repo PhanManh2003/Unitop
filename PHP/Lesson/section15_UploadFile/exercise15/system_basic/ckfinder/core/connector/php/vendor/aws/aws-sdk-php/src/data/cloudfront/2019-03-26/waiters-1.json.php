@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c5ee2b1b1a823dad469ebe6c8bd4b40996cd7cddef7e4225983a8bee25c33792
-size 823
+<?php
+// This file was auto-generated from sdk-root/src/data/cloudfront/2019-03-26/waiters-1.json
+return [ 'waiters' => [ '__default__' => [ 'success_type' => 'output', 'success_path' => 'Status', ], 'StreamingDistributionDeployed' => [ 'operation' => 'GetStreamingDistribution', 'description' => 'Wait until a streaming distribution is deployed.', 'interval' => 60, 'max_attempts' => 25, 'success_value' => 'Deployed', ], 'DistributionDeployed' => [ 'operation' => 'GetDistribution', 'description' => 'Wait until a distribution is deployed.', 'interval' => 60, 'max_attempts' => 25, 'success_value' => 'Deployed', ], 'InvalidationCompleted' => [ 'operation' => 'GetInvalidation', 'description' => 'Wait until an invalidation has completed.', 'interval' => 20, 'max_attempts' => 30, 'success_value' => 'Completed', ], ],];

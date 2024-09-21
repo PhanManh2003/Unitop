@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4edf3dc0c1d6ae202617ae41334f3af89b07b7c8a80f7e9748fc7e302aaf8c80
-size 1024
+<?php
+/**
+ * Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0.
+ */
+namespace AWS\CRT;
+
+use AWS\CRT\CRT as CRT;
+
+/**
+ * Base class for all native resources, tracks all outstanding resources
+ * and provides basic leak checking
+ */
+abstract class NativeResource {
+    protected static $crt = null;
+    protected static $resources = [];
+    protected $native = null;
+
+    protected function __construct() {
+        if (is_null(self::$crt)) {
+            self::$crt = new CRT();
+        }
+
+        self::$resources[spl_object_hash($this)] = 1;
+    }
+
+    protected function acquire($handle) {
+        return $this->native = $handle;
+    }
+
+    protected function release() {
+        $native = $this->native;
+        $this->native = null;
+        return $native;
+    }
+
+    function __destruct() {
+        // Should have been destroyed and released by derived resource
+        assert($this->native == null);
+        unset(self::$resources[spl_object_hash($this)]);
+    }
+}

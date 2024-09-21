@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:863c5bc8fbe8a28d8e98016cf55c6b2ef60e038d968848f1e01c12c40e57becf
-size 3188
+<?php
+namespace Aws\ComputeOptimizer;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **AWS Compute Optimizer** service.
+ * @method \Aws\Result deleteRecommendationPreferences(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteRecommendationPreferencesAsync(array $args = [])
+ * @method \Aws\Result describeRecommendationExportJobs(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeRecommendationExportJobsAsync(array $args = [])
+ * @method \Aws\Result exportAutoScalingGroupRecommendations(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise exportAutoScalingGroupRecommendationsAsync(array $args = [])
+ * @method \Aws\Result exportEBSVolumeRecommendations(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise exportEBSVolumeRecommendationsAsync(array $args = [])
+ * @method \Aws\Result exportEC2InstanceRecommendations(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise exportEC2InstanceRecommendationsAsync(array $args = [])
+ * @method \Aws\Result exportLambdaFunctionRecommendations(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise exportLambdaFunctionRecommendationsAsync(array $args = [])
+ * @method \Aws\Result getAutoScalingGroupRecommendations(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getAutoScalingGroupRecommendationsAsync(array $args = [])
+ * @method \Aws\Result getEBSVolumeRecommendations(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getEBSVolumeRecommendationsAsync(array $args = [])
+ * @method \Aws\Result getEC2InstanceRecommendations(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getEC2InstanceRecommendationsAsync(array $args = [])
+ * @method \Aws\Result getEC2RecommendationProjectedMetrics(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getEC2RecommendationProjectedMetricsAsync(array $args = [])
+ * @method \Aws\Result getEffectiveRecommendationPreferences(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getEffectiveRecommendationPreferencesAsync(array $args = [])
+ * @method \Aws\Result getEnrollmentStatus(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getEnrollmentStatusAsync(array $args = [])
+ * @method \Aws\Result getEnrollmentStatusesForOrganization(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getEnrollmentStatusesForOrganizationAsync(array $args = [])
+ * @method \Aws\Result getLambdaFunctionRecommendations(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getLambdaFunctionRecommendationsAsync(array $args = [])
+ * @method \Aws\Result getRecommendationPreferences(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getRecommendationPreferencesAsync(array $args = [])
+ * @method \Aws\Result getRecommendationSummaries(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getRecommendationSummariesAsync(array $args = [])
+ * @method \Aws\Result putRecommendationPreferences(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise putRecommendationPreferencesAsync(array $args = [])
+ * @method \Aws\Result updateEnrollmentStatus(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateEnrollmentStatusAsync(array $args = [])
+ */
+class ComputeOptimizerClient extends AwsClient {}

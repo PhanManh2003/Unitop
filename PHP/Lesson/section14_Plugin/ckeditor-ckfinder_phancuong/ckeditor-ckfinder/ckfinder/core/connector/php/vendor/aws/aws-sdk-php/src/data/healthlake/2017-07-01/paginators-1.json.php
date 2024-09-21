@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf4c62a6b31c4d65c9b3862df52b74a5d22eae3ed4ce113c47fe16934ab8b2e1
-size 490
+<?php
+// This file was auto-generated from sdk-root/src/data/healthlake/2017-07-01/paginators-1.json
+return [ 'pagination' => [ 'ListFHIRDatastores' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListFHIRExportJobs' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListFHIRImportJobs' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];

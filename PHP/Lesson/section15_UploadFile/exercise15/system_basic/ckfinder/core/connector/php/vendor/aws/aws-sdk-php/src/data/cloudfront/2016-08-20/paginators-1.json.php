@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:99132290d0c7b7d3cf34d09e284c65ba3f96693216a4e3fff4fa9809c32a26a6
-size 1134
+<?php
+// This file was auto-generated from sdk-root/src/data/cloudfront/2016-08-20/paginators-1.json
+return [ 'pagination' => [ 'ListCloudFrontOriginAccessIdentities' => [ 'input_token' => 'Marker', 'output_token' => 'CloudFrontOriginAccessIdentityList.NextMarker', 'limit_key' => 'MaxItems', 'more_results' => 'CloudFrontOriginAccessIdentityList.IsTruncated', 'result_key' => 'CloudFrontOriginAccessIdentityList.Items', ], 'ListDistributions' => [ 'input_token' => 'Marker', 'output_token' => 'DistributionList.NextMarker', 'limit_key' => 'MaxItems', 'more_results' => 'DistributionList.IsTruncated', 'result_key' => 'DistributionList.Items', ], 'ListInvalidations' => [ 'input_token' => 'Marker', 'output_token' => 'InvalidationList.NextMarker', 'limit_key' => 'MaxItems', 'more_results' => 'InvalidationList.IsTruncated', 'result_key' => 'InvalidationList.Items', ], 'ListStreamingDistributions' => [ 'input_token' => 'Marker', 'output_token' => 'StreamingDistributionList.NextMarker', 'limit_key' => 'MaxItems', 'more_results' => 'StreamingDistributionList.IsTruncated', 'result_key' => 'StreamingDistributionList.Items', ], ],];

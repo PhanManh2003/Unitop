@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9813e69f82229b212f28c860c7a1ec6fcadf032f1d0136c63fb63e26f333af5b
-size 1159
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sibling selector</title>
+</head>
+<body>
+    <style>
+        /* Cú pháp: selector:first-child{} ; selector:last-child{}; selector:nth-child(value){} */ 
+        /* Ví dụ: chọn ra phần tử li thứ nhất , phần tử li cuối cùng , hoặc phần tử li vị trí cụ thể */
+
+        /* ul li:nth-child(3){ 
+            font-weight: bold;
+            color: red;
+        } */
+        ul li:nth-child(odd){ 
+            font-weight: bold;
+            color: blue;
+        }
+        ul li:nth-child(even){ 
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+    <h1>sibling selector</h1>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2
+            <ul>
+                <li>item 2.1</li>
+                <li>item 2.2</li>
+                <li>item 2.3</li>
+                <li>item 2.4</li>
+            </ul>
+        </li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+</body>
+</html>

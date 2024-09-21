@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b0c82e74e29c87bd9280f1cccddcda145a5af31905310d471f1141368cde6ebe
-size 1446
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set và get trong object</title>
+</head>
+
+<body>
+    <h1>Set và get trong object</h1>
+    <!-- Phương thức get định nghĩa "cách lấy giá trị của một thuộc tính". 
+    Khi truy cập vào thuộc tính này, phương thức get sẽ được gọi tự động -->
+
+    <!-- Phương thức set định nghĩa "cách gán giá trị cho một thuộc tính".
+    Khi gán giá trị cho thuộc tính này, phương thức set sẽ được gọi tự động. -->
+
+    <!-- Nếu dùng set thì phải dùng thêm get -->
+    <script>
+        let person = {
+            // firstName: 'Phan',
+            // lastName: 'Mạnh',
+            get getFullName() {
+                return this.firstname + ' ' + this.lastname;
+            },
+            
+            set setFullName(info) {
+                info = info.split(' ');
+                this.firstName = info[0]; // ko cần khai báo trước thuộc tính firstName lastName
+                this.lastName = info[info.length - 1];
+            }
+        }
+        // Gọi setter để gán giá trị
+        person.setFullName = 'Phan Tiến Mạnh';
+        // Gọi getter để truy cập giá trị
+        document.write(person.getFullName);
+    </script>
+</body>
+
+</html>

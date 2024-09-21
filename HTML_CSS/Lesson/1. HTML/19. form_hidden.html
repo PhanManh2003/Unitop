@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6aab0be4cc94d5b95e02a18290ffb45a58115770b295a6bbeee55ab134b62832
-size 767
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input hidden</title>
+</head>
+<body>
+    <h1>Input hidden</h1>
+    <!-- Tác dụng: Thẻ giúp lưu trữ dữ liệu ngầm(không do người dùng nhập) gửi lên server -->
+    <form action="">
+        <label for="username">Tên đăng nhập</label>
+        <input type="text" name="username" placeholder="username" id="username"><br><br>
+        <label for="password">Mật khẩu</label>
+        <input type="password" name="password" placeholder="password" id="password">
+        <input type="hidden" name="rediret-to" value="https://www.facebook.com/"> 
+    </form>
+</body>
+</html>

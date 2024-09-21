@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ab2308810af1e56a3275d69fc059d5350813245dea2293fe0737b5486a2ec57
-size 232
+<?php
+namespace Aws\EC2InstanceConnect\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **AWS EC2 Instance Connect** service.
+ */
+class EC2InstanceConnectException extends AwsException {}

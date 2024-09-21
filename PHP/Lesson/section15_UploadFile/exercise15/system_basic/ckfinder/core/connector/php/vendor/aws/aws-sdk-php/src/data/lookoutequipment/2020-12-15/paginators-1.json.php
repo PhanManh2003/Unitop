@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1a9400573dd55f43fce9af5878462f43f6ee9656d47d25cfe67905f1c04e95ea
-size 733
+<?php
+// This file was auto-generated from sdk-root/src/data/lookoutequipment/2020-12-15/paginators-1.json
+return [ 'pagination' => [ 'ListDataIngestionJobs' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListDatasets' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListInferenceExecutions' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListInferenceSchedulers' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListModels' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];

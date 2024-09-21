@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2212f3f58699d32abe7e3fa542278bd96e4cfd85d6cad1ac3ab7d52b32cb5518
-size 716
+<?php
+// This file was auto-generated from sdk-root/src/data/cloudcontrol/2021-09-30/waiters-2.json
+return [ 'version' => 2, 'waiters' => [ 'ResourceRequestSuccess' => [ 'description' => 'Wait until resource operation request is successful', 'operation' => 'GetResourceRequestStatus', 'delay' => 5, 'maxAttempts' => 720, 'acceptors' => [ [ 'state' => 'success', 'matcher' => 'path', 'argument' => 'ProgressEvent.OperationStatus', 'expected' => 'SUCCESS', ], [ 'state' => 'failure', 'matcher' => 'path', 'argument' => 'ProgressEvent.OperationStatus', 'expected' => 'FAILED', ], [ 'state' => 'failure', 'matcher' => 'path', 'argument' => 'ProgressEvent.OperationStatus', 'expected' => 'CANCEL_COMPLETE', ], ], ], ],];

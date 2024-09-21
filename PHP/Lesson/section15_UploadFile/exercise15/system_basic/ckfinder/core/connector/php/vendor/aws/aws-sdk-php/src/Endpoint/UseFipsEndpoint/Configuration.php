@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1f3076b58e8c9c33e748ce513ae7183ef2b27bc8d9788073a9e9c59db4b27f5a
-size 855
+<?php
+namespace Aws\Endpoint\UseFipsEndpoint;
+
+use Aws;
+use Aws\ClientResolver;
+use Aws\Endpoint\UseFipsEndpoint\Exception\ConfigurationException;
+
+class Configuration implements ConfigurationInterface
+{
+    private $useFipsEndpoint;
+
+    public function __construct($useFipsEndpoint)
+    {
+        $this->useFipsEndpoint = Aws\boolean_value($useFipsEndpoint);
+        if (is_null($this->useFipsEndpoint)) {
+            throw new ConfigurationException("'use_fips_endpoint' config option"
+                . " must be a boolean value.");
+        }
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function isUseFipsEndpoint()
+    {
+        return $this->useFipsEndpoint;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function toArray()
+    {
+        return [
+            'use_fips_endpoint' => $this->isUseFipsEndpoint(),
+        ];
+    }
+}

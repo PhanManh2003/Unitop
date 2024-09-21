@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c207d4acff333350068de8508ce9ab0366ac3373101f59deed0f0cf49f52c6c0
-size 895
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\ErrorHandler\Error;
+
+class UndefinedMethodError extends \Error
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function __construct(string $message, \Throwable $previous)
+    {
+        parent::__construct($message, $previous->getCode(), $previous->getPrevious());
+
+        foreach ([
+            'file' => $previous->getFile(),
+            'line' => $previous->getLine(),
+            'trace' => $previous->getTrace(),
+        ] as $property => $value) {
+            $refl = new \ReflectionProperty(\Error::class, $property);
+            $refl->setAccessible(true);
+            $refl->setValue($this, $value);
+        }
+    }
+}

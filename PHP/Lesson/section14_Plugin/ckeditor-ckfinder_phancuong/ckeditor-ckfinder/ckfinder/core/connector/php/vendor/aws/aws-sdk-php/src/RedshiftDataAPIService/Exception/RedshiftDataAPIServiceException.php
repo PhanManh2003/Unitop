@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a72915d3778a161c7270ad17ae4ee6c67c812fd5662a7d83d4b90b8c9b2f7323
-size 241
+<?php
+namespace Aws\RedshiftDataAPIService\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Redshift Data API Service** service.
+ */
+class RedshiftDataAPIServiceException extends AwsException {}

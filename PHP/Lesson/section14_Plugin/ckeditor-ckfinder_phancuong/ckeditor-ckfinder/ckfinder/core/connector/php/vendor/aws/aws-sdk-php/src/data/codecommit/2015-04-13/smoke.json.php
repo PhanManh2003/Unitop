@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c9df88a38d8024eae586e750cdf0b6c78e904ec67e15f3af9da63a1c1c7dcfb
-size 394
+<?php
+// This file was auto-generated from sdk-root/src/data/codecommit/2015-04-13/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListRepositories', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'ListBranches', 'input' => [ 'repositoryName' => 'fake-repo', ], 'errorExpectedFromService' => true, ], ],];

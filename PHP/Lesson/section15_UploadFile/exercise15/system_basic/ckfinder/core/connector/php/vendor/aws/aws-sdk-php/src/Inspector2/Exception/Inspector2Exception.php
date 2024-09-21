@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1dd8845f0e3cf6718d8fcd3a8721243572e62f6e65edf7ffeb6c135c26fb4adf
-size 202
+<?php
+namespace Aws\Inspector2\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Inspector2** service.
+ */
+class Inspector2Exception extends AwsException {}

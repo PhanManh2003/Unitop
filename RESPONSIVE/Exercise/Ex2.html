@@ -1,3 +1,60 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5680139721838d25783615db2bb6f7dd3addf2cce32f0b95f50323cfa63ca205
-size 1728
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2 responsive</title>
+
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@1,600&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+        /* Default code cho mọi thiết bị*/
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #wrapper {
+            display: flex;
+            justify-content: center;
+            /* Sử dụng align-items để căn chỉnh các phần tử con trong từng hàng theo chiều dọc.
+              Sử dụng align-content để căn chỉnh khoảng cách giữa các hàng */
+            align-items: center; 
+        }
+            
+        h1 {
+            font-size: 22px;
+            letter-spacing: 2px;
+        }
+
+        /* Small device(landscape phone, 576px and up) */
+        @media (min-width: 576px) {
+            h1 {
+                font-size: 30px;
+            }
+        }
+
+        /* Medium device(tablets, 768px and up) */
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 35px;
+            }
+        }
+
+        /* Large device(desktop, 992px and up) */
+        @media (min-width: 992px) {
+            h1 {
+                font-size: 42px;
+            }
+        }
+    </style>
+    <div id="wrapper">
+        <h1>RESPONSIVE MASTERY</h1>
+    </div>
+
+</body>
+
+</html>

@@ -1,3 +1,60 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fbab8cd3f56e9da751cfdd5b5b142bbcac1da99dc4de73f7c429d3adda029778
-size 2338
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+
+        })
+    </script>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Tab bootstrap</h1>
+                <nav>
+                    <ul class="nav nav-tabs mb-3" >
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#tab-content-1" data-bs-toggle="tab">Tab item 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tab-content-2" data-bs-toggle="tab">Tab item 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tab-content-3" data-bs-toggle="tab">Tab item 3</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Tabs -->
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="tab-content-1">
+                        Tab content 1
+                    </div>
+                    <div class="tab-pane fade" id="tab-content-2">
+                        Tab content 2
+                    </div>
+                    <div class="tab-pane fade" id="tab-content-3">
+                        Tab content 3
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

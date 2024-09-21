@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bc636174bd4f96b3f3332014aebd000774ccc792ce629ff6b7396569daf243c3
-size 219
+<?php
+namespace Aws\SecretsManager\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **AWS Secrets Manager** service.
+ */
+class SecretsManagerException extends AwsException {}

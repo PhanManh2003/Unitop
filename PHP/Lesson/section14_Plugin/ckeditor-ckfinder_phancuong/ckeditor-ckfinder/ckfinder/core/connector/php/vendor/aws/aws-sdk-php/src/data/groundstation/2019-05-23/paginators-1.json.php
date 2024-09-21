@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2e0beeaaf02c55a690aeda3c49192385cbd7b8a3f88c9099519428b9308ff2f5
-size 1053
+<?php
+// This file was auto-generated from sdk-root/src/data/groundstation/2019-05-23/paginators-1.json
+return [ 'pagination' => [ 'ListConfigs' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'configList', ], 'ListContacts' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'contactList', ], 'ListDataflowEndpointGroups' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'dataflowEndpointGroupList', ], 'ListGroundStations' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'groundStationList', ], 'ListMissionProfiles' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'missionProfileList', ], 'ListSatellites' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'satellites', ], ],];

@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0413d4fa503b6cd232aee9fe18868e1abee2517ff19f787730a6e9696419272e
-size 1493
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Weight</title>
+</head>
+
+<body>
+    <style>
+    /* 
+    - Tác dụng: Thiết lập độ đậm nhạt cho text
+    - Cú pháp: font-weight: value; 
+    (value: -key: normal,bold; - number: 100-900)  
+    */
+    .font-weight-normal{
+        font-weight: normal ; /* ~ 400 */
+    } 
+    .font-weight-bold{
+        font-weight: bold ; /* ~ 700 */
+    } 
+    .font-weight-light{
+        font-weight: lighter ;  /* ~ 200 */ 
+    }
+    /* number 100- 900 chỉ áp dụng khi sử dụng font từ bên ngoài còn font 
+        mặc định của trình duyệt thì ko bị ảnh hưởng. nên sử dụng value mặc định để 
+        tương thích trên nhiều trình duyệt */
+    </style>
+    <h1>Font Weight</h1>
+    <p class="font-weight-normal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore fuga quasi necessitatibus molestias, qui laudantium doloribus eaque quo dolore ullam?</p>
+    <p class="font-weight-bold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias nam dolorum saepe quisquam blanditiis pariatur aspernatur consequuntur illo possimus at!</p>
+    <p class="font-weight-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, fuga! Quasi, eligendi qui. Aliquid fugit, nihil facilis odit est nisi.</p>
+</body>
+
+</html>

@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2175342f590dde5b3d9572a9743b02c405346aa766f6b12c75b238d32bb8c60a
-size 1512
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute</title>
+</head>
+
+<body>
+    <!-- Tác dụng: thuộc tính  position absolute giúp 1 khối trôi nổi trên 1 khối cha bao quanh nó khi
+         kết hợp với các thuộc tính phụ top, left, right, bottom -->
+
+    <!-- The position:absolute CSS property is used to position an element 
+    in a specific location relative to its nearest positioned ancestor or the initial containing block. 
+    If no ancestor is positioned, then the element's position will be relative to the initial containing block, 
+    which is typically the <body> element.
+    
+    By setting position:relative on the parent element, we create a new positioning ancestor for the absolute element inside it -->
+    <style>
+        .parent {
+            background-color: bisque;
+            height: 300px;
+            width: 230px;
+            position: relative;
+        }
+
+        .child {
+            position: absolute;
+            background-color: tomato;
+            color: rgb(22, 141, 38);
+            padding: 15px 10px;
+            /* cách trên */
+            top: 5px;
+            /* cách phải */
+            right: 10px; 
+        }
+    </style>
+    <h1>Position Absolute</h1>
+    <div class="parent">
+        <div class="child">
+            -20%
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:18d80c23d207c7033e86d2889bfdd6eae5efe0a5db4b5b0e035db7c371c948d8
-size 1241
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đơn vị tương đối 'em' và 'rem' trong responsive</title>
+</head>
+
+<body>
+    <!-- 
+    Em:
+    1. Là đơn vị font-size tương đối so với cha nó  
+    2. Mặc định body có font-size 1 em tương đương 16px
+
+    Rem: 
+    1. Là đơn vị font-size tương đối so với thẻ html 
+    2. Mặc định html có font-size 16px
+-->
+    <style>
+        body {
+            font-size: 16px;
+        }
+
+        #wrapper{
+            font-size: 20px;
+        }
+
+        h1 { 
+            font-size: 2.5em;  /* 50px, cha là wrapper*/
+        }
+    </style>
+    <div id="wrapper">
+        <h1>Font size em and rem responsive</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corrupti quae magni vitae debitis aliquam
+            odio
+            recusandae non ducimus harum.</p>
+        <p>Error nostrum eius beatae, mollitia sequi sed unde voluptate perspiciatis ipsa dolor explicabo quos delectus
+            temporibus pariatur soluta consequatur nihil.</p>
+    </div>
+</body>
+
+</html>

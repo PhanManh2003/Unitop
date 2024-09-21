@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2c0385e57406d9ee4f1b9b989c5bf7087e2b75b14de7b4152132660e56b4e3e9
-size 525
+<?php
+/**
+ * Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0.
+ */
+namespace AWS\CRT\Auth;
+
+use AWS\CRT\NativeResource as NativeResource;
+
+/**
+ * Base class for credentials providers
+ */
+abstract class CredentialsProvider extends NativeResource {
+
+    function __construct(array $options = []) {
+        parent::__construct();
+    }
+
+    function __destruct() {
+        self::$crt->credentials_provider_release($this->release());
+        parent::__destruct();
+    }
+}

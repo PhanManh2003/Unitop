@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:33764d963bdeb052f6413930a44551cb3ea91971469a1765e3f5b5e1649c763a
-size 362
+<?php
+// server nhận dữ liệu từ AJAX, xử lí và return với echo
+$num_order = $_POST['num_order'];
+$price = $_POST['price'];
+$total = $num_order * $price;
+$result = array(
+    'price' => $price,
+    'num_order' => $num_order,
+    'total' => $total,
+);
+// Return: số, chuỗi, html, json 
+// echo json_encode($result);
+echo $total;
+
+

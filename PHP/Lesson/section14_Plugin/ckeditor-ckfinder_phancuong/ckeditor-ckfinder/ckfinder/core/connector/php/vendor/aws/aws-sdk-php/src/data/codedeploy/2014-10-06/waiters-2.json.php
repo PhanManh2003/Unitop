@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7f3126a6d2e36df2fdff1c477b564c985a70f59f4ffd4d6518d3c3ca2fcb7eac
-size 600
+<?php
+// This file was auto-generated from sdk-root/src/data/codedeploy/2014-10-06/waiters-2.json
+return [ 'version' => 2, 'waiters' => [ 'DeploymentSuccessful' => [ 'delay' => 15, 'operation' => 'GetDeployment', 'maxAttempts' => 120, 'acceptors' => [ [ 'expected' => 'Succeeded', 'matcher' => 'path', 'state' => 'success', 'argument' => 'deploymentInfo.status', ], [ 'expected' => 'Failed', 'matcher' => 'path', 'state' => 'failure', 'argument' => 'deploymentInfo.status', ], [ 'expected' => 'Stopped', 'matcher' => 'path', 'state' => 'failure', 'argument' => 'deploymentInfo.status', ], ], ], ],];

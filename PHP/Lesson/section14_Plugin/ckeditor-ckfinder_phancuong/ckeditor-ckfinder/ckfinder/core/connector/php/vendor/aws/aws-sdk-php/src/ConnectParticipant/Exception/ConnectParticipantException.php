@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:52e3149572f3480823169ebe4cf6c7aacc302d4f200c9ee95c07df0659bfaab8
-size 242
+<?php
+namespace Aws\ConnectParticipant\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Amazon Connect Participant Service** service.
+ */
+class ConnectParticipantException extends AwsException {}

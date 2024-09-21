@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a7de3452fe14c5baaa158cc7073fe977f3fb52003b8175ddd4039f20e7c7580
-size 1062
+<?php
+// This file was auto-generated from sdk-root/src/data/amp/2020-08-01/waiters-2.json
+return [ 'version' => 2, 'waiters' => [ 'WorkspaceActive' => [ 'description' => 'Wait until a workspace reaches ACTIVE status', 'delay' => 2, 'maxAttempts' => 60, 'operation' => 'DescribeWorkspace', 'acceptors' => [ [ 'matcher' => 'path', 'argument' => 'workspace.status.statusCode', 'state' => 'success', 'expected' => 'ACTIVE', ], [ 'matcher' => 'path', 'argument' => 'workspace.status.statusCode', 'state' => 'retry', 'expected' => 'UPDATING', ], [ 'matcher' => 'path', 'argument' => 'workspace.status.statusCode', 'state' => 'retry', 'expected' => 'CREATING', ], ], ], 'WorkspaceDeleted' => [ 'description' => 'Wait until a workspace reaches DELETED status', 'delay' => 2, 'maxAttempts' => 60, 'operation' => 'DescribeWorkspace', 'acceptors' => [ [ 'matcher' => 'error', 'state' => 'success', 'expected' => 'ResourceNotFoundException', ], [ 'matcher' => 'path', 'argument' => 'workspace.status.statusCode', 'state' => 'retry', 'expected' => 'DELETING', ], ], ], ],];

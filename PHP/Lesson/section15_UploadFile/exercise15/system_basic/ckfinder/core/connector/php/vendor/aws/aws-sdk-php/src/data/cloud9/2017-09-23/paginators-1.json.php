@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:79f6d54ffd37305619d4442474e071b41feea2272c54c8643497e7d9c721bde1
-size 377
+<?php
+// This file was auto-generated from sdk-root/src/data/cloud9/2017-09-23/paginators-1.json
+return [ 'pagination' => [ 'DescribeEnvironmentMemberships' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListEnvironments' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], ],];

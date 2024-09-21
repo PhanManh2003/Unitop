@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:262a89f1ba9bcbaaaef2c0235de9426cf4a61c115b9ab006f588bbbbf24ff929
-size 568
+/**
+ * @license Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
+ * For licensing, see https://ckeditor.com/legal/ckeditor-oss-license
+ */
+
+CKEDITOR.editorConfig = function( config ) {
+	// Define changes to default configuration here. For example:
+	// config.language = 'fr';
+	// config.uiColor = '#AADC6E';
+	// config.filebrowserBrowseUrl = 'plugins/ckfinder/ckfinder.html';
+	config.filebrowserBrowseUrl = 'ckfinder/ckfinder.html';
+	config.filebrowserUploadUrl = 'ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
+};

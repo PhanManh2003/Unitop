@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fc21f93d3ebd877f45bdfa944634a9fe990e0c851da9609214f042cba5da4b13
-size 907
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex shorthand</title>
+</head>
+
+<body>
+    <style>
+        /* ----------flex: grow shrink basis */
+        .container {
+            display: flex;
+            background-color: gray;
+            
+
+        }
+
+        .flex-item {
+            background-color: greenyellow;
+            padding: 40px;
+            width: 100px;
+            margin: 10px;
+            font-size: 20px;
+        }
+
+        .item-1 {
+            flex: 1 1 400px;
+        }
+
+        .item-2 {
+            width: 300px;
+        }
+
+    </style>
+    <h1>Display flex shorthand</h1>
+    <div class="container">
+        <div class="flex-item item-1">1</div>
+        <div class="flex-item item-2">2</div>
+    </div>
+
+</body>
+
+</html>

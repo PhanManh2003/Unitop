@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:70f3972e8bfc0181c68bbef268f529ae677d0d752b299589d7178142c9f28600
-size 672
+<?php
+namespace Aws\Route53RecoveryCluster;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **Route53 Recovery Cluster** service.
+ * @method \Aws\Result getRoutingControlState(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getRoutingControlStateAsync(array $args = [])
+ * @method \Aws\Result updateRoutingControlState(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateRoutingControlStateAsync(array $args = [])
+ * @method \Aws\Result updateRoutingControlStates(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateRoutingControlStatesAsync(array $args = [])
+ */
+class Route53RecoveryClusterClient extends AwsClient {}

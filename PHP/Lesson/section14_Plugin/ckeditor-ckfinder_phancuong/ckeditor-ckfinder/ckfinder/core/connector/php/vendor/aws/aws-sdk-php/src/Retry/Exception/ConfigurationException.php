@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f9791259083c268e004f1cdc7640762e193958a523d8d41ac6faa05b79cbdeb8
-size 310
+<?php
+namespace Aws\Retry\Exception;
+
+use Aws\HasMonitoringEventsTrait;
+use Aws\MonitoringEventsInterface;
+
+/**
+ * Represents an error interacting with retry configuration
+ */
+class ConfigurationException extends \RuntimeException implements
+    MonitoringEventsInterface
+{
+    use HasMonitoringEventsTrait;
+}

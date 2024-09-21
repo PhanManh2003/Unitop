@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e592d049a7053a0f16824ef47002eeb05d6bdbf6c4d1ed62e0f35fe958c37b3
-size 593
+<?php
+
+namespace League\Flysystem\Util;
+
+class StreamHasher
+{
+    /**
+     * @var string
+     */
+    private $algo;
+
+    /**
+     * StreamHasher constructor.
+     *
+     * @param string $algo
+     */
+    public function __construct($algo)
+    {
+        $this->algo = $algo;
+    }
+
+    /**
+     * @param resource $resource
+     *
+     * @return string
+     */
+    public function hash($resource)
+    {
+        rewind($resource);
+        $context = hash_init($this->algo);
+        hash_update_stream($context, $resource);
+        fclose($resource);
+
+        return hash_final($context);
+    }
+}

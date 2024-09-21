@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:78ae57ced37fa80ae3d93a44ce8d37bb2de342a57af0d85e1dbcdf8ea0401f30
-size 580
+<?php
+// This file was auto-generated from sdk-root/src/data/backup-gateway/2021-01-01/paginators-1.json
+return [ 'pagination' => [ 'ListGateways' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', 'result_key' => 'Gateways', ], 'ListHypervisors' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', 'result_key' => 'Hypervisors', ], 'ListVirtualMachines' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', 'result_key' => 'VirtualMachines', ], ],];

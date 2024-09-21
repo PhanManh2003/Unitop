@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7aa0a481c6081bc54566400a672626e6b4db3bfb2ae8c1eedf3802b5d31d18f1
-size 457
+CHANGELOG
+=========
+
+5.2.0
+-----
+
+ * Add support for DKIM
+ * Deprecated `Address::fromString()`, use `Address::create()` instead
+
+4.4.0
+-----
+
+ * [BC BREAK] Removed `NamedAddress` (`Address` now supports a name)
+ * Added PHPUnit constraints
+ * Added `AbstractPart::asDebugString()`
+ * Added `Address::fromString()`
+
+4.3.3
+-----
+
+ * [BC BREAK] Renamed method `Headers::getAll()` to `Headers::all()`.
+
+4.3.0
+-----
+
+ * Introduced the component as experimental

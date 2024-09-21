@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fdd9cc2adffb9e72e76f2116dc3914e77780c27a0e58dff3f650d5a45bd50615
-size 871
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+</head>
+
+<body>
+    <style>
+        /* exactly */
+        a[href="http://unitop.vn"] {
+            color: yellow
+        }
+
+        /* start with */
+        a[href^="m"] {
+            color: green
+        }
+
+        /* end with */
+        a[href$=".com"] {
+            color: red
+        }
+
+
+        /* contain */
+        a[href*="y"] {
+            color: plum
+        }
+    </style>
+    <h1>Attribute Selector</h1>
+    <a href="http://unitop.vn">Unitop</a><br>
+    <a href="http://facebook.com">facebook</a><br>
+    <a href="http://google.com">google</a><br>
+    <a href="malsdkf">malsdkf</a><br>
+    <a href="rtynfb">rtynfb</a><br>
+</body>
+
+</html>

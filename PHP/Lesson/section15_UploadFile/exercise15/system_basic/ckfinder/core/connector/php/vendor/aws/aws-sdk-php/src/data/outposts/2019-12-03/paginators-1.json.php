@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9d5b6c1d21f8505f2229757f2da4b421539431f2c298996d9b6ad2167b58d8cb
-size 582
+<?php
+// This file was auto-generated from sdk-root/src/data/outposts/2019-12-03/paginators-1.json
+return [ 'pagination' => [ 'ListCatalogItems' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListOrders' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListOutposts' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListSites' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];

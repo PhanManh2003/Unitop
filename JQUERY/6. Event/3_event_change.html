@@ -1,3 +1,60 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c2e0f4cac25fc70a7060ba35d4811621c1665d19d8c0edd1d56944d9a2432da0
-size 1610
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự kiện change trong jquery</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+
+
+    <style>
+        input,
+        select,
+        textarea {
+            display: block;
+            margin-bottom: 15px;
+            outline: none;
+        }
+    </style>
+
+    <script>
+        // chỉ áp dụng cho textarea, input text, select
+        $(document).ready(function () {
+            $('input#form_input_text').change(function () {
+                alert($(this).val());
+            })
+
+            $('select#form_select').change(function () {
+                alert($(this).val());
+            })
+
+            $('#form_textarea').change(function () {
+                alert($(this).val());
+            })
+
+            // cái other này ít dùng @_@
+            $('#other').click(function () {
+                $('form_textarea').change();
+                return false
+            })
+        })
+    </script>
+
+    <h1>Sự kiện change trong jquery</h1>
+    <form action="" method="post">
+        <input type="text" name="" id="form_input_text">
+        <select name="" id="form_select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <textarea name="" id="form_textarea" cols="30" rows="10"></textarea>
+    </form>
+    <a href="" id="other">Kích hoạt</a>
+</body>
+
+</html>

@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b21d3fd2fe1f9b18fdb6de23ac6715d65a9b462acf969875b51936d28bb916cd
-size 923
+<?php declare(strict_types=1);
+
+/*
+ * This file is part of the Monolog package.
+ *
+ * (c) Jordi Boggiano <j.boggiano@seld.be>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Monolog\Handler;
+
+use Monolog\Formatter\FormatterInterface;
+
+/**
+ * Interface to describe loggers that have a formatter
+ *
+ * This interface is present in monolog 1.x to ease forward compatibility.
+ *
+ * @author Jordi Boggiano <j.boggiano@seld.be>
+ */
+interface FormattableHandlerInterface
+{
+    /**
+     * Sets the formatter.
+     *
+     * @param  FormatterInterface $formatter
+     * @return HandlerInterface   self
+     */
+    public function setFormatter(FormatterInterface $formatter): HandlerInterface;
+
+    /**
+     * Gets the formatter.
+     *
+     * @return FormatterInterface
+     */
+    public function getFormatter(): FormatterInterface;
+}

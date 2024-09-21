@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3d97b1273f1ed51f81a5ae4174640e892430f6b72c42dce58b07eecac8a8638d
-size 422
+<?php
+// This file was auto-generated from sdk-root/src/data/grafana/2020-08-18/paginators-1.json
+return [ 'pagination' => [ 'ListPermissions' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'permissions', ], 'ListWorkspaces' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'workspaces', ], ],];

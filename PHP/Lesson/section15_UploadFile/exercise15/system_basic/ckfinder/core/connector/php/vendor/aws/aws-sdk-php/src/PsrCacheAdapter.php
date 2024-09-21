@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d0c229cf00713826aa47168107247c298f887e986713fb425b4d346408a9c05
-size 742
+<?php
+namespace Aws;
+
+use Psr\Cache\CacheItemPoolInterface;
+
+class PsrCacheAdapter implements CacheInterface
+{
+    /** @var CacheItemPoolInterface */
+    private $pool;
+
+    public function __construct(CacheItemPoolInterface $pool)
+    {
+        $this->pool = $pool;
+    }
+
+    public function get($key)
+    {
+        $item = $this->pool->getItem($key);
+
+        return $item->isHit() ? $item->get() : null;
+    }
+
+    public function set($key, $value, $ttl = 0)
+    {
+        $item = $this->pool->getItem($key);
+        $item->set($value);
+        if ($ttl > 0) {
+            $item->expiresAfter($ttl);
+        }
+
+        $this->pool->save($item);
+    }
+
+    public function remove($key)
+    {
+        $this->pool->deleteItem($key);
+    }
+}

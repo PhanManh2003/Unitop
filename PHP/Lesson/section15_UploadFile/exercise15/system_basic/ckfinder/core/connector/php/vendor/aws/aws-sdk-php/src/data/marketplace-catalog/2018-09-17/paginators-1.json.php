@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:630090e0a5150dbf26c7a0de97d77e09eb25b9e517e584801b8fb37f0406bcf7
-size 370
+<?php
+// This file was auto-generated from sdk-root/src/data/marketplace-catalog/2018-09-17/paginators-1.json
+return [ 'pagination' => [ 'ListChangeSets' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListEntities' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];

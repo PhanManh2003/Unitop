@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d20caa2d4da36221a5bc0a068536a25035fcd30a1ba4d80a3650a181566a544b
-size 1190
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex Grow</title>
+</head>
+
+<body>
+    <style>
+        /* Tác dụng: Flex-grow sẽ được sử dụng khi tổng kích thước các item trong container 
+        nhỏ hơn kích thước của container và bạn muốn nội dung trong container của mình luôn được lấp đầy. */
+        .container {
+            display: flex;
+            background-color: gray;
+            /* ----------flex-grow: value; value: 1, 2, 0.3, 0.7 (mặc định là 0) ---------------*/
+
+        }
+
+        .flex-item {
+            background-color: greenyellow;
+            padding: 40px;
+            width: 100px;
+            margin: 10px;
+            font-size: 20px;
+        }
+
+        .item-1 {
+            flex-grow: 1;
+        }
+
+        .item-2 {
+            flex-grow: 2;
+        }
+
+    </style>
+    <h1>Display flex Grow</h1>
+    <div class="container">
+        <div class="flex-item item-1">1</div>
+        <div class="flex-item item-2">2</div>
+    </div>
+
+</body>
+
+</html>

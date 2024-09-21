@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ea38077ffcb55aaf0e4bcb07b6b4e15dc0ad4af2b3493b466c1f00001b17dd3c
-size 398
+<?php
+// This file was auto-generated from sdk-root/src/data/cloudsearch/2013-01-01/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'DescribeDomains', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'DescribeIndexFields', 'input' => [ 'DomainName' => 'fakedomain', ], 'errorExpectedFromService' => true, ], ],];

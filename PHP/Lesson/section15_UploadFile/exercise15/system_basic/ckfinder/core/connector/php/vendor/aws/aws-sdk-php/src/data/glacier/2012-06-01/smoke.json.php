@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c2623ae19ab053dd686b0f1673b748bd8df8e056a8ea941c49edac6b8c3a1538
-size 378
+<?php
+// This file was auto-generated from sdk-root/src/data/glacier/2012-06-01/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListVaults', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'ListVaults', 'input' => [ 'accountId' => 'abcmnoxyz', ], 'errorExpectedFromService' => true, ], ],];

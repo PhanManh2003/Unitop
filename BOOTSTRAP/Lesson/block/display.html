@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ee191afeb2dd6fe0fc329992563151871cca2d00b718ed60e8193a2e295936ed
-size 1474
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm class về display trong bootstrap</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <!-- .d-{value}: cho tất cả thiết bị
+    .d-sm-{value}
+    .d-md-{value}
+    .d-lg-{value}
+    .d-xl-{value}
+    với value thuộc :none, inline, inline-block, block, flex -->
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Display Bootstrap</h1>
+                <h3>Display cho tất cả các thiết bị</h3>
+                <div class="box text-light bg-dark p-1 d-inline">Box 1</div>
+                <div class="box text-light bg-primary p-1 d-inline">Box 2</div>
+
+                <h3>Display cho các thiết bị khác nhau</h3>
+                <div class="box text-light bg-dark p-1 d-none d-md-block">Box 1</div>
+                <div class="box text-light bg-primary p-1">Box 2</div>
+                <div class="box text-light bg-success p-1 d-lg-none">Box 3</div>
+                <div class="box text-light bg-warning p-1">Box 4</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,3 +1,61 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34851d42da857d1e57d8f42a2e5bd45a4ffe36522dbff69f08f064c82f46348f
-size 2300
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+</head>
+
+<body>
+    <!-- 1 flex container chứa các flex-item  -->
+    <!-- Tác dụng: 
+        Display flex trong css là một kiểu dàn trang được Web Developer yêu thích sử dụng bởi tính linh hoạt của nó.
+        Bạn không cần phải thiết lập kích thước cho các phần tử mà Flex Css sẽ tự điều chỉnh để hiển thị trên mọi màn hình thiết bị. -->
+    <!-- Cú pháp:
+    display: flex;
+    flex-direction: column/row/column-reverse/ column-reverse; => quy định thứ tự hiển thị các phần tử theo hàng hoặc cột cùng thứ tự hiển thị trái<->phải trên<->dưới.
+    flex-wrap: wrap, wrap-reverse, no-wrap; => quy định các phần tử có xuống hàng hay không.
+    justify-content: => căn chỉnh hiển thị tất cả flex item theo chiều ngang
+    align-content => căn chỉnh hiển thị tất cả flex item theo chiều dọc 
+    
+    -->
+    <style>
+        .container {
+            width: 1000px;
+            height: 600px;
+            background-color: gray;
+            /* -------------- */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            /* align-content(mặc định là stretch) chỉ dùng khi container có height cố định và có nhiều dòng flex-item */ 
+        }
+
+        .box {
+            width: 100px;
+            padding: 40px;
+            background-color: greenyellow;
+            margin: 10px;
+        }
+    </style>
+    <h1>Display Flex</h1>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+</body>
+
+</html>

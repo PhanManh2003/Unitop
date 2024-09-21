@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d8185d1b54a530c5c7171fccf7053be50084da52ae14485b40e73d322522f082
-size 354
+<?php
+namespace Aws\Endpoint\UseFipsEndpoint;
+
+interface ConfigurationInterface
+{
+    /**
+     * Returns whether or not to use a FIPS endpoint
+     *
+     * @return bool
+     */
+    public function isUseFipsEndpoint();
+
+    /**
+     * Returns the configuration as an associative array
+     *
+     * @return array
+     */
+    public function toArray();
+}

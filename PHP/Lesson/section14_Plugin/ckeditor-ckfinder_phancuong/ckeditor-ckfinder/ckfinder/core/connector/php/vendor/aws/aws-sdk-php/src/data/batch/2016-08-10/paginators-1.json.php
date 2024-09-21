@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2e296e54d4419c3b9323f60fff165a542d16993bb106a01e13e21e823a4795fa
-size 903
+<?php
+// This file was auto-generated from sdk-root/src/data/batch/2016-08-10/paginators-1.json
+return [ 'pagination' => [ 'DescribeComputeEnvironments' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'computeEnvironments', ], 'DescribeJobDefinitions' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'jobDefinitions', ], 'DescribeJobQueues' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'jobQueues', ], 'ListJobs' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'jobSummaryList', ], 'ListSchedulingPolicies' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'schedulingPolicies', ], ],];

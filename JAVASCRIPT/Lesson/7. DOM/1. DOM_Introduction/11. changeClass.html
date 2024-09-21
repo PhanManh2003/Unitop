@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c7e424a953d4e9105d1147454c0c45dbcc8106eaffc0a207508080ac79ae1a5e
-size 771
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Classlist</title>
+</head>
+
+<body>
+    <h1 id="demo" class="class-1 class-2 class-3">my title</h1>
+    <script>
+        const demo = document.getElementById('demo');
+        // Thêm, xóa class   
+        demo.classList.add('class-4');
+        demo.classList.remove('class-1');
+
+        // Thêm nếu chưa có , xóa nếu có 1 class bất kì (ON/OFF menu or background-color)
+        demo.classList.toggle('basic');
+        
+        // Cập nhật class
+        demo.classList.replace('class-3','class-03')
+        console.log(demo.classList);
+    </script>
+
+</body>
+
+</html>

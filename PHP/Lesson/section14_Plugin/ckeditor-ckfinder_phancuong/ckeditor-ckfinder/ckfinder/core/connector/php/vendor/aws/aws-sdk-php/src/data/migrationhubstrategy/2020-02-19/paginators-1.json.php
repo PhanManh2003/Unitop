@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7938a065032ca0cbf7c9413b3d6a100d2428ad9ea3898980bf56f1953fffc0df
-size 909
+<?php
+// This file was auto-generated from sdk-root/src/data/migrationhubstrategy/2020-02-19/paginators-1.json
+return [ 'pagination' => [ 'GetServerDetails' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'associatedApplications', ], 'ListApplicationComponents' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'applicationComponentInfos', ], 'ListCollectors' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'Collectors', ], 'ListImportFileTask' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'taskInfos', ], 'ListServers' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'serverInfos', ], ],];

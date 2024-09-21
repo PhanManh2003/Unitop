@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e1d2f94c994185a553d156f26df4a879b37d15d4475098d93e3e1d205ba1991
-size 407
+<?php
+// This file was auto-generated from sdk-root/src/data/email/2010-12-01/waiters-2.json
+return [ 'version' => 2, 'waiters' => [ 'IdentityExists' => [ 'delay' => 3, 'operation' => 'GetIdentityVerificationAttributes', 'maxAttempts' => 20, 'acceptors' => [ [ 'expected' => 'Success', 'matcher' => 'pathAll', 'state' => 'success', 'argument' => 'VerificationAttributes.*.VerificationStatus', ], ], ], ],];

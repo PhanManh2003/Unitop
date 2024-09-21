@@ -1,3 +1,88 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bcf7c9ea9786cc135a756d361a4a0cef34788a5bbe582de5e054d07c832f1a9a
-size 1911
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout web 2 Cột - Flex Css</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+
+        .bg-blue {
+            background-color: rgb(53, 145, 221);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+
+        .padding-15 {
+            padding: 15px;
+        }
+
+        .padding-10 {
+            padding: 10px;
+        }
+
+        .clear-both {
+            clear: both;
+        }
+
+        .text-white {
+            color: whitesmoke;
+        }
+
+        /* --------flex--------- */
+        #wp-content {
+            display: flex;
+            flex-direction: row;
+            min-height: 600px;
+        }
+
+        #content {
+            background-color: #f3f3f3;
+            /* set width */
+            flex-basis: 600px;    
+            flex-shrink: 0;
+        }
+
+        #sidebar {
+            background-color: #e1e1e1;
+            flex-basis: 360px;
+            flex-shrink: 2;   
+        }
+    </style>
+    <div id="wrapper">
+        <div id="header" class="bg-blue text-center padding-15 text-white">
+            Layout web 2 Cột - Flex Css
+        </div>
+        <div id="wp-content">
+            <div id="content" class="padding-15">
+                Content
+            </div>
+            <div id="sidebar" class="padding-15">
+                Sidebar
+            </div>
+        </div>
+        <div id="footer" class="bg-blue text-center padding-10 text-white">
+            unitop.vn
+        </div>
+    </div>
+</body>
+
+</html>

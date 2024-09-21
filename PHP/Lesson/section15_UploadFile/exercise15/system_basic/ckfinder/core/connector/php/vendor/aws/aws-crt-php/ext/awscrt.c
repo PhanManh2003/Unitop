@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7d8d236f0fc51ee7e3f8f1d212d7c1b0f634adf907ac6862be840f2f9c717383
-size 440
+/**
+ * Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0.
+ */
+
+/* This is a unity-build style source file, as PHP's build system is simplest with 1 source file per extension */
+
+#include "credentials.c"
+#include "crt.c"
+#include "event_loop.c"
+#include "http.c"
+#include "signing.c"
+#include "stream.c"
+// #include "hash.c"
+#include "crc.c"
+#include "logging.c"
+#include "php_util.c"

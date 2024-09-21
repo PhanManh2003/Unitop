@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fcddcf38a5fa452fd23985cf919d5c94786ce16d78a7732c335e4a03ca51bcf1
-size 272
+#!/usr/bin/env bash
+
+set -ex
+
+launcher=
+if command -v catchsegv; then
+    launcher=catchsegv
+fi
+
+if [ -z $PHP_BINARY ]; then
+    PHP_BINARY=$(which php)
+fi
+
+if [ ! -d vendor ]; then
+    composer update
+fi
+
+$launcher $PHP_BINARY -c php.ini vendor/bin/phpunit tests --debug

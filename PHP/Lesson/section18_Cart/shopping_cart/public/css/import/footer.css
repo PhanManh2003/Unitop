@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c4a79900f9f3ec9cf9ab0c3adb88975518faff5cf8115af09f20d4972a08247a
-size 155
+/*FOOTER*/
+#footer-wp{  border-top: 1px solid #bdbdbd;}
+#copyright{
+    font-size: 13px;
+    color: #555;
+    padding: 10px 20px;
+    text-align: center;
+}

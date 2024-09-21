@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1b7a02cd74df59ed471b0b1b9bb2b5bb82c33b6677a7c1f3e34936343e100f4f
-size 788
+<?php
+// This file was auto-generated from sdk-root/src/data/application-autoscaling/2016-02-06/paginators-1.json
+return [ 'pagination' => [ 'DescribeScalableTargets' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'ScalableTargets', ], 'DescribeScalingActivities' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'ScalingActivities', ], 'DescribeScalingPolicies' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'ScalingPolicies', ], 'DescribeScheduledActions' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'ScheduledActions', ], ],];

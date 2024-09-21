@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:493136ed31e476ecf0130b9e54bb7726142f7fd59d5a54327a8c2cd6a87df5af
-size 683
+<?php
+namespace Aws\Arn\S3;
+
+use Aws\Arn\AccessPointArn as BaseAccessPointArn;
+use Aws\Arn\AccessPointArnInterface;
+use Aws\Arn\ArnInterface;
+use Aws\Arn\Exception\InvalidArnException;
+
+/**
+ * @internal
+ */
+class AccessPointArn extends BaseAccessPointArn implements AccessPointArnInterface
+{
+    /**
+     * Validation specific to AccessPointArn
+     *
+     * @param array $data
+     */
+    public static function validate(array $data)
+    {
+        parent::validate($data);
+        if ($data['service'] !== 's3') {
+            throw new InvalidArnException("The 3rd component of an S3 access"
+                . " point ARN represents the region and must be 's3'.");
+        }
+    }
+}

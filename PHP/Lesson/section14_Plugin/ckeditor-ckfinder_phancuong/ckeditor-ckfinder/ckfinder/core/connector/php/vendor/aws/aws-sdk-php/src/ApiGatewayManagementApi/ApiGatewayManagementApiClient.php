@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6d3d5ebfe03e54900d33659130b15f566918e9f9f49b74403e163dabfb7ecf1c
-size 623
+<?php
+namespace Aws\ApiGatewayManagementApi;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **AmazonApiGatewayManagementApi** service.
+ * @method \Aws\Result deleteConnection(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteConnectionAsync(array $args = [])
+ * @method \Aws\Result getConnection(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getConnectionAsync(array $args = [])
+ * @method \Aws\Result postToConnection(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise postToConnectionAsync(array $args = [])
+ */
+class ApiGatewayManagementApiClient extends AwsClient {}

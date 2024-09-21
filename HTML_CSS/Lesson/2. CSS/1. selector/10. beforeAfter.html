@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:83e2794a62494abe19a1cf767ce1e52fd1cf7810c0f0c218c5050b20cde2e978
-size 832
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector before after</title>
+</head>
+<body>
+    <style>
+        /* Tạo ra một phần tử trước hoặc sau một phần tử cụ thể */
+        .new::after{
+            content: "✮";
+            color: red;
+        }
+
+        ::before{
+            content: "✮";
+            color: blueviolet;
+        }
+    </style>
+    <ul>
+        <li><a href="" class="new">Bài viết 1</a></li>
+        <li><a href="" class="new">Bài viết 2</a></li>
+        <li><a href="" class="special"></a>Bài viết 3</li>
+        <li><a href="" class="special"></a>Bài viết 4</li>
+        <li><a href=""></a>Bài viết 5</li>
+    </ul>
+</body>
+</html>

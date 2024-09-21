@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3e6daa48266452c3ff47841093daf6d9d221140540c1262448ca4357d501de9a
-size 561
+Symfony Polyfill / Php73
+========================
+
+This component provides functions added to PHP 7.3 core:
+
+- [`array_key_first`](https://php.net/array_key_first)
+- [`array_key_last`](https://php.net/array_key_last)
+- [`hrtime`](https://php.net/function.hrtime)
+- [`is_countable`](https://php.net/is_countable)
+- [`JsonException`](https://php.net/JsonException)
+
+More information can be found in the
+[main Polyfill README](https://github.com/symfony/polyfill/blob/master/README.md).
+
+License
+=======
+
+This library is released under the [MIT license](LICENSE).

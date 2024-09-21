@@ -1,3 +1,49 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a0f6c78e5abacadfdd115614fc933bc364e6922126466763e782163846104e8d
-size 1325
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Extend js</title>
+</head>
+
+<body>
+    <h1>Tạo lớp kế thừa extend </h1>
+    <div id="root"></div>
+    <script>
+        class User {
+            // Thuộc tính
+            constructor(fullname) {
+                this.fullname = fullname;
+            }
+            // Phương thức
+            show() {
+                return `Xin chào: ${this.fullname}`;
+            }
+
+            render() {
+                document.getElementById('divText').innerHTML = this.show();
+            }
+        }
+
+        class Student extends User {
+            constructor(fullname, uni, std_year) {
+                super(fullname);
+                this.uni = uni;
+                this.std_year = std_year;
+            }
+
+            introduce() {
+                // return `Xin chào, tôi là ${this.fullname} sinh viên năm
+                // ${this.std_year}, hiện đang học tại ${this.uni}`;
+
+                return this.show(); // hoặc return super.show();
+            }
+        }
+        let myStd = new Student('Dũng', '2023', 'FPT');
+        console.log(myStd.introduce());
+
+    </script>
+</body>
+
+</html>

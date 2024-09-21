@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:15110965d8ce371042d0ca6c8020cdc741bd233a0178c5d37b3707e1659704cb
-size 766
+<?php
+namespace Aws\S3\RegionalEndpoint;
+
+class Configuration implements ConfigurationInterface
+{
+    private $endpointsType;
+
+    public function __construct($endpointsType)
+    {
+        $this->endpointsType = strtolower($endpointsType);
+        if (!in_array($this->endpointsType, ['legacy', 'regional'])) {
+            throw new \InvalidArgumentException(
+                "Configuration parameter must either be 'legacy' or 'regional'."
+            );
+        }
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getEndpointsType()
+    {
+        return $this->endpointsType;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function toArray()
+    {
+        return [
+            'endpoints_type' => $this->getEndpointsType()
+        ];
+    }
+}

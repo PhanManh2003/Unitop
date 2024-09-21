@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:88048b46f5570121d41085b3c99e31b12973b1cd7a3c522c25c4e80924480c6b
-size 347
+        
+        /* Global CSS thường chứa các class đơn giản */
+.text-center{
+    text-align: center;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+.clearfix::after {
+    content: "abc";
+    display: block;
+    clear: left;
+    visibility: hidden;
+    height: 0;
+}

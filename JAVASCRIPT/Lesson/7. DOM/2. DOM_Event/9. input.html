@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6731e6965c96187b4547fc88092e3d1d3be3a1d1ce6546e3f0d98127345c4a8f
-size 1934
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input event js</title>
+</head>
+
+<body>
+    <h1>Input event js</h1>
+    <!-- Mục đích: Được kích hoạt khi giá trị của một phần tử <input>, <textarea>,
+         hoặc <select> thay đổi. -->
+    <form action="" id="register">
+        <fieldset>
+            <legend>Register form</legend>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" autocomplete="off"><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" autocomplete="off"><br>
+            <label for="city">City</label><br>
+            <select name="" id="city">
+                <option value="">--Chọn--</option>
+                <option value="1">Hà Nội</option>
+                <option value="2">Đà Nẵng</option>
+                <option value="3">TP.HCM</option>
+                <option value="4">Thành phố khác</option>
+            </select>
+            <br><br>
+            <input type="submit" name="" id="" value="Login now">
+        </fieldset>
+    </form>
+
+    <script>
+        const username = document.getElementById('username');
+        username.addEventListener('input', function (e) {
+            console.log(e.target.value);
+            console.log(this.value);
+            //  e.target.value: Tham chiếu đến giá trị của phần tử mà sự kiện thực sự được kích hoạt trên đó
+             //  this.value: Tham chiếu đến giá trị của phần tử mà sự kiện được gán vào.
+        });
+
+        const city = document.getElementById('city');
+        city.addEventListener('input', function (e) {
+            console.log(this.value);
+        });
+    </script>
+</body>
+
+</html>

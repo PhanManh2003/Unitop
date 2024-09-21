@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4c5617067d8b7ca215e0bd5954926b479ff34becd554d6e18e4657efbb272d0c
-size 203
+<?php
+namespace Aws\RoboMaker\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **AWS RoboMaker** service.
+ */
+class RoboMakerException extends AwsException {}

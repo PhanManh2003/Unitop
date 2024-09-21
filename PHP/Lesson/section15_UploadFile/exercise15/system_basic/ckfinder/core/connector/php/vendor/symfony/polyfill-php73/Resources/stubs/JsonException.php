@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:25e2b3c4eb6c3b6075bcf2b54eb833e1ac808bf7d930e330dfb12a980d091b0a
-size 280
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+class JsonException extends Exception
+{
+}

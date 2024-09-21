@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4443354660ea4e06b60cda95a1d1de5795b686b325a665f55693ff58ae057f16
-size 230
+<?php
+namespace Aws\ElasticLoadBalancing\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the Elastic Load Balancing service.
+ */
+class ElasticLoadBalancingException extends AwsException {}

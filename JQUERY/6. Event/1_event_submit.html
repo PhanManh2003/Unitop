@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2c1d1506de8b0c87510be54d82d1fa5f7178edb47175335d84410bc2b90d7c81
-size 1251
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự kiện submit form trong jquery</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+
+
+    <style>
+
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $('form#login_form').submit(function(){
+                var username = $('#username').val();
+                var password = $('#password').val();
+                alert(username + '-' + password);
+                return false
+            })
+
+            $('#other').click(function(){
+                $('form#login_form').submit();
+                return false;
+            })
+        })
+    </script>
+
+    <h1>Sự kiện submit form trong jquery</h1>
+    <form id="login_form" action="" method="post">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <input type="submit" value="Login Now">
+    </form>
+    <a href="" id="other">Submit form từ bên ngoài</a>
+</body>
+
+</html>

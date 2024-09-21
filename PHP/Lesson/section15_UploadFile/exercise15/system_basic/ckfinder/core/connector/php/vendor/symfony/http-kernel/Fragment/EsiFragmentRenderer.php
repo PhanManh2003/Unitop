@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:46492e2cf2df9b54f7878839ab2b3be9c579347d0ec3ab1314060a5ebeae7459
-size 563
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\Fragment;
+
+/**
+ * Implements the ESI rendering strategy.
+ *
+ * @author Fabien Potencier <fabien@symfony.com>
+ */
+class EsiFragmentRenderer extends AbstractSurrogateFragmentRenderer
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function getName()
+    {
+        return 'esi';
+    }
+}

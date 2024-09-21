@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f0048825ecb8fc680bd46e35aa002dfe60287e64400b21cdf530af8f9a8179c
-size 1694
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+</head>
+
+<body>
+
+    <!-- Tác dụng: quyết định cách hiển thị khi kích thước nội dung 
+     vượt quá kích thước khối. (mặc định là visible) -->
+    <style>
+        .box {
+            width: 200px;
+            height: 300px;
+            border: 1px solid goldenrod;
+            overflow: auto;
+            /* 
+            overflow: auto;
+            overflow: hidden; // vẫn tồn tại trong DOM nhưng không hiển thị giống như visibility: hidden, khác với display: none là không tồn tại trong DOM
+            overflow: visible;
+            overflow: scroll; 
+            */
+        }
+    </style>
+    <h1>Overflow</h1>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nobis atque saepe quaerat ullam magni quas
+        quia eaque corrupti odio vel eos optio fugit, modi asperiores consequatur consequuntur praesentium minima et
+        omnis expedita? Nam, quam est? Harum corrupti, ipsum pariatur natus debitis quod minus sed inventore quibusdam
+        perferendis, esse a excepturi magni earum error quis molestias ex modi accusamus! Aut nisi tempore nostrum?
+        Sapiente modi alias, amet ullam quae dolor consequatur. Non eos veritatis vero voluptas, fugiat animi dolor?
+        Quos hic doloribus sint quasi vitae cum aliquid fuga ducimus, repellendus tenetur, obcaecati dolorum! Nobis
+        nostrum sint facilis similique, voluptates amet.
+    </div>
+</body>
+
+</html>

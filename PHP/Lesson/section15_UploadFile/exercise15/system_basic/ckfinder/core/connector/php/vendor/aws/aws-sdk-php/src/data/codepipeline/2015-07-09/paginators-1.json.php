@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8887043b75286ce01e28c8724766abe5973c4e5e2b0b506fd1c526d7241cce5a
-size 1013
+<?php
+// This file was auto-generated from sdk-root/src/data/codepipeline/2015-07-09/paginators-1.json
+return [ 'pagination' => [ 'ListActionExecutions' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'actionExecutionDetails', ], 'ListActionTypes' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'result_key' => 'actionTypes', ], 'ListPipelineExecutions' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'pipelineExecutionSummaries', ], 'ListPipelines' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'pipelines', ], 'ListTagsForResource' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'tags', ], 'ListWebhooks' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', 'result_key' => 'webhooks', ], ],];

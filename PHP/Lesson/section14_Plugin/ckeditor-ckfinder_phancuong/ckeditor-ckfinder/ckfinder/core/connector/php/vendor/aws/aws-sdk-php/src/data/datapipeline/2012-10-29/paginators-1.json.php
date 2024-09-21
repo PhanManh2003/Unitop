@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1f96954cef8564518dfdec75d38bfc8aaaa07e69d3dd34a96791a9eeb5da79a3
-size 668
+<?php
+// This file was auto-generated from sdk-root/src/data/datapipeline/2012-10-29/paginators-1.json
+return [ 'pagination' => [ 'DescribeObjects' => [ 'input_token' => 'marker', 'more_results' => 'hasMoreResults', 'output_token' => 'marker', 'result_key' => 'pipelineObjects', ], 'DescribePipelines' => [ 'result_key' => 'pipelineDescriptionList', ], 'ListPipelines' => [ 'input_token' => 'marker', 'more_results' => 'hasMoreResults', 'output_token' => 'marker', 'result_key' => 'pipelineIdList', ], 'QueryObjects' => [ 'input_token' => 'marker', 'limit_key' => 'limit', 'more_results' => 'hasMoreResults', 'output_token' => 'marker', 'result_key' => 'ids', ], ],];

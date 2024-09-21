@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:90e8577fb2b1a30a969507d8606424036f239d64df493a3223dd7c549192e5f4
-size 931
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức tác động Css</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <!--
+STT        CÁCH VIẾT                              MÔ TẢ 
+1       .css(propertyName)              Lấy giá trị thuộc tính của phần tử đầu tiên trong bộ chọn
+2       .css(propertyName, value)       Thiết lập giá trị thuộc tính 
+-->
+
+
+
+    <style>
+        ul.sub-menu {
+            display: none;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $('p').css('color', 'red');
+        })
+    </script>
+
+    <p>Đoạn văn 1</p>
+    <p>Đoạn văn 2</p>
+    <p>Đoạn văn 3</p>
+    <p>Đoạn văn 4</p>
+    <p>Đoạn văn 5</p>
+
+
+
+</body>
+
+</html>

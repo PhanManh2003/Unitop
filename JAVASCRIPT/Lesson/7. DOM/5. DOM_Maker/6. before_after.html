@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:42d2486289aef82231680743487ee44a9d93d7279562c556bd5435e16bcfd2cb
-size 796
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chèn 1 element vào trước hoặc sau một phần tử xác định</title>
+</head>
+
+<body>
+    <h1>Chèn 1 element vào trước hoặc sau một phần tử xác định</h1>
+    <ul id="langs">
+        <li>Html</li>
+        <li class="current">Css</li>
+        <li>Javascript</li>
+    </ul>
+
+    <script>
+        const langs = document.getElementById('langs');
+        const current = document.querySelector('li.current');
+        const liNew = document.createElement('li');
+        liNew.textContent = 'Php';
+
+
+        // current.before(liNew);
+        current.after(liNew);
+    </script>
+</body>
+
+</html>

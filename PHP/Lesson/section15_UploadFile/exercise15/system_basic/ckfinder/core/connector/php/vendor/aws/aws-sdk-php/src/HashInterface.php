@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a16eed1d8de1997d96396333b297fcf0bdc395e1a1d0b1a7f7fd0541dea700c9
-size 531
+<?php
+namespace Aws;
+
+/**
+ * Interface that allows implementing various incremental hashes.
+ */
+interface HashInterface
+{
+    /**
+     * Adds data to the hash.
+     *
+     * @param string $data Data to add to the hash
+     */
+    public function update($data);
+
+    /**
+     * Finalizes the incremental hash and returns the resulting digest.
+     *
+     * @return string
+     */
+    public function complete();
+
+    /**
+     * Removes all data from the hash, effectively starting a new hash.
+     */
+    public function reset();
+}

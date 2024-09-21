@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:129534bf969786c6020dcb3897e0eac280c4d6179e4f23eb37b204359da5d297
-size 1018
+<?php
+namespace Aws\RDSDataService;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **AWS RDS DataService** service.
+ * @method \Aws\Result batchExecuteStatement(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise batchExecuteStatementAsync(array $args = [])
+ * @method \Aws\Result beginTransaction(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise beginTransactionAsync(array $args = [])
+ * @method \Aws\Result commitTransaction(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise commitTransactionAsync(array $args = [])
+ * @method \Aws\Result executeSql(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise executeSqlAsync(array $args = [])
+ * @method \Aws\Result executeStatement(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise executeStatementAsync(array $args = [])
+ * @method \Aws\Result rollbackTransaction(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise rollbackTransactionAsync(array $args = [])
+ */
+class RDSDataServiceClient extends AwsClient {}

@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:81b624d211d3e15a02e90f651ee4f60feaff93bdad2735b088a9392dcae0a656
-size 1514
+<?php
+namespace Aws\PinpointSMSVoice;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **Amazon Pinpoint SMS and Voice Service** service.
+ * @method \Aws\Result createConfigurationSet(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise createConfigurationSetAsync(array $args = [])
+ * @method \Aws\Result createConfigurationSetEventDestination(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise createConfigurationSetEventDestinationAsync(array $args = [])
+ * @method \Aws\Result deleteConfigurationSet(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteConfigurationSetAsync(array $args = [])
+ * @method \Aws\Result deleteConfigurationSetEventDestination(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteConfigurationSetEventDestinationAsync(array $args = [])
+ * @method \Aws\Result getConfigurationSetEventDestinations(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getConfigurationSetEventDestinationsAsync(array $args = [])
+ * @method \Aws\Result listConfigurationSets(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listConfigurationSetsAsync(array $args = [])
+ * @method \Aws\Result sendVoiceMessage(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise sendVoiceMessageAsync(array $args = [])
+ * @method \Aws\Result updateConfigurationSetEventDestination(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateConfigurationSetEventDestinationAsync(array $args = [])
+ */
+class PinpointSMSVoiceClient extends AwsClient {}

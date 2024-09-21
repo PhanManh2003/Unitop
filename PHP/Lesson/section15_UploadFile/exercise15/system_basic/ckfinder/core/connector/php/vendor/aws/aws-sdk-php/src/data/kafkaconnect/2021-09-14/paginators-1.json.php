@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b79176359d05c1937a1b07ac71d25e0135e3fe9f4cbac8f3165d012762398783
-size 596
+<?php
+// This file was auto-generated from sdk-root/src/data/kafkaconnect/2021-09-14/paginators-1.json
+return [ 'pagination' => [ 'ListConnectors' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'connectors', ], 'ListCustomPlugins' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'customPlugins', ], 'ListWorkerConfigurations' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'workerConfigurations', ], ],];

@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:357ab9864553591c508cbb2cb4cd05ff83abec0bd6134e5521f8ca79eac974cd
-size 904
+<?php
+// This file was auto-generated from sdk-root/src/data/dynamodb/2012-08-10/paginators-1.json
+return [ 'pagination' => [ 'BatchGetItem' => [ 'input_token' => 'RequestItems', 'output_token' => 'UnprocessedKeys', ], 'ListContributorInsights' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', ], 'ListExports' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', ], 'ListTables' => [ 'input_token' => 'ExclusiveStartTableName', 'limit_key' => 'Limit', 'output_token' => 'LastEvaluatedTableName', 'result_key' => 'TableNames', ], 'Query' => [ 'input_token' => 'ExclusiveStartKey', 'limit_key' => 'Limit', 'output_token' => 'LastEvaluatedKey', 'result_key' => 'Items', ], 'Scan' => [ 'input_token' => 'ExclusiveStartKey', 'limit_key' => 'Limit', 'output_token' => 'LastEvaluatedKey', 'result_key' => 'Items', ], ],];

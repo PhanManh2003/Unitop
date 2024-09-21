@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:81028c485e8d56cdfcd134d112f2af2a72bbbfb507ccac423257b74dac3c53e9
-size 775
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành đổi màu bằng jquery</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(() => {
+            $('.red_btn').click(() => {
+                $('.text').css('color', 'red');
+            });
+            $('.green_btn').click(() => {
+                $('.text').css('color', 'green');
+            });
+        })
+    </script>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptates</p>
+    <button class="red_btn">Đỏ</button>
+    <button class="green_btn">Xanh</button>
+</body>
+
+</html>

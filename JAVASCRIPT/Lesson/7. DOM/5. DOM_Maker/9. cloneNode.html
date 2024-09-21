@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c7d2383e43b2e839aaa10f939c757986ea878f90705545cdcf3595955d4e2e6d
-size 940
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhân bản Element trên DOM bằng phương thức cloneNode()</title>
+</head>
+
+<body>
+    <h1>Nhân bản Element trên DOM bằng cloneNode()</h1>
+    <ul id="menu">
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Giới thiệu</a></li>
+        <li class="current"><a href="#">Khóa học</a>
+            <ul class="sub-menu">
+                <li><a href="">Html Css 21 ngày</a></li>
+                <li><a href="">Php Master</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <script>
+        const menu = document.getElementById('menu');
+        const current = document.querySelector('.current');
+
+        // 
+        const cloneLi = current.cloneNode(true);
+        menu.append(cloneLi);
+    </script>
+</body>
+
+</html>

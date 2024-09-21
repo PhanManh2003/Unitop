@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34eabf50b14864de093568c8facc8660c0ffbcbf6e6509e4eb609ed130b4cdfb
-size 2115
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truy cập element qua classname</title>
+</head>
+
+<body>
+    <h1>Truy cập element qua classname</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eaque sapiente! Cumque ipsum harum dolorum
+        optio fuga voluptatum reiciendis repudiandae molestias aliquam commodi praesentium rem eaque velit adipisci,
+        alias eius.</p>
+    <h2 class="highlight">Heading 2.1</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eaque sapiente! Cumque ipsum harum dolorum
+        optio fuga voluptatum reiciendis repudiandae molestias aliquam commodi praesentium rem eaque velit adipisci,
+        alias eius.</p>
+    <h2 class="highlight">Heading 2.2</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eaque sapiente! Cumque ipsum harum dolorum
+        optio fuga voluptatum reiciendis repudiandae molestias aliquam commodi praesentium rem eaque velit adipisci,
+        alias eius.</p>
+    <h2>Heading 2.3</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eaque sapiente! Cumque ipsum harum dolorum
+        optio fuga voluptatum reiciendis repudiandae molestias aliquam commodi praesentium rem eaque velit adipisci,
+        alias eius.</p>
+    <script>
+        // getElementByClassName trả về 1 HTMLCollection
+        
+        // HTML Collection (DOM Colletion) là một đối tượng giống mảng 
+        // bao gồm một tập hợp các element được trích xuất từ cây DOM 
+        const highlight = document.getElementsByClassName('highlight');
+        console.log(highlight);
+        // Không thể áp thuộc tính style cho 1 HTML collection có từ 2 phần tử trở lên 1 cách trực tiếp 
+        // mà phải thông qua vòng lặp
+        for (let element of highlight) {
+            element.style.color = 'green';
+        }
+    </script>
+</body>
+
+</html>

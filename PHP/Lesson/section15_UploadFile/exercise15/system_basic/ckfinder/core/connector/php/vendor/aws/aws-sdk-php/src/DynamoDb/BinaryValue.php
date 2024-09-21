@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:10441c45e591df505c389833b74b00310aaf8fd6a41d33cbab631429df833c06
-size 743
+<?php
+namespace Aws\DynamoDb;
+
+use GuzzleHttp\Psr7;
+
+/**
+ * Special object to represent a DynamoDB binary (B) value.
+ */
+class BinaryValue implements \JsonSerializable
+{
+    /** @var string Binary value. */
+    private $value;
+
+    /**
+     * @param mixed $value A binary value compatible with Guzzle streams.
+     *
+     * @see GuzzleHttp\Stream\Stream::factory
+     */
+    public function __construct($value)
+    {
+        if (!is_string($value)) {
+            $value = Psr7\Utils::streamFor($value);
+        }
+        $this->value = (string) $value;
+    }
+
+    #[\ReturnTypeWillChange]
+    public function jsonSerialize()
+    {
+        return $this->value;
+    }
+
+    public function __toString()
+    {
+        return $this->value;
+    }
+}

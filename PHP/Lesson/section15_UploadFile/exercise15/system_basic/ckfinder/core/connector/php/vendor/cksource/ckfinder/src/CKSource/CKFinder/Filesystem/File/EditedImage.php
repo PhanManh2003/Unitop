@@ -1,3 +1,62 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b7bcf8c0c77020f7863e562e4d2c12dd6d437daaf5ba076eafcf52dff740db8
-size 1532
+<?php
+
+/*
+ * CKFinder
+ * ========
+ * https://ckeditor.com/ckfinder/
+ * Copyright (c) 2007-2021, CKSource - Frederico Knabben. All rights reserved.
+ *
+ * The software, this file and its contents are subject to the CKFinder
+ * License. Please read the license.txt file before using, installing, copying,
+ * modifying or distribute this file or part of its contents. The contents of
+ * this file is part of the Source Code of CKFinder.
+ */
+
+namespace CKSource\CKFinder\Filesystem\File;
+
+use CKSource\CKFinder\Exception\InvalidUploadException;
+
+/**
+ * The EditedImage class.
+ *
+ * Represents an image file that is edited.
+ */
+class EditedImage extends EditedFile
+{
+    /**
+     * @var int
+     */
+    protected $newWidth;
+
+    /**
+     * @var int
+     */
+    protected $newHeight;
+
+    /**
+     * Sets new image dimensions.
+     *
+     * @param int $newWidth
+     * @param int $newHeight
+     */
+    public function setNewDimensions($newWidth, $newHeight)
+    {
+        $this->newWidth = $newWidth;
+        $this->newHeight = $newHeight;
+    }
+
+    /**
+     * @copydoc EditedFile::isValid()
+     */
+    public function isValid()
+    {
+        $imagesConfig = $this->config->get('images');
+
+        if ($imagesConfig['maxWidth'] && $this->newWidth > $imagesConfig['maxWidth'] ||
+            $imagesConfig['maxHeight'] && $this->newHeight > $imagesConfig['maxHeight']) {
+            throw new InvalidUploadException('The image dimensions exceeds images.maxWidth or images.maxHeight');
+        }
+
+        return parent::isValid();
+    }
+}

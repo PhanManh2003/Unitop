@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a74dc6a0493a9162578b7c5819854212f7b3c00334fa5ccb8bde5fa6a15c0ac6
-size 405
+parameters:
+    level: 3
+
+    paths:
+        - src/
+#        - tests/
+
+
+    ignoreErrors:
+        - '#zend_monitor_|ZEND_MONITOR_#'
+        - '#RollbarNotifier#'
+        - '#Predis\\Client#'
+        - '#^Cannot call method ltrim\(\) on int\|false.$#'
+        - '#^Access to an undefined property Raven_Client::\$context.$#'
+        - '#MongoDB\\(Client|Collection)#'
+        - '#Gelf\\IMessagePublisher#'

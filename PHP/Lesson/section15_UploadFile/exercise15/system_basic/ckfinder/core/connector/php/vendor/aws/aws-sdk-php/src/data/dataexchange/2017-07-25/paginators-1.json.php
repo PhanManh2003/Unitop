@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1bd0647a4f89d58755a4bfb40a34eb70d5ad92a2ad4d606aa0b5e9354ff8210d
-size 853
+<?php
+// This file was auto-generated from sdk-root/src/data/dataexchange/2017-07-25/paginators-1.json
+return [ 'pagination' => [ 'ListDataSetRevisions' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', 'result_key' => 'Revisions', ], 'ListDataSets' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', 'result_key' => 'DataSets', ], 'ListEventActions' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', 'result_key' => 'EventActions', ], 'ListJobs' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', 'result_key' => 'Jobs', ], 'ListRevisionAssets' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', 'result_key' => 'Assets', ], ],];

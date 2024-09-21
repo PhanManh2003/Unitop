@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:46c98f2b5e1393556c4ad922771d03cf34521293004bfbb3677e6f6b91498bd3
-size 742
+<?php
+namespace Aws;
+
+/**
+ * Interface for adding and retrieving client-side monitoring events
+ */
+interface MonitoringEventsInterface
+{
+
+    /**
+     * Get client-side monitoring events attached to this object. Each event is
+     * represented as an associative array within the returned array.
+     *
+     * @return array
+     */
+    public function getMonitoringEvents();
+
+    /**
+     * Prepend a client-side monitoring event to this object's event list
+     *
+     * @param array $event
+     */
+    public function prependMonitoringEvent(array $event);
+
+    /**
+     * Append a client-side monitoring event to this object's event list
+     *
+     * @param array $event
+     */
+    public function appendMonitoringEvent(array $event);
+
+}

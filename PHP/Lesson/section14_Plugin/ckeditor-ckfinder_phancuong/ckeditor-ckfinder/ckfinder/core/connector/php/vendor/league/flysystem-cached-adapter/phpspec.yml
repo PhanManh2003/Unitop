@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:245b8f1ce3dda155b424bfde014e4eefbe952e58e501d9d107d35692c14d6ca4
-size 151
+---
+suites:
+      cached_adapter_suite:
+        namespace: League\Flysystem\Cached
+        psr4_prefix: League\Flysystem\Cached
+formatter.name: pretty

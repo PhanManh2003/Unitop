@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f3fc6a6584fc058b30fdf3c56f97a400ee5ce49f75248d0fcaaaec364e9bb135
-size 743
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <h1>Arrow function</h1>
+    <script>
+
+        // Yêu cầu: Viết hàm sayHi() để xuất lời chào
+        
+        // let sayHi = (name) => { return `Xin chào ${name}`};
+
+        let sayHi = (name) =>  `Xin chào ${name}` // có 1 câu lệnh thì bỏ return và {}
+        console.log(sayHi('Mạnh'));
+
+        // arrow function với hàm
+        let h1Element = document.querySelector('h1');
+        h1Element.addEventListener('click', () => {
+            alert('Ok');
+        })
+    </script>
+</body>
+</html>

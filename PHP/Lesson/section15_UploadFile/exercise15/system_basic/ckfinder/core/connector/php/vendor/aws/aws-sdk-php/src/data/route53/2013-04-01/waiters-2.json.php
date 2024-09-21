@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d18dd91c3033624df8cfae1d023d10274585a2dd400ced93a12fd8ed6e4da5fa
-size 367
+<?php
+// This file was auto-generated from sdk-root/src/data/route53/2013-04-01/waiters-2.json
+return [ 'version' => 2, 'waiters' => [ 'ResourceRecordSetsChanged' => [ 'delay' => 30, 'maxAttempts' => 60, 'operation' => 'GetChange', 'acceptors' => [ [ 'matcher' => 'path', 'expected' => 'INSYNC', 'argument' => 'ChangeInfo.Status', 'state' => 'success', ], ], ], ],];

@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc99a9d6a060777f0176ebd8e01c2bc091d42bddc11c75eeba45bb457959de8d
-size 1093
+<?php
+namespace Aws\AutoScalingPlans;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **AWS Auto Scaling Plans** service.
+ * @method \Aws\Result createScalingPlan(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise createScalingPlanAsync(array $args = [])
+ * @method \Aws\Result deleteScalingPlan(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteScalingPlanAsync(array $args = [])
+ * @method \Aws\Result describeScalingPlanResources(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeScalingPlanResourcesAsync(array $args = [])
+ * @method \Aws\Result describeScalingPlans(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeScalingPlansAsync(array $args = [])
+ * @method \Aws\Result getScalingPlanResourceForecastData(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getScalingPlanResourceForecastDataAsync(array $args = [])
+ * @method \Aws\Result updateScalingPlan(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateScalingPlanAsync(array $args = [])
+ */
+class AutoScalingPlansClient extends AwsClient {}

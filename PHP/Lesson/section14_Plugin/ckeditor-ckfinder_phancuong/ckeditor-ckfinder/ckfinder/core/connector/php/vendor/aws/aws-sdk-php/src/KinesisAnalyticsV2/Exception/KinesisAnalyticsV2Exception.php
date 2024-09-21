@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d93456e73b98a5725be325abd575941dde08b16734fe5f234af874ef619c0e6e
-size 232
+<?php
+namespace Aws\KinesisAnalyticsV2\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Amazon Kinesis Analytics** service.
+ */
+class KinesisAnalyticsV2Exception extends AwsException {}

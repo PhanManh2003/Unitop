@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1939670e8e6be94fdf8ff5946c396d849a8a1dfab7b0813290327568d5c8b209
-size 1049
+<?php
+namespace Aws\Crypto\Polyfill;
+
+use Aws\Exception\CryptoPolyfillException;
+
+/**
+ * Trait NeedsTrait
+ * @package Aws\Crypto\Polyfill
+ */
+trait NeedsTrait
+{
+    /**
+     * Preconditions, postconditions, and loop invariants are very
+     * useful for safe programing.  They also document the specifications.
+     * This function is to help simplify the semantic burden of parsing
+     * these constructions.
+     *
+     * Instead of constructions like
+     *     if (!(GOOD CONDITION)) {
+     *         throw new \Exception('condition not true');
+     *     }
+     *
+     * you can write:
+     *     needs(GOOD CONDITION, 'condition not true');
+     * @param $condition
+     * @param $errorMessage
+     * @param null $exceptionClass
+     */
+    public static function needs($condition, $errorMessage, $exceptionClass = null)
+    {
+        if (!$condition) {
+            if (!$exceptionClass) {
+                $exceptionClass = CryptoPolyfillException::class;
+            }
+            throw new $exceptionClass($errorMessage);
+        }
+    }
+}

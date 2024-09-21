@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d654432536d77767125848f1b3d7f8e1f4cb801de55fa2e50c2777612efaf01f
-size 231
+<?php
+namespace Aws\OpenSearchService\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Amazon OpenSearch Service** service.
+ */
+class OpenSearchServiceException extends AwsException {}

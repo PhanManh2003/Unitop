@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:41e60f6f3949209f92b7cdaf6bef95bbc0c2e927415faf6afa9e7cd899fc08ab
-size 468
+# CKFinder 3 Package for Laravel {#laravel_package}
+
+CKFinder 3 can also be installed as a Laravel package.
+
+The Laravel Package source code along with documentation and usage examples is available in a dedicated
+GitHub repository: https://github.com/ckfinder/ckfinder-laravel-package.
+
+Please use the [GitHub Issues page](https://github.com/ckfinder/ckfinder-laravel-package/issues) to report issues and submit feature requests for the CKFinder 3 Package for Laravel.

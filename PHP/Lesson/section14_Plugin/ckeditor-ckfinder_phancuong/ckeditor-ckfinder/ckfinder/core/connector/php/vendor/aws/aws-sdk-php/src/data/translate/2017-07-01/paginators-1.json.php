@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a7f2f68d4849117afbc91267f05518cbeb27b8b619f6f97682bae7cd4e5ae51f
-size 491
+<?php
+// This file was auto-generated from sdk-root/src/data/translate/2017-07-01/paginators-1.json
+return [ 'pagination' => [ 'ListParallelData' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', ], 'ListTerminologies' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', ], 'ListTextTranslationJobs' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', ], ],];

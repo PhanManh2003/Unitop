@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:439018eaebea08f838156cce7613d3742da444136878abbe8a877a2b22e33689
-size 674
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createElement()</title>
+</head>
+
+<body>
+    <script>
+        //b1:  Tạo div,p
+        const divWrapper = document.createElement('div');
+        const p = document.createElement('p');
+        divWrapper.id = 'wrapper';
+        divWrapper.className = 'text-center';
+        p.innerText = "Content p";
+
+        // b2: Thêm element div vừa tạo vào cha
+        const body = document.body;
+        divWrapper.appendChild(p);
+        body.appendChild(divWrapper);
+    </script>
+</body>
+
+</html>

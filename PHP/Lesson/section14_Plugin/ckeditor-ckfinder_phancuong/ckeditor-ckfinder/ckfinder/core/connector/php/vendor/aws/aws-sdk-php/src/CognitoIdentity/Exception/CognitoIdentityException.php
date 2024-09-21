@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b846214f682c586f9278823433c1a58dbc65838035efbc97eef2ecce1235872d
-size 226
+<?php
+namespace Aws\CognitoIdentity\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the Amazon Cognito Identity Logs service.
+ */
+class CognitoIdentityException extends AwsException {}

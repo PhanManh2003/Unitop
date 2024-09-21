@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:10586602893691ff21acd0f14e341fd946ae19aa00acc8655f005c6596acf790
-size 1202
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chống sập độ cao bằng clearfix trong bootstrap</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <!-- Nếu tất cả khối con sử dụng float thì khối cha phải có clearfix -->
+    <!-- The w-25 utility class in Bootstrap is used to set the width of an element to 
+         25% of its parent container. -->
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Chống sập độ cao bằng clearfix trong bootstrap</h1>
+                <div class="box-parent bg-secondary clearfix">
+                    <div class="box p-3 bg-success w-25 float-start">Box1</div>
+                    <div class="box p-3 bg-warning w-25 float-start" >Box2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

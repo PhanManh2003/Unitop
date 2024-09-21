@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7b25eee073385059e6446b33d83b22cb127598e07bc2914146ad79d3c7fffaa0
-size 292
+<?php
+
+$file_url = 'uploads/cmnd.jpg';
+// thêm @ vào trước hàm unlink để nếu có lỗi gì thì nó ko thông báo lên page
+if (@unlink($file_url)) {
+    echo "Xóa file {$file_url} thành công";
+} else {
+    echo "File {$file_url} không tồn tại trên server";
+}
+?>

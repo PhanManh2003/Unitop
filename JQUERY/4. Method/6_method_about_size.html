@@ -1,3 +1,59 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e2a951ec20fa936002d14c7bfaa1bb1fe904494f3f1e1ed2eeaac6f7e843263d
-size 2441
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức xử lí kích thước</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <!-- 
+STT        CÁCH VIẾT                              MÔ TẢ 
+1       .height()           Lấy độ cao của phần tử đầu tiên trong bộ chọn không gồm padding, border
+2       .height(value)      Thiết lập độ cao cho tất cả các phần tử trong bộ chọn không gồm padding, border
+3       .innerHeight()      Lấy độ cao của phần tử đầu tiên trong bộ chọn bao gồm padding
+4       .outerHeight()      Lấy độ cao của phần tử đầu tiên trong bộ chọn bao gồm padding, border
+------------------------------------------------------------------------------------------------------
+5       .width()            Lấy độ rộng của phần tử đầu tiên trong bộ chọn không gồm padding, border
+6       .width(value)       Thiết lập độ rộng cho tất cả các phần tử trong bộ chọn không gồm padding, border
+7       .innerWidth()       Lấy độ rộng của phần tử đầu tiên trong bộ chọn bao gồm padding
+8       .outerWidth()       Lấy độ rộng của phần tử đầu tiên trong bộ chọn bao gồm cả padding, border
+-->
+
+    <style>
+        .box {
+            border: 1px solid #333;
+            min-height: 100px;
+            width: 200px;
+            margin: 20px 0px;
+        }
+
+        #box_1 {
+            padding: 10px 20px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            var height_box1, inner_height_box1, outer_height_box1;
+
+            height_box1 = $('#box_1').height();
+            inner_height_box1 = $('#box_1').innerHeight();
+            outer_height_box1 = $('#box_1').outerHeight();
+
+            console.log(height_box1 + " - " + inner_height_box1 + " - " + outer_height_box1);
+
+            // Thiết lập độ cao cho box 2 và box 3 theo box 1
+            $('.box').height(height_box1);
+        })
+
+
+    </script>
+    <h1>Phương thức xử lí kích thước</h1>
+    <div class="box" id="box_1">Box1</div>
+    <div class="box" id="box_2">Box2</div>
+    <div class="box" id="box_3">Box3</div>
+</body>
+
+</html>

@@ -1,3 +1,160 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0a555e2fd94be282b6451f13791b6a7f822cbe5fc924e92194cb807b0cdfde4e
-size 9672
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức tọa độ, khoảng cách</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <!-- 
+STT        CÁCH VIẾT                              MÔ TẢ 
+1       .scrollTop()        Lấy khoảng cách từ vị trí của thanh cuộn so với phần tử đầu tiên trong bộ chọn theo phương thẳng đứng
+2       .scrollTop(value)   Thiết lập khoảng cách của thanh cuộn với phần tử đầu tiên trong bộ chọn theo phương thẳng đứng
+3       .scrollLeft()       Lấy khoảng cách vị trí của thanh cuộn với phần tử đầu tiên trong bộ chọn theo phương ngang
+4       .scrollLeft(value)  Thiết lập khoảng cách của thanh cuộn với phần tử đầu tiên trong bộ chọn theo phương ngang
+5       .position()         Lấy vị trí tương đối của selector absolute so với phần tử cha reletive bao gồm top, left
+                                .position().top     .position().left
+6       .offset()           Lấy vị trí tương đối của selector so với document bao gồm top, left 
+                                .offset().top       .offset().left
+
+-->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 25px;
+        }
+
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+
+        #header,
+        #footer {
+            background: #333;
+            padding: 20px 0px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        #content {
+            position: relative;
+            padding: 20px 0px;
+        }
+
+        #content p {
+            margin-bottom: 15px;
+        }
+
+        .widget {
+            width: 100px;
+            height: 50px;
+            background: red;
+            position: absolute;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            // $(window).scroll(function () {
+                var windows_scroll_top = $(window).scrollTop();
+                var windows_scroll_left = $(window).scrollLeft();
+                console.log(windows_scroll_top + " - " + windows_scroll_left);
+            // })
+
+
+            var content_top = $('#content').offset().top;
+            console.log(content_top);
+            var widget_top_content = $('.widget').position().top;
+            console.log(widget_top_content);
+        })
+
+
+    </script>
+
+    <div id="wrapper">
+        <div id="header">
+            Header
+        </div>
+        <!-- end header -->
+        <div id="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde sequi quod accusantium eos facilis
+                quasi aut a, itaque ipsa recusandae at iure non nam aspernatur cum quam tenetur odit magnam? Magni
+                quibusdam asperiores maiores reprehenderit sed rem nisi totam eligendi dolorem vitae expedita aliquam
+                quidem molestiae, voluptas excepturi obcaecati voluptatem, vero a vel quasi! Maiores cum ullam obcaecati
+                ipsa amet aliquid facere nostrum nesciunt molestiae excepturi sapiente quidem distinctio magni deleniti
+                necessitatibus quaerat optio ipsum natus, voluptates consectetur culpa voluptas tempore. Ad cum eaque,
+                sapiente ab repellat eligendi atque fuga numquam voluptate illum facere consectetur, alias impedit
+                architecto debitis commodi quae itaque saepe ipsum officiis. Ab numquam expedita animi maiores vero
+                repudiandae. Cupiditate aperiam fugiat eius ut reiciendis illo. Quas optio pariatur rem numquam. Non
+                deserunt mollitia distinctio veritatis ex asperiores quibusdam sit animi quia, necessitatibus maiores
+                aliquid cum vel est rem unde quas? Sit dignissimos ea porro modi!</p>
+            <div class="widget">
+
+            </div>
+            <p>Ad, porro. Tempore dolorum provident, optio iure aut ut illo, similique est quia soluta earum. Quasi nam
+                a alias architecto mollitia tenetur ipsa necessitatibus quam aspernatur recusandae reprehenderit ab,
+                neque minus, quisquam, modi optio voluptate quae delectus magni numquam unde. Perspiciatis recusandae
+                mollitia ea omnis sunt ad earum labore illum, est, unde ipsa laborum, cumque incidunt maxime dignissimos
+                voluptate esse odio a sint temporibus. Sint, aperiam repellat. Natus expedita impedit corrupti labore
+                quos. Exercitationem distinctio sed labore totam hic officia debitis dignissimos sapiente et veritatis
+                eum molestias quis eius aliquid doloremque, quibusdam minima, eaque similique necessitatibus alias
+                maiores doloribus praesentium. Deleniti tempore qui voluptas doloremque officia expedita earum vel!
+                Magnam amet vero vel soluta molestiae, ratione sint ut ipsum harum temporibus et labore accusamus aut
+                porro facilis hic officiis officia, dolorem magni atque architecto quos, recusandae nisi? Non qui
+                adipisci minus voluptate, consectetur soluta blanditiis, modi, placeat ab voluptatum odio?</p>
+            <p>Similique officiis blanditiis, sint iste aliquam perferendis facilis vel omnis illum accusamus recusandae
+                quia et magni sed, quidem vitae, itaque laudantium commodi possimus! Sunt dicta, eaque accusantium harum
+                ipsa amet odio et molestias modi, quasi necessitatibus optio eos aspernatur minima temporibus ut soluta
+                omnis recusandae ipsum, saepe itaque vero consequatur laboriosam. Odio, quisquam nam fugit fuga,
+                consequatur reiciendis eligendi necessitatibus sunt, neque officia distinctio consequuntur officiis eum
+                ducimus? Adipisci mollitia odit maiores quaerat, pariatur ad rerum veniam quis sit quos. Enim numquam
+                minus provident placeat veniam maiores rerum. Tempore, recusandae similique? Nobis aut iste ad et, saepe
+                quibusdam ratione repudiandae animi possimus odit, impedit laudantium dolorem delectus mollitia nihil
+                alias doloribus fugiat debitis in quidem corporis assumenda illum. Ipsa quo recusandae vitae ducimus
+                perferendis deserunt harum libero, velit est provident sed totam assumenda optio mollitia tempore
+                exercitationem quae alias voluptates, a modi corrupti facere aliquid cupiditate nostrum. Recusandae,
+                eaque doloribus?</p>
+            <p>Facilis voluptas odio et? Ad sunt alias quasi eos maiores corrupti est, eligendi consequuntur officia.
+                Soluta natus libero quia earum veritatis ab totam eveniet ipsa molestias, velit deleniti doloremque
+                consequatur commodi nam sed iure esse facilis, aliquam omnis maiores iste voluptatum modi fugit. Optio,
+                fugiat neque explicabo ut harum deleniti nesciunt illo sunt ipsum cupiditate modi nihil blanditiis
+                accusamus odio eveniet! Doloremque reprehenderit eius enim modi. Porro nam incidunt error optio facilis,
+                soluta hic dolor aspernatur culpa repellat dolores est officia adipisci, voluptatibus magni at
+                consectetur. Delectus unde, odio culpa blanditiis excepturi libero nobis sunt quos, porro facere dolorum
+                voluptatum corporis vero beatae atque in laboriosam cupiditate odit architecto neque! Soluta laudantium
+                maiores, delectus quo aspernatur laborum harum commodi molestias consectetur labore a beatae, eius
+                dolorem eveniet illo officia minima, enim vitae adipisci dolore quisquam repellat! Autem ad assumenda in
+                dolore optio quibusdam adipisci velit dolorum culpa, accusantium natus voluptatem.</p>
+            <p>Iure fugit modi voluptas. Rerum natus cum maxime iusto iste! Totam, veritatis sapiente quo nesciunt ipsa
+                aspernatur aliquam provident possimus illum dolorum quaerat deleniti? Asperiores, eaque quasi dicta
+                accusantium ullam doloremque quam suscipit provident repudiandae, quidem ea, fugiat illum inventore cum!
+                Impedit optio maiores, ab esse tempora ullam et consequuntur culpa eveniet animi porro, a molestias quas
+                excepturi nihil libero itaque quod! Corporis fugiat autem enim esse similique quia tenetur, dicta atque
+                corrupti. Et dolore officiis tempora doloremque ducimus maiores corrupti ab sed itaque error repudiandae
+                facilis veniam impedit ullam fuga minus optio repellat neque unde asperiores laudantium accusantium,
+                repellendus totam exercitationem? Officiis nam ducimus fugiat, unde in alias soluta aliquam voluptatibus
+                dolorem, doloribus voluptatum et, velit quibusdam delectus? Quo neque dicta numquam adipisci autem eum
+                consequatur veniam quas magnam blanditiis harum dolorem officia illum provident et aut eveniet
+                voluptates, cupiditate sit aliquid sed rerum ab quisquam! Ex, consequatur libero?</p>
+        </div>
+        <!-- end content -->
+        <div id="footer">
+            Footer
+        </div>
+    </div>
+</body>
+
+</html>

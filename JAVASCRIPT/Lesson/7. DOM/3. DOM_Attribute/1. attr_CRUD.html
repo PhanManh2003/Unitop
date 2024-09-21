@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:46d6beda247ad751abe9cfe21cdf188d36dfe0dd314be736eb124d32f352f3b1
-size 1408
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức làm việc với thuộc tính trên DOM</title>
+</head>
+
+<body>
+    <h1>Phương thức làm việc với thuộc tính trên DOM</h1>
+    <a href="" title="Demo title" count="988"> </a>
+    <script>
+        const aElement = document.querySelector('a');
+
+        // aElement.getAttribute(); -> Lấy giá trị thuộc tính
+        // aElement.setAttribute(); -> Sửa hoặc Thêm thuộc tính  
+        // aElement.hasAttribute(); -> Kiểm tra xem có thuộc tính ở trên phần tử hay không
+        // aElement.removeAttribute(); -> Xóa một thuộc tính ở trên phần tử
+        
+        // Lấy giá trị thuộc tính
+        console.log(aElement.getAttribute('count'));
+
+         // Sửa thuộc tính
+        aElement.setAttribute('count', '111');
+        console.log(aElement.getAttribute('count'));
+
+        // Thêm thuộc tính
+        aElement.setAttribute('author', 'Phan Văn Cương');
+        console.log(aElement.getAttribute('author'));   
+
+        // Xóa thuộc tính
+        aElement.removeAttribute('count');
+        
+        // Check xem còn không
+        console.log(aElement.hasAttribute('count')); // Output: false
+    </script>
+</body>
+
+</html>

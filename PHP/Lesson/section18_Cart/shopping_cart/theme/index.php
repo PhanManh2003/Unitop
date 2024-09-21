@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:500be04b26207276e1075261d40e0dc0718c0f1a3279c66930ef707afe122ef2
-size 247
+<?php
+
+$page = isset($_GET['page']) ? $_GET['page'] : 'home';
+$path = "./pages/{$page}.php";
+
+require './inc/header.php';
+
+if (file_exists($path)) {
+    require "{$path}";
+} else {
+    require "./modules/404.php";
+}
+
+require './inc/footer.php';
+?>

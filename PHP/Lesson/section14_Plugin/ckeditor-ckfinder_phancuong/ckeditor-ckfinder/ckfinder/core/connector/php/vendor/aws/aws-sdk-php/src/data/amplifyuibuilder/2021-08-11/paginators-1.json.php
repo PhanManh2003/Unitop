@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:59ca0dda76bf0d4f68a2be24262adb20de4f096f3b12477a6c2c9954190ff230
-size 421
+<?php
+// This file was auto-generated from sdk-root/src/data/amplifyuibuilder/2021-08-11/paginators-1.json
+return [ 'pagination' => [ 'ListComponents' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'entities', ], 'ListThemes' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'entities', ], ],];

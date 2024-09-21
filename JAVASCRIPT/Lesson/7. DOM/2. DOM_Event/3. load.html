@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:20e1d4a72d1237f5c9934d0ab4e5dbd19651edecb5c044dba5e9ae44ef7b99bb
-size 849
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load event js</title>
+</head>
+
+<body>
+    <h1>Load event js</h1>
+    <img src="orange.jpg" style="max-width: 30%;" alt=""> 
+    <script>
+        // Kích hoạt nội dung được load xong
+        // 1. Load trang
+        // Cách 1: <body onload="alert('page loaded succesfully!');">
+        // Cách 2:
+        window.addEventListener('load', function () {
+            alert('page loaded succesfully!');
+        });
+
+        // 2. Load hình ảnh
+        const imgElement = document.querySelector('img');
+        imgElement.addEventListener('load',function () {
+            alert('Img loaded successfully!');
+        });
+        
+    </script>
+</body>
+
+</html>

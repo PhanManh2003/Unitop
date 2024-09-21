@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:492d80b9ccc832f07e2eecdc9bc2457939153d1ebcb20c9046b7ad2f0486dea3
-size 269
+<?php
+// This file was auto-generated from sdk-root/src/data/migrationhub-config/2019-06-30/paginators-1.json
+return [ 'pagination' => [ 'DescribeHomeRegionControls' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];

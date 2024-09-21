@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ed433148dd6dc0bcb13717993a4b817f743ad8edf4502e7f685850c59d3adc40
-size 214
+<?php
+namespace Aws\CloudFormation\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the AWS CloudFormation service.
+ */
+class CloudFormationException extends AwsException {}

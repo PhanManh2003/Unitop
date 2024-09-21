@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:570abd11b01854abfd38514223546210227bff0ddda58a022f2c4fc58a5053ef
-size 972
+<?php
+
+/*
+ * CKFinder
+ * ========
+ * https://ckeditor.com/ckfinder/
+ * Copyright (c) 2007-2021, CKSource - Frederico Knabben. All rights reserved.
+ *
+ * The software, this file and its contents are subject to the CKFinder
+ * License. Please read the license.txt file before using, installing, copying,
+ * modifying or distribute this file or part of its contents. The contents of
+ * this file is part of the Source Code of CKFinder.
+ */
+
+namespace CKSource\CKFinder\Command;
+
+use Symfony\Component\HttpFoundation\Request;
+
+class Operation extends CommandAbstract
+{
+    public function execute(Request $request)
+    {
+        $operationId = (string) $request->query->get('operationId');
+
+        /** @var \CKSource\CKFinder\Operation\OperationManager $operation */
+        $operation = $this->app['operation'];
+
+        if ($request->query->get('abort')) {
+            $operation->abort($operationId);
+        }
+
+        return $operation->getStatus($operationId);
+    }
+}

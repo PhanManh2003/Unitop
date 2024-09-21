@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8fbb23389a38cc3ec894df49867e82de39ad73741003305d6363866c7fd7a3eb
-size 686
+<?php
+// This file was auto-generated from sdk-root/src/data/appmesh/2018-10-01/paginators-1.json
+return [ 'pagination' => [ 'ListMeshes' => [ 'input_token' => 'nextToken', 'limit_key' => 'limit', 'output_token' => 'nextToken', 'result_key' => 'meshes', ], 'ListRoutes' => [ 'input_token' => 'nextToken', 'limit_key' => 'limit', 'output_token' => 'nextToken', 'result_key' => 'routes', ], 'ListVirtualNodes' => [ 'input_token' => 'nextToken', 'limit_key' => 'limit', 'output_token' => 'nextToken', 'result_key' => 'virtualNodes', ], 'ListVirtualRouters' => [ 'input_token' => 'nextToken', 'limit_key' => 'limit', 'output_token' => 'nextToken', 'result_key' => 'virtualRouters', ], ],];

@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a9005918b56c9821b5db048e02f32a35229a47270333e911ad6e997a202e7da2
-size 832
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lọc phần tử mảng</title>
+</head>
+
+<body>
+    <h1>Lọc phần tử mảng</h1>
+    <script>
+        // filter sẽ duyệt qua từng phần tử mảng, lấy phần tử đó làm tham số cho hàm lọc 
+        // và chọn các phần tử mà hàm lọc trả về true vào 1 mảng mới.
+
+        let list_number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // Lọc tất cả các số lẻ và cho vào 1 mảng mới
+        let new_array = [];
+        function check_odd(k) {
+            return k % 2 != 0;
+        }
+        new_array = list_number.filter(check_odd);
+        console.log(new_array);
+    </script>
+</body>
+
+</html>

@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1eeff82704ebd55989cafef72643599e24e193a40ac10110d306f225689298e0
-size 1145
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector con cháu- hậu duệ</title>
+</head>
+
+<body>
+    <style>
+         /* Cú pháp: selector1 selector2 selector3... {}
+         
+            Tác dụng: chọn tất cả phần tử selector2 và có tổ tiên là selector1 */
+        ul#main-menu a {
+
+            color: brown;
+            font-size: 15px;
+        }
+
+        ul#main-menu ul.sub-menu a {
+            /* viết thêm ul vào bên trái để selector dễ hiểu hơn */
+            color: blue
+        }
+    </style>
+    <ul id="main-menu">
+        <li><a href="">Trang chủ</a></li>
+        <li><a href="">Giới thiệu</a></li>
+        <li><a href="">Sản Phẩm</a>
+            <ul class=sub-menu> <!-- Vì trong menu có nhiều sub-menu nên dùng class -->
+                <li><a href="">Máy tính</a></li>
+                <li><a href="">Điện thoại</a></li>
+            </ul>
+        </li>
+        <li><a href="">Liên hệ</a></li>
+    </ul>
+</body>
+
+</html>

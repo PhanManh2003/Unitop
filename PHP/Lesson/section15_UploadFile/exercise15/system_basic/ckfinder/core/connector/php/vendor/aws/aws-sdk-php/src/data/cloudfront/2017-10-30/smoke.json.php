@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f7946a6090b4f9701bed54bf708fa4fa7fbeb3a12fff06e15238d27b476f955e
-size 423
+<?php
+// This file was auto-generated from sdk-root/src/data/cloudfront/2017-10-30/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-east-1', 'testCases' => [ [ 'operationName' => 'ListCloudFrontOriginAccessIdentities', 'input' => [ 'MaxItems' => '1', ], 'errorExpectedFromService' => false, ], [ 'operationName' => 'GetDistribution', 'input' => [ 'Id' => 'fake-id', ], 'errorExpectedFromService' => true, ], ],];

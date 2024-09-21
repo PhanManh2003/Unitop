@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cca06e3f1d2a1cb188dafc797ed0eca617fb5abd26b24073a4423f9e900a8293
-size 1065
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpKernel\Exception;
+
+/**
+ * @author Steve Hutchins <hutchinsteve@gmail.com>
+ */
+class UnprocessableEntityHttpException extends HttpException
+{
+    /**
+     * @param string|null     $message  The internal exception message
+     * @param \Throwable|null $previous The previous exception
+     * @param int             $code     The internal exception code
+     */
+    public function __construct(?string $message = '', \Throwable $previous = null, int $code = 0, array $headers = [])
+    {
+        if (null === $message) {
+            trigger_deprecation('symfony/http-kernel', '5.3', 'Passing null as $message to "%s()" is deprecated, pass an empty string instead.', __METHOD__);
+
+            $message = '';
+        }
+
+        parent::__construct(422, $message, $previous, $headers, $code);
+    }
+}

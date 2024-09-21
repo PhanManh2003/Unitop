@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:917778cc96ca405a42522a3da775fd05dfd8eb638689adea44eabe9191fdc991
-size 938
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display None</title>
+</head>
+<body>
+    <!-- Tác dụng: Ẩn một đối tượng trong website -->
+    <style>
+        a {
+            text-decoration: none;
+        }
+        ul.sub-menu{
+            display: none;
+        }
+        
+        ul#main-menu li:hover ul.sub-menu{
+            display: block;
+        }
+    </style>
+    <h1>Display None</h1>
+    <ul id="main-menu">
+        <li><a href="">Trang chủ</a></li>
+        <li><a href="">Giới thiệu</a></li>
+        <li><a href="">Sản phẩm</a>
+            <ul class="sub-menu">
+                <li><a href="">Giày dép</a></li>
+                <li><a href="">Quần áo</a></li>
+            </ul>
+        </li>
+        <li><a href="">Giỏ hàng</a></li>
+    </ul>
+</body>
+</html>

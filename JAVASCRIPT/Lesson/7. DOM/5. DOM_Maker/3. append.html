@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d2b2927ab4b106f3f8b8e482c7dbf24a10b9590b794b75e6fca90c152bb06278
-size 735
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>append()</title>
+</head>
+
+<body>
+    <h1>append()chèn nhiều element vào sau phần tử con cuối cùng</h1>
+    <ul id="menu">
+        <li>Homepage</li>
+        <li>About</li>
+    </ul>
+    <script>
+        // Thêm course, contact vào menu ở cuối
+        const menu = document.getElementById('menu');
+
+        const li1 = document.createElement('li');
+        li1.textContent = 'Course';
+
+        const li2 = document.createElement('li');
+        li2.textContent = 'Contact';
+
+        menu.append(li1, li2);
+
+    </script>
+</body>
+
+</html>

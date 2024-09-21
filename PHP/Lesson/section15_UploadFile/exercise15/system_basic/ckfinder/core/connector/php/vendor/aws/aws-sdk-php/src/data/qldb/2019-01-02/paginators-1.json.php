@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:deb6b9e0b6ecad831e569e8809cb6adcb0713b218ac8c8c7f6f9eea419b5e827
-size 625
+<?php
+// This file was auto-generated from sdk-root/src/data/qldb/2019-01-02/paginators-1.json
+return [ 'pagination' => [ 'ListJournalKinesisStreamsForLedger' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListJournalS3Exports' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListJournalS3ExportsForLedger' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListLedgers' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];

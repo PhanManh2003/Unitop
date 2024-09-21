@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bea1f0e9be007e78fb8f0c6d079f2c83885f25e77b0600e5ac29ef111c2d2674
-size 890
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự kiện hover trong jquery</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+
+
+    <style>
+
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $('a#target').hover(
+                //Xử lí khi Hover in
+                function () {
+                    console.log('hover in');
+                },
+                //Xử lí khi Hover out
+                function () {
+                    console.log('hover out');
+                } 
+                // Có thể xử lí hover in và out trong 1 function 
+            );
+        })
+    </script>
+
+    <h1>Sự kiện hover trong jquery</h1>
+    <a href="" id="target">target</a>
+</body>
+
+</html>

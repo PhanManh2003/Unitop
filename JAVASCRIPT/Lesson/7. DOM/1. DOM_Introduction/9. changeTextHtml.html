@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7f1974dd9bbfa176f25bbcfb6370391b4ab30ca2ea28b04e9b13b796872b01d0
-size 1178
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi text html của 1 element</title>
+</head>
+
+<body>
+    <h1>Js HTML DOM - Change Html, Text</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptates a placeat sequi ut, perspiciatis ex
+        debitis sapiente neque dolorum minima, accusamus fuga omnis minus voluptatem inventore. Quaerat impedit in
+        tenetur labore.</p>
+    <h2 id="demo">First content</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptates a placeat sequi ut, perspiciatis ex
+        debitis sapiente neque dolorum minima, accusamus fuga omnis minus voluptatem inventore. Quaerat impedit in
+        tenetur labore.</p>
+    <div id="result">
+        <!-- kết quả  -->
+    </div>
+
+    <script>
+      
+        // Cập nhật nội dung cho 1 element
+        let total = 1998;
+        const result = document.getElementById("result");
+        result.innerHTML = "<b>Thành tiền: </b>" + total + " USD";
+
+    </script>
+
+</body>
+
+</html>

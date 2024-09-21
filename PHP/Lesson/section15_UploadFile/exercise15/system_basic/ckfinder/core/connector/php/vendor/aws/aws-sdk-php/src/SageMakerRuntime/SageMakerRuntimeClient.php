@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c7a84af3b05221708a918f9ca6c4b0e46b48fe21827e8ef30b5ba00c544b85bd
-size 475
+<?php
+namespace Aws\SageMakerRuntime;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **Amazon SageMaker Runtime** service.
+ * @method \Aws\Result invokeEndpoint(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise invokeEndpointAsync(array $args = [])
+ * @method \Aws\Result invokeEndpointAsync(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise invokeEndpointAsyncAsync(array $args = [])
+ */
+class SageMakerRuntimeClient extends AwsClient {}

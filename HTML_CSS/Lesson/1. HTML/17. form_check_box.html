@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0ae03384e693b074cf0681159bbffd8e7ff2fb5848f094a14d11b344dff8758f
-size 900
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check box</title>
+</head>
+<body>
+    <h1>Check box</h1>
+    <!-- Dùng checkbox khi chọn nhiều hơn 1 giá trị-->
+    <form action = "">
+        <label>Sở thích: </label> 
+        <label for="book">Đọc sách</label>
+        <input type="checkbox" name = "hobby" value = "Sách" id="book"> <!-- thuộc tính value chính là giá trị được gửi lên server, chứ ko phải dấu tích. -->
+        <label for="game">Chơi game</label>     
+        <input type="checkbox" name = "hobby" value = "Game" id="game">
+        <label for="music">Nghe nhạc</label>
+        <input type="checkbox" name = "hobby" value = "Nhạc" id="music">
+        <!-- name phải cùng giá trị -->
+    </form>
+</body>
+</html>

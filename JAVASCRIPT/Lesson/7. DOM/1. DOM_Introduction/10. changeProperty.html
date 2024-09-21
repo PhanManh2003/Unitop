@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b38ea50aca68bd1cd8b6d80afe620bfc7b5bf6fe5e7fbfb94ad34069535fb4d
-size 811
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi giá trị thuộc tính của 1 element</title>
+</head>
+
+<body>
+    <h1>Thay đổi giá trị thuộc tính của 1 element</h1>
+    
+    <img id="demo" class="test" lang="vi" src="" alt="Dom tree" title="Some text">
+    <script>
+      // Truy cập vào thuộc tính id của phần tử có id "demo" 
+      const demo = document.getElementById('demo');
+
+      // element.attr
+      demo.title = "new title";
+      console.log(demo.className); // output: test
+      console.log(demo.title);
+      console.log(demo.alt);
+      console.log(demo.src);
+      console.log(demo.lang);
+
+    </script>
+
+</body>
+
+</html>

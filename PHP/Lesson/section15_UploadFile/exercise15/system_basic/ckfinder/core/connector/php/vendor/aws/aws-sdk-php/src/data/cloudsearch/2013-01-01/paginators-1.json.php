@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:af6a18185ff198589951578fc7259132742ad728a0260b3781485c48e156ec4b
-size 446
+<?php
+// This file was auto-generated from sdk-root/src/data/cloudsearch/2013-01-01/paginators-1.json
+return [ 'pagination' => [ 'DescribeAnalysisSchemes' => [ 'result_key' => 'AnalysisSchemes', ], 'DescribeDomains' => [ 'result_key' => 'DomainStatusList', ], 'DescribeExpressions' => [ 'result_key' => 'Expressions', ], 'DescribeIndexFields' => [ 'result_key' => 'IndexFields', ], 'DescribeSuggesters' => [ 'result_key' => 'Suggesters', ], ],];

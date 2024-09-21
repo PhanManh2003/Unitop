@@ -1,3 +1,129 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bacb6e8f05e1f2d1afc7dfe2f46a0e71fb355324e40c234726ab764e9f0d2a91
-size 3849
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array map render html</title>
+  </head>
+
+  <body>
+    <style>
+      ul.products {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        justify-content: space-between;
+        max-width: 500px;
+      }
+
+      ul.products li {
+        flex-basis: 42%;
+        border: 1px solid #333;
+        padding: 5px 10px;
+      }
+
+      a.product-thumb {
+        display: block;
+      }
+
+      a.product-thumb img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .product-item a.product-name {
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+        padding: 5px 0px;
+      }
+
+      .product-item .product-name:hover {
+        color: #f00;
+      }
+
+      span {
+        display: block;
+      }
+
+      span.price {
+        padding-top: 5px;
+      }
+    </style>
+    <h1>Array map render html</h1>
+    <ul class="products">
+      <!-- <li>
+            <div class="product-item">
+                <a href="" class="product-thumb">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/223602/iphone-13-xanh-la-thumb-new-600x600.jpg"
+                        alt="">
+                </a>
+                <a href="" class="product-name">Iphone 13 Pro Max</a>
+                <span>RAM: 6 GB</span>
+                <span class="price">Giá: 27.790.000đ</span>
+            </div>
+        </li>
+        
+        <li>
+            <div class="product-item">
+                <a href="" class="product-thumb">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-tim-thumb-600x600.jpg"
+                        alt="">
+                </a>
+                <a href="" class="product-name">Iphone 14 Pro Max</a>
+                <span>RAM: 6 GB</span>
+                <span class="price">Giá: 33.990.000đ</span>
+            </div>
+        </li> -->
+    </ul>
+
+    <script>
+      // Thực tế thì ta đổ dữ liệu từ database lên cấu trúc HTML bằng Js để xây dựng giao diện website
+
+      // 1. Tạo mảng lưu danh sách sản phẩm dưới dạng object (mảng data)
+      const productList = document.querySelector(".products");
+
+      let products = [
+        {
+          id: 1,
+          url: "#",
+          product_name: "Iphone 13 Pro Max",
+          ram: "6GB",
+          price: "27.790.000đ",
+          product_thumb:
+            "https://cdn.tgdd.vn/Products/Images/42/223602/iphone-13-xanh-la-thumb-new-600x600.jpg",
+        },
+        {
+          id: 2,
+          url: "#",
+          product_name: "Iphone 14 Pro Max",
+          ram: "6GB",
+          price: "33.990.000đ",
+          product_thumb:
+            "https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-tim-thumb-600x600.jpg",
+        },
+      ];
+
+      // 2. Tạo mảng HTML với map
+      let productsHtml = products.map((element) => {
+        return `
+          <li>
+              <div class="product-item">
+                  <a href="${element.url}" class="product-thumb">
+                      <img src="${element.product_thumb}"
+                          alt="">
+                  </a>
+                  <a href="${element.url}" class="product-name">${element.product_name}</a>
+                  <span>RAM: ${element.ram}</span>
+                  <span class="price">Giá: ${element.price}</span>
+              </div>
+          </li> `;
+      });
+
+      // 3. join mảng HTML thành 1 string và đổ vào HTML
+      productList.innerHTML = productsHtml.join("");
+    </script>
+  </body>
+</html>

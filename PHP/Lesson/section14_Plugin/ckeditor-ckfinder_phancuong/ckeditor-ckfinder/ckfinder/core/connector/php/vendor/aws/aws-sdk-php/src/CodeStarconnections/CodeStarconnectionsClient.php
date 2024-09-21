@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e1b34938f5be1fd7c7f894f73a0abb35507afa35bc20d6d6146b1c0932dab27
-size 1763
+<?php
+namespace Aws\CodeStarconnections;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **AWS CodeStar connections** service.
+ * @method \Aws\Result createConnection(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise createConnectionAsync(array $args = [])
+ * @method \Aws\Result createHost(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise createHostAsync(array $args = [])
+ * @method \Aws\Result deleteConnection(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteConnectionAsync(array $args = [])
+ * @method \Aws\Result deleteHost(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteHostAsync(array $args = [])
+ * @method \Aws\Result getConnection(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getConnectionAsync(array $args = [])
+ * @method \Aws\Result getHost(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getHostAsync(array $args = [])
+ * @method \Aws\Result listConnections(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listConnectionsAsync(array $args = [])
+ * @method \Aws\Result listHosts(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listHostsAsync(array $args = [])
+ * @method \Aws\Result listTagsForResource(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listTagsForResourceAsync(array $args = [])
+ * @method \Aws\Result tagResource(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise tagResourceAsync(array $args = [])
+ * @method \Aws\Result untagResource(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise untagResourceAsync(array $args = [])
+ * @method \Aws\Result updateHost(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateHostAsync(array $args = [])
+ */
+class CodeStarconnectionsClient extends AwsClient {}

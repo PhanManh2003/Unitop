@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb4c4c82c0cffe2686fcb7516f74de23d24888a72c36475d77711879e347e5eb
-size 972
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpFoundation\Session\Storage\Handler;
+
+use Symfony\Component\Cache\Marshaller\MarshallerInterface;
+
+/**
+ * @author Ahmed TAILOULOUTE <ahmed.tailouloute@gmail.com>
+ */
+class IdentityMarshaller implements MarshallerInterface
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function marshall(array $values, ?array &$failed): array
+    {
+        foreach ($values as $key => $value) {
+            if (!\is_string($value)) {
+                throw new \LogicException(sprintf('%s accepts only string as data.', __METHOD__));
+            }
+        }
+
+        return $values;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function unmarshall(string $value): string
+    {
+        return $value;
+    }
+}

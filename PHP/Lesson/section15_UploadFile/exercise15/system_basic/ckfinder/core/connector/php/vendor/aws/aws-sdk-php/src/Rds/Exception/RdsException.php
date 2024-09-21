@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:431655972275fa7ef13161c26b614b87562ff17169c470a1be891e9064b5ee1e
-size 200
+<?php
+namespace Aws\Rds\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the Amazon Relational Database Service.
+ */
+class RdsException extends AwsException {}

@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ccb5de2a0327e064bdc667ba1960cf4ebb71e35b979149e74e383187e28780b4
-size 139
+<?php
+// This file was auto-generated from sdk-root/src/data/autoscaling-plans/2018-01-06/paginators-1.json
+return [ 'pagination' => [],];

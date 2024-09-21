@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:08166072a656aea38be7e2b8818b0322a6e1cbf7482f631ad344b526b26f2be1
-size 796
+<?php
+namespace Aws\IoTJobsDataPlane;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **AWS IoT Jobs Data Plane** service.
+ * @method \Aws\Result describeJobExecution(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeJobExecutionAsync(array $args = [])
+ * @method \Aws\Result getPendingJobExecutions(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getPendingJobExecutionsAsync(array $args = [])
+ * @method \Aws\Result startNextPendingJobExecution(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise startNextPendingJobExecutionAsync(array $args = [])
+ * @method \Aws\Result updateJobExecution(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateJobExecutionAsync(array $args = [])
+ */
+class IoTJobsDataPlaneClient extends AwsClient {}

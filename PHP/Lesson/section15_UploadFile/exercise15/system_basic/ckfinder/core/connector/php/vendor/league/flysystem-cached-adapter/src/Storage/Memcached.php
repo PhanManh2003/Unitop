@@ -1,3 +1,59 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2756beaff99a335f9fac0e412906f14b2080bbdfdb8c7ecdbd9cc7d479691002
-size 1261
+<?php
+
+namespace League\Flysystem\Cached\Storage;
+
+use Memcached as NativeMemcached;
+
+class Memcached extends AbstractCache
+{
+    /**
+     * @var string storage key
+     */
+    protected $key;
+
+    /**
+     * @var int|null seconds until cache expiration
+     */
+    protected $expire;
+
+    /**
+     * @var \Memcached Memcached instance
+     */
+    protected $memcached;
+
+    /**
+     * Constructor.
+     *
+     * @param \Memcached $memcached
+     * @param string     $key       storage key
+     * @param int|null   $expire    seconds until cache expiration
+     */
+    public function __construct(NativeMemcached $memcached, $key = 'flysystem', $expire = null)
+    {
+        $this->key = $key;
+        $this->expire = $expire;
+        $this->memcached = $memcached;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function load()
+    {
+        $contents = $this->memcached->get($this->key);
+
+        if ($contents !== false) {
+            $this->setFromStorage($contents);
+        }
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function save()
+    {
+        $contents = $this->getForStorage();
+        $expiration = $this->expire === null ? 0 : time() + $this->expire;
+        $this->memcached->set($this->key, $contents, $expiration);
+    }
+}

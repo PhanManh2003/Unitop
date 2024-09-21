@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47a9a4c985db46232ff4f6617c86bc7e2da2eb01c1943c2093e4a84b53dbfe45
-size 231
+<?php
+
+session_start();
+
+setcookie('is_login', true, time() - 3600);
+setcookie('user_login', true, time() - 3600);
+
+
+unset($_SESSION['is_login']);
+unset($_SESSION['user_login']);
+
+session_destroy();
+header("Location: login.php");
+

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:244c928ffa9de5bc17969e3d86d73a486f97bbaa37d5c25df84b16ab87143699
-size 219
+<?php
+namespace Aws\Route53Domains\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the Amazon Route 53 Domains service.
+ */
+class Route53DomainsException extends AwsException {}

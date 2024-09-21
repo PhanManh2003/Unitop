@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cc862c4814ec42427052a533c84933cccb0b041fb9988342c0b60f9cae49828b
-size 143
+<?php
+
+namespace Psr\Cache;
+
+/**
+ * Exception interface for all exceptions thrown by an Implementing Library.
+ */
+interface CacheException
+{
+}

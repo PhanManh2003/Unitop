@@ -1,3 +1,232 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9fd33b1ff9c0d547ed6cef5061d2d2b20265e235551d7fe295cfa7f52260e186
-size 3885
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.ul-reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 1 cố định navbar */
+#header {
+    position: relative;
+    height: 54px;
+}
+
+nav {
+    background-color: #25252b;
+    position: fixed;
+    width: 100%;
+}
+
+/* 2 logo , brand */
+a#navbar-brand {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+
+span#brand-name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+/* 3 main-menu */
+ul#main-menu {
+    display: none;
+}
+
+ul#main-menu li a {
+    display: block;
+    color: #9d9d9d;
+    text-decoration: none;
+    padding: 15px 15px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+ul#main-menu li:hover a {
+    color: #ffffff;
+}
+
+/* 4 download item */
+a#download {
+    display: none;
+    height: inherit;
+    background-color: #0d72c4;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 14px 25px;
+    position: relative;
+}
+
+a#download:hover {
+    background-color: #005ba4;
+}
+
+a#download::before {
+    content: '\f063';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 10px;
+}
+
+
+
+/* 5 wp-content */
+#wp-content {
+    padding: 40px 10px;
+}
+
+#menu-icon {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px 10px;
+    color: #ffffff;
+}
+
+/* 6 Responsive Menu */
+ul#responsive-menu {
+    position: absolute;
+    top: 46px;
+    background-color: #3c3c43;
+    width: 100%;
+    padding-top: 25px;
+    display: none;
+}
+
+ul#responsive-menu li a {
+    display: block;
+    text-decoration: none;
+    color: #9d9d9d;
+    padding: 10px 15px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+
+}
+
+ul#responsive-menu li:hover a {
+    color: #ffffff;
+}
+
+/* 7. Menu đa cấp  */
+ul#main-menu li {
+    position: relative;
+}
+
+ul#main-menu ul.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #333435;
+    width: 120px;
+    left: 15px;
+}
+
+ul#main-menu ul.sub-menu li a {
+    color: #9d9d9d;
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+ul#main-menu ul.sub-menu li:hover>a {
+    color: #ffffff;
+}
+
+ul#main-menu li:hover ul.sub-menu {
+    display: block;
+}
+
+/* ------------ Menu đa cấp với responsive-menu ---------------*/
+
+ul#responsive-menu ul.sub-menu {
+    display: none;
+    background-color: #4d4d52;
+}
+
+ul#responsive-menu ul.sub-menu li a {
+    display: block;
+    color: #9d9d9d;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+ul#responsive-menu ul.sub-menu li:hover>a {
+    color: #ffffff;
+}
+
+ul#responsive-menu li {
+    position: relative;
+    border-top: 1px solid #666666;
+}
+
+ul#responsive-menu ul.sub-menu li{
+    padding-left: 30px;
+    border-top: 1px solid #666666;
+}
+
+.responsive-menu-toggle {
+    position: absolute;
+    color: #ffffff;
+    font-size: 12px;
+    right: 5px;
+    top: 16px;
+    cursor: pointer;
+}
+
+.responsive-menu-toggle.opening {
+    transform: rotate(180deg);
+}
+
+/* Pc query media*/
+
+@media (min-width: 992px) {
+    ul#main-menu {
+        display: flex;
+    }
+
+    a#download {
+        display: block;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    ul#main-menu {
+        display: flex;
+    }
+
+    ul#main-menu li:hover a {
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    ul#responsive-menu {
+        display: none;
+    }
+}

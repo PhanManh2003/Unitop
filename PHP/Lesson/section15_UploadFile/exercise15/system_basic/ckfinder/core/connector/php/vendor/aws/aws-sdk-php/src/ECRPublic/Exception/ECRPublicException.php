@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d536cf29404a5f981225ab3e1ca22bca34b9b353443085026e104e565ed6e1dc
-size 230
+<?php
+namespace Aws\ECRPublic\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Amazon Elastic Container Registry Public** service.
+ */
+class ECRPublicException extends AwsException {}

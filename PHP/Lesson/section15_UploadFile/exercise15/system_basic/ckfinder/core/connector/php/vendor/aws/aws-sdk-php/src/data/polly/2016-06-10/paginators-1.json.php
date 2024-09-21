@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:72d479bb353be4bd74b30210f8e7acd3906ad90c8a3c5f1d3913cbe490351837
-size 253
+<?php
+// This file was auto-generated from sdk-root/src/data/polly/2016-06-10/paginators-1.json
+return [ 'pagination' => [ 'ListSpeechSynthesisTasks' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];

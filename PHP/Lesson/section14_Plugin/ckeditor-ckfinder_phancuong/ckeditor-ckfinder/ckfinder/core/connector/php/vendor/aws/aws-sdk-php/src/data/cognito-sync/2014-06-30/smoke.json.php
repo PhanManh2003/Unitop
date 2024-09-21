@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b40fcd21c02cb538e6fab3427457aee0f47f4e3293c55779d1d1714cf4b049a
-size 451
+<?php
+// This file was auto-generated from sdk-root/src/data/cognito-sync/2014-06-30/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListIdentityPoolUsage', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'DescribeIdentityPoolUsage', 'input' => [ 'IdentityPoolId' => 'us-east-1:aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee', ], 'errorExpectedFromService' => true, ], ],];

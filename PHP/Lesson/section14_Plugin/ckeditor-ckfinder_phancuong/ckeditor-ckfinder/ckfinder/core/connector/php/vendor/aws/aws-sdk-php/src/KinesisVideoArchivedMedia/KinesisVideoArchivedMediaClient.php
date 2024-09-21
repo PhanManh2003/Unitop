@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:58a2836189a9f04a2e795dfb05d2ee55583017c8eac1c4c102775f9eee24c44e
-size 949
+<?php
+namespace Aws\KinesisVideoArchivedMedia;
+
+use Aws\AwsClient;
+
+/**
+ * This client is used to interact with the **Amazon Kinesis Video Streams Archived Media** service.
+ * @method \Aws\Result getClip(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getClipAsync(array $args = [])
+ * @method \Aws\Result getDASHStreamingSessionURL(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getDASHStreamingSessionURLAsync(array $args = [])
+ * @method \Aws\Result getHLSStreamingSessionURL(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getHLSStreamingSessionURLAsync(array $args = [])
+ * @method \Aws\Result getMediaForFragmentList(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getMediaForFragmentListAsync(array $args = [])
+ * @method \Aws\Result listFragments(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listFragmentsAsync(array $args = [])
+ */
+class KinesisVideoArchivedMediaClient extends AwsClient {}

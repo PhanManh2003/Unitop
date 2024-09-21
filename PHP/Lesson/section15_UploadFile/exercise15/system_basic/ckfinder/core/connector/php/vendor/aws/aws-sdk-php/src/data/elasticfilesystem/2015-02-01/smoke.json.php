@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:160d88ee90f69d690a65b0c000dc275e511fd89a3d53947337efa35146b626ac
-size 408
+<?php
+// This file was auto-generated from sdk-root/src/data/elasticfilesystem/2015-02-01/smoke.json
+return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'DescribeFileSystems', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'DeleteFileSystem', 'input' => [ 'FileSystemId' => 'fs-c5a1446c', ], 'errorExpectedFromService' => true, ], ],];

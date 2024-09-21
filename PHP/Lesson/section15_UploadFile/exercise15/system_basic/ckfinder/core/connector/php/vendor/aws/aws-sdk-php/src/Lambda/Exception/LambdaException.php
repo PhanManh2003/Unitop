@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8fbc9e1a329a77601816107d2dcb574026a56479ddbf7003067d51fa73681f4f
-size 177
+<?php
+namespace Aws\Lambda\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with AWS Lambda
+ */
+class LambdaException extends AwsException {}

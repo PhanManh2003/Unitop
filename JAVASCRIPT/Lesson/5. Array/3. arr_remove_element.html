@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb542e55ec41ecc410316a05631c3bb3943c8085bf3d1a38a258ef493bec261c
-size 700
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xóa phần tử ra khỏi mảng</title>
+</head>
+
+<body>
+    <h1>Xóa phần tử ra khỏi mảng</h1>
+    <script>
+        // pop(): xóa phần tử cuối mảng
+        // shift(): xóa phần tử đầu mảng
+        let list_users = ['Mạnh', 'Cương', 'Phong', 'Tuấn'];
+        list_users.pop();
+        console.log(list_users.shift()); // Output: Mạnh, nếu mảng rỗng thì trả về undefined!
+        
+        console.log(list_users); // Output: ['Cương', 'Phong']
+
+    </script>
+</body>
+
+</html>

@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4de76d7c748e8fd128c4780f7cfc64620492d876afdba7e5b7d7a9178802f7c3
-size 302
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>7.4.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.10.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+<providesextension>awscrt</providesextension>
+ <extsrcrelease/>
+ <changelog>
+  <release>
+
+  </release>
+ </changelog>
+</package>

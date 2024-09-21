@@ -1,3 +1,66 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:928a9eeaa4e00959444a1ef574d907aadc7265b153a772eba154d9b348d28277
-size 2902
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <style>
+        #my-dropdown .dropdown-menu {
+            width: 300px;
+        }
+    </style>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Dropdown Menu bootstrap</h1>
+                <div class="dropdown float-end" id="my-dropdown">
+                    <button class="btn btn-primary dropdown-toggle" data-bs-display="static"
+                        data-bs-toggle="dropdown">AVATAR</button>
+                    <!-- Nếu không có data-bs-target, button sẽ tìm các phần tử có class "dropdown-menu" gần nhất để mở. -->
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a href="" class="dropdown-item">Menu item 1</a>
+                        <a href="" class="dropdown-item active">Menu item 2</a>
+                        <a href="" class="dropdown-item">Menu item 3</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-header">MORE MENU</div>
+                        <a href="" class="dropdown-item">Menu item 4</a>
+                        <a href="" class="dropdown-item disabled">Menu item 5</a>
+                        <div class="dropdown-divider"></div>
+                        <p class="p-4 text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam culpa
+                            nostrum necessitatibus in exercitationem ducimus accusamus vel autem velit deleniti.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            // on là 1 phương thức tương tự như addEventListener trong js thuần
+            $('#my-dropdown').on('show.bs.dropdown',function () {
+                alert('show');
+            });
+
+            $('#my-dropdown').on('hide.bs.dropdown',function () {
+                alert('hide');
+            });
+        })
+    </script>
+</body>
+
+</html>

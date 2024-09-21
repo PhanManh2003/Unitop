@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b471c31823f5a6e99b2e45785b39734756991215fc5339ea38c4d6e7eeb1adbb
-size 1808
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector theo phần tử con</title>
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <!-- 
+STT        CÁCH VIẾT                              MÔ TẢ 
+1       $(":first-child")           Chọn phần tử con đầu tiên của phần tử cha được chỉ định
+2       $(":last-child")            Chọn phần tử con cuối cùng của phần tử cha được chỉ định
+3       $(":only-child")            Chọn phần tử con là con duy nhất của phần tử cha được chỉ định
+4       $(":nth-child(index         Chọn tất cả phần tử là con của phần tử cha tuân theo :nth-child
+        /even/odd/equation)")       lọc theo chỉ số, chẵn lẻ hoặc phương trình 1 ẩn
+-->
+    <script>
+        $(document).ready(function () {
+            // 1. Chọn bài viết đầu tiên và cho color red
+            // $("ul.list-post :first-child").css('color','red');
+            // 2. $(":nth-child(index/even/odd/equation)") 
+            // $("ul.list-post :nth-child(5)").css('color','red');
+            // $("ul.list-post :nth-child(3n)").css('color','red');
+            // 3. Chọn phần tử là con duy nhất của phần tử cha
+            // $("ul.list-post :only-child").css('color','red');
+        })
+    </script>
+    <ul class="list-post">
+        <li>Bài viết 1</li>
+        <li>Bài viết 2</li>
+        <li>Bài viết 3</li>
+        <li>Bài viết 4</li>
+        <li>Bài viết 5</li>
+        <li>Bài viết 6</li>
+    </ul>
+    <ul class="list-post">
+        <li>Bài viết 1</li>
+    </ul>
+</body>
+
+</html>

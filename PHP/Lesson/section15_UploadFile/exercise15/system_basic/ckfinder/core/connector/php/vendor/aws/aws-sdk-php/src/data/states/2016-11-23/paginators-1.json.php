@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:424ec8b93057074abd2467fbd13fc011f75d0bcc5a2559a2cb4ad5b46d83f217
-size 716
+<?php
+// This file was auto-generated from sdk-root/src/data/states/2016-11-23/paginators-1.json
+return [ 'pagination' => [ 'GetExecutionHistory' => [ 'input_token' => 'nextToken', 'limit_key' => 'maxResults', 'output_token' => 'nextToken', 'result_key' => 'events', ], 'ListActivities' => [ 'input_token' => 'nextToken', 'limit_key' => 'maxResults', 'output_token' => 'nextToken', 'result_key' => 'activities', ], 'ListExecutions' => [ 'input_token' => 'nextToken', 'limit_key' => 'maxResults', 'output_token' => 'nextToken', 'result_key' => 'executions', ], 'ListStateMachines' => [ 'input_token' => 'nextToken', 'limit_key' => 'maxResults', 'output_token' => 'nextToken', 'result_key' => 'stateMachines', ], ],];

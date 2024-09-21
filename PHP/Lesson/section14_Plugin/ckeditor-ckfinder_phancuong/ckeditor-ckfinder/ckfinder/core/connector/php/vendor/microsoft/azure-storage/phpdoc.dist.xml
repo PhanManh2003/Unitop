@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:370c4f616e8b3abbe065d30399122f943567884a2debd0bec9516c869d1eca51
-size 281
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+  <title>Windows Azure SDK for PHP</title>
+  <parser>
+    <target>build/api</target>
+  </parser>
+  <transformer>
+    <target>build/api</target>
+  </transformer>
+  <files>
+    <directory>WindowsAzure/</directory>
+  </files>
+</phpdoc>

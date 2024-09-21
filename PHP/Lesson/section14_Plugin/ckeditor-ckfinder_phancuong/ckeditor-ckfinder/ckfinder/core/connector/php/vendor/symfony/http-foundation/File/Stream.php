@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b89d73eda8ecac7f48a41e82d7d86747c4c404aedc2be4f7c87d848a00bccaf4
-size 566
+<?php
+
+/*
+ * This file is part of the Symfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Symfony\Component\HttpFoundation\File;
+
+/**
+ * A PHP stream of unknown size.
+ *
+ * @author Nicolas Grekas <p@tchwork.com>
+ */
+class Stream extends File
+{
+    /**
+     * {@inheritdoc}
+     *
+     * @return int|false
+     */
+    #[\ReturnTypeWillChange]
+    public function getSize()
+    {
+        return false;
+    }
+}

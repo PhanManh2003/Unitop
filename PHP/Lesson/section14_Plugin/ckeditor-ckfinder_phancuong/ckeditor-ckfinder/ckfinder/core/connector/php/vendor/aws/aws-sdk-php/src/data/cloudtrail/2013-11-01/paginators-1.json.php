@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4c2e093bd7be26c394cb14be5af79b9204a7a6c03bd81b185081625fb272597c
-size 668
+<?php
+// This file was auto-generated from sdk-root/src/data/cloudtrail/2013-11-01/paginators-1.json
+return [ 'pagination' => [ 'DescribeTrails' => [ 'result_key' => 'trailList', ], 'ListPublicKeys' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'result_key' => 'PublicKeyList', ], 'ListTags' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'result_key' => 'ResourceTagList', ], 'ListTrails' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'result_key' => 'Trails', ], 'LookupEvents' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'Events', ], ],];

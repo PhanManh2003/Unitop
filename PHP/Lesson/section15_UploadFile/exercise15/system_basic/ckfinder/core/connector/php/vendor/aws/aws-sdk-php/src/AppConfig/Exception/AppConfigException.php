@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d111be4c243475e9643cc38ee80d15a3a66ef5783f54851ebf6db4d40088b89
-size 206
+<?php
+namespace Aws\AppConfig\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Amazon AppConfig** service.
+ */
+class AppConfigException extends AwsException {}

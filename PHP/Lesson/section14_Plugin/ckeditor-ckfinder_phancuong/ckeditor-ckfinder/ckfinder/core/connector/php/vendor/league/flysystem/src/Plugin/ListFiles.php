@@ -1,3 +1,35 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2948ec89573a6ee1dbc9e21569309a704dcf08e41c6b84770d1de115ad214729
-size 702
+<?php
+
+namespace League\Flysystem\Plugin;
+
+class ListFiles extends AbstractPlugin
+{
+    /**
+     * Get the method name.
+     *
+     * @return string
+     */
+    public function getMethod()
+    {
+        return 'listFiles';
+    }
+
+    /**
+     * List all files in the directory.
+     *
+     * @param string $directory
+     * @param bool   $recursive
+     *
+     * @return array
+     */
+    public function handle($directory = '', $recursive = false)
+    {
+        $contents = $this->filesystem->listContents($directory, $recursive);
+
+        $filter = function ($object) {
+            return $object['type'] === 'file';
+        };
+
+        return array_values(array_filter($contents, $filter));
+    }
+}

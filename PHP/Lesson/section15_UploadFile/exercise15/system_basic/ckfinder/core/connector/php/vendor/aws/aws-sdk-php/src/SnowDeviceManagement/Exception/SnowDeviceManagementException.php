@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aac1443d13497d57ec19c68860335ec8228a5a97dcfd038f3212ace2afcff673
-size 238
+<?php
+namespace Aws\SnowDeviceManagement\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **AWS Snow Device Management** service.
+ */
+class SnowDeviceManagementException extends AwsException {}

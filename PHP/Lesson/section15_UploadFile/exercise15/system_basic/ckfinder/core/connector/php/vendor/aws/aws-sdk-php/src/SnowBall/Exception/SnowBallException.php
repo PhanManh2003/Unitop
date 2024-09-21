@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:303960120e3bc8cc1bfc5854f38e681fa9d73fdd1547183faf23e23456a953d5
-size 217
+<?php
+namespace Aws\SnowBall\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Amazon Import/Export Snowball** service.
+ */
+class SnowBallException extends AwsException {}

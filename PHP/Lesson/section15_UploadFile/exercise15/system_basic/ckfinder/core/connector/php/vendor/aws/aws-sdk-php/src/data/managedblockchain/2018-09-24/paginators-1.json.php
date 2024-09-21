@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:116d14ab2f2b35b8e70d2bad5133c3399a5829862b0c246d41f59d858d817fb7
-size 823
+<?php
+// This file was auto-generated from sdk-root/src/data/managedblockchain/2018-09-24/paginators-1.json
+return [ 'pagination' => [ 'ListInvitations' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListMembers' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListNetworks' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListNodes' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListProposalVotes' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListProposals' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];

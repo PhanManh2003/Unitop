@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3648567ac9800909902b753852b772d82f20ce3f36647212e30cf30a17ffac29
-size 226
+<?php
+namespace Aws\LookoutMetrics\Exception;
+
+use Aws\Exception\AwsException;
+
+/**
+ * Represents an error interacting with the **Amazon Lookout for Metrics** service.
+ */
+class LookoutMetricsException extends AwsException {}

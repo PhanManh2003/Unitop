@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a1b7dfbfa7b53dcf74ffaf6fbda6079d9f19aabd5279179c7adb707d55782517
-size 305
+<?php
+// This file was auto-generated from sdk-root/src/data/applicationcostprofiler/2020-09-10/paginators-1.json
+return [ 'pagination' => [ 'ListReportDefinitions' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'reportDefinitions', ], ],];
