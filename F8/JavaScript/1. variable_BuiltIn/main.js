@@ -1,25 +1,3 @@
-/**
- * Giới thiệu 1 số hàm built-in
- * 1. alert
- * 2. console
- * 3. confirm
- * 4. prompt
- * 5. setTimeout: để thực thi 1 hàm sau 1 khoảng thời gian nào đó (ms)
- * 6. setInterval: để thực thi 1 hàm sau mỗi khoảng thời gian nào đó
- */
-
-// var fullName = 'Nguyễn Văn A';
-// console.log(fullName);
-// console.warn(fullName);
-// console.error(fullName);
-
-confirm('Bạn có đủ 18 tuổi không?');
-prompt('Nhập tuổi của bạn:');
-
-// setTimeout(function() {
-//     alert('Hello');
-// }, 3000);
-
-// setInterval(function(){
-//     console.log('setInterval 2000ms' + Math.random());
-// }, 2000);
+version https://git-lfs.github.com/spec/v1
+oid sha256:dd59a0704aaa850c2af93b3e75a7090473a934fa170f05777cbd92d0e3e1b3e0
+size 637
