@@ -1,27 +1,3 @@
-$(document).ready(function () {
-    $('#menu-icon').click(function () {
-        $('#responsive-menu').stop().slideToggle();
-        return false
-    })
-
-    $('.responsive-menu-toggle').click(function () {
-        $(this).next('.sub-menu').stop().slideToggle();
-        $(this).toggleClass('opening');
-        return false
-    })
-
-    $(window).resize(function () {
-        $('#responsive-menu').slideUp();
-        $('#responsive-menu .sub-menu').slideUp();
-        $('.responsive-menu-toggle').removeClass('opening');
-    });
-
-    $(window).scroll(function () {
-        $('#responsive-menu').slideUp();
-        $('#responsive-menu .sub-menu').slideUp();
-        $('.responsive-menu-toggle').removeClass('opening');
-    });
-});
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:c8828788375372f94b74db6b96e3065fc5a537d40915912e4bdb532b475aeeea
+size 739
