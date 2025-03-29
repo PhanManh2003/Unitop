@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/elastictranscoder/2012-09-25/smoke.json
-return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListPresets', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'ReadJob', 'input' => [ 'Id' => 'fake_job', ], 'errorExpectedFromService' => true, ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:7f548550d1563596693d081fbc5844911552352be48a224cefb93c96106fada4
+size 378

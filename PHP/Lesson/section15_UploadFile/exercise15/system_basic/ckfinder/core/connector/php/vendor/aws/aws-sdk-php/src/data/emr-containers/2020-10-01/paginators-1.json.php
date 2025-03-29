@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/emr-containers/2020-10-01/paginators-1.json
-return [ 'pagination' => [ 'ListJobRuns' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'jobRuns', ], 'ListManagedEndpoints' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'endpoints', ], 'ListVirtualClusters' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'virtualClusters', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:76434aaa55de2d0aa6e2098062026bd190b316f08f8d70492d0cd228154d5316
+size 581

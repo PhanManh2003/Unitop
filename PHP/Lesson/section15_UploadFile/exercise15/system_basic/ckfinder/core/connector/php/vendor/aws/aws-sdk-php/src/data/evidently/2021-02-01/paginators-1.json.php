@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/evidently/2021-02-01/paginators-1.json
-return [ 'pagination' => [ 'ListExperiments' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'experiments', ], 'ListFeatures' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'features', ], 'ListLaunches' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'launches', ], 'ListProjects' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'projects', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:c1423153ac02fd5ea7a06aaa1e97a69a2abcdd550cb464398b21d798411d5bfb
+size 702

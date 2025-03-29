@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/signer/2017-08-25/waiters-2.json
-return [ 'version' => 2, 'waiters' => [ 'SuccessfulSigningJob' => [ 'delay' => 20, 'operation' => 'DescribeSigningJob', 'maxAttempts' => 25, 'acceptors' => [ [ 'expected' => 'Succeeded', 'matcher' => 'path', 'state' => 'success', 'argument' => 'status', ], [ 'expected' => 'Failed', 'matcher' => 'path', 'state' => 'failure', 'argument' => 'status', ], [ 'expected' => 'ResourceNotFoundException', 'matcher' => 'error', 'state' => 'failure', ], ], ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:03f7d191616e23780906dd063f6f70d227ea2c10b9702d23137f97fe4a4f75bc
+size 550

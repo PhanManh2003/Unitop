@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/servicecatalog-appregistry/2020-06-24/paginators-1.json
-return [ 'pagination' => [ 'ListApplications' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'applications', ], 'ListAssociatedAttributeGroups' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'attributeGroups', ], 'ListAssociatedResources' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'resources', ], 'ListAttributeGroups' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'attributeGroups', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:174965d9df10b19e712e1f5e38961901638654ef8034c99ecb48efe9b000eb65
+size 771

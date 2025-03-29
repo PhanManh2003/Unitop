@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/mwaa/2020-07-01/paginators-1.json
-return [ 'pagination' => [ 'ListEnvironments' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', 'result_key' => 'Environments', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:b6166997ba697f8bc06679e9c8a53c71bb918b3724e2818a81288e1667fe6522
+size 276

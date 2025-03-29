@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/dynamodb/2012-08-10/smoke.json
-return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListTables', 'input' => [ 'Limit' => 1, ], 'errorExpectedFromService' => false, ], [ 'operationName' => 'DescribeTable', 'input' => [ 'TableName' => 'fake-table', ], 'errorExpectedFromService' => true, ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:5c49084daa6b4e8abdd195b661321e8c7c3317e54e99a894b5a67eaac7be6870
+size 398

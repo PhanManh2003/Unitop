@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/logs/2014-03-28/paginators-1.json
-return [ 'pagination' => [ 'DescribeDestinations' => [ 'input_token' => 'nextToken', 'limit_key' => 'limit', 'output_token' => 'nextToken', 'result_key' => 'destinations', ], 'DescribeLogGroups' => [ 'input_token' => 'nextToken', 'limit_key' => 'limit', 'output_token' => 'nextToken', 'result_key' => 'logGroups', ], 'DescribeLogStreams' => [ 'input_token' => 'nextToken', 'limit_key' => 'limit', 'output_token' => 'nextToken', 'result_key' => 'logStreams', ], 'DescribeMetricFilters' => [ 'input_token' => 'nextToken', 'limit_key' => 'limit', 'output_token' => 'nextToken', 'result_key' => 'metricFilters', ], 'DescribeSubscriptionFilters' => [ 'input_token' => 'nextToken', 'limit_key' => 'limit', 'output_token' => 'nextToken', 'result_key' => 'subscriptionFilters', ], 'FilterLogEvents' => [ 'input_token' => 'nextToken', 'limit_key' => 'limit', 'output_token' => 'nextToken', 'result_key' => [ 'events', 'searchedLogStreams', ], ], 'GetLogEvents' => [ 'input_token' => 'nextToken', 'limit_key' => 'limit', 'output_token' => 'nextForwardToken', 'result_key' => 'events', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:386dad8f2d9c9e67f75cd3c56336941d55c45bff4d059fc493d41489de0f0e94
+size 1178

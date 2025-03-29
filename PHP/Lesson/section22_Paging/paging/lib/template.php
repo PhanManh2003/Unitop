@@ -1,36 +1,3 @@
-<?php
-
-function get_header($mod = '')
-{
-    if (!empty($mod)) {
-        $path_header = "inc/header_{$mod}.php";
-    } else {
-        $path_header = "inc/header.php";
-    }
-    if (file_exists($path_header)) {
-        require $path_header;
-    } else {
-        echo "Không tồn tại đường dẫn $path_header";
-    }
-}
-
-function get_footer()
-{
-    $path_footer = "inc/footer.php";
-    if (file_exists($path_footer)) {
-        require $path_footer;
-    } else {
-        echo "Không tồn tại đường dẫn $path_footer";
-    }
-}
-
-
-function get_sidebar()
-{
-    $path_sidebar = "inc/sidebar.php";
-    if (file_exists($path_sidebar)) {
-        require $path_sidebar;
-    } else {
-        echo "Không tồn tại đường dẫn $path_sidebar";
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0f261eb8cb5644f868fff78d814666bbd57862a999ba1d72d6cf6eeed7df5475
+size 759

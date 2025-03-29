@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/elasticloadbalancingv2/2015-12-01/paginators-1.json
-return [ 'pagination' => [ 'DescribeListeners' => [ 'input_token' => 'Marker', 'output_token' => 'NextMarker', 'result_key' => 'Listeners', ], 'DescribeLoadBalancers' => [ 'input_token' => 'Marker', 'output_token' => 'NextMarker', 'result_key' => 'LoadBalancers', ], 'DescribeTargetGroups' => [ 'input_token' => 'Marker', 'output_token' => 'NextMarker', 'result_key' => 'TargetGroups', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:2b4e7dd6691f50c8bcbc3b63aea98d5e5939740ef5f4a315a6c5626574f54c2f
+size 507

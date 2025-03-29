@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/redshift/2012-12-01/smoke.json
-return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'DescribeClusterVersions', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'DescribeClusters', 'input' => [ 'ClusterIdentifier' => 'fake-cluster', ], 'errorExpectedFromService' => true, ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:818feeafce6abf3dbf363f262da962dfa0ef652c78be5cf94d20162d5c1928ff
+size 409

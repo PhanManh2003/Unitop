@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/greengrassv2/2020-11-30/paginators-1.json
-return [ 'pagination' => [ 'ListClientDevicesAssociatedWithCoreDevice' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'associatedClientDevices', ], 'ListComponentVersions' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'componentVersions', ], 'ListComponents' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'components', ], 'ListCoreDevices' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'coreDevices', ], 'ListDeployments' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'deployments', ], 'ListEffectiveDeployments' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'effectiveDeployments', ], 'ListInstalledComponents' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'installedComponents', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:8b5a32001b7b6b3b2d3805fc8fbd4f18047619fdb0093ae166cb17ebde4efaa3
+size 1246

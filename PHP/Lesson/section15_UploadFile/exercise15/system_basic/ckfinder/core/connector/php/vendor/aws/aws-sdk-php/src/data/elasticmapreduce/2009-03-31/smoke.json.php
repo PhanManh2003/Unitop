@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/elasticmapreduce/2009-03-31/smoke.json
-return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListClusters', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'DescribeCluster', 'input' => [ 'ClusterId' => 'fake_cluster', ], 'errorExpectedFromService' => true, ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:a30648293a6beb62a7885301cb775d72571ed14192a0f68b411f589a15c5e4a6
+size 397

@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/rds/2014-10-31/waiters-1.json
-return [ 'waiters' => [ '__default__' => [ 'interval' => 30, 'max_attempts' => 60, ], '__DBInstanceState' => [ 'operation' => 'DescribeDBInstances', 'acceptor_path' => 'DBInstances[].DBInstanceStatus', 'acceptor_type' => 'output', ], 'DBInstanceAvailable' => [ 'extends' => '__DBInstanceState', 'success_value' => 'available', 'failure_value' => [ 'deleted', 'deleting', 'failed', 'incompatible-restore', 'incompatible-parameters', 'incompatible-parameters', 'incompatible-restore', ], ], 'DBInstanceDeleted' => [ 'extends' => '__DBInstanceState', 'success_value' => 'deleted', 'failure_value' => [ 'creating', 'modifying', 'rebooting', 'resetting-master-credentials', ], ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:2eeb778361509ff5fbd829152c348573fb5661d38bcdae16363bf0fb53eae5bd
+size 771

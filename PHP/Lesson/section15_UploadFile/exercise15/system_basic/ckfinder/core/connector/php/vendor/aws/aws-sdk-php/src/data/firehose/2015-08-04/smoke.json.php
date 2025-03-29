@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/firehose/2015-08-04/smoke.json
-return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListDeliveryStreams', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'DescribeDeliveryStream', 'input' => [ 'DeliveryStreamName' => 'bogus-stream-name', ], 'errorExpectedFromService' => true, ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:f80940a6131b71d65d224e989d81a196fd183c1b7e0d12d4230febfa5accacf6
+size 417

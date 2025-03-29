@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/support/2013-04-15/smoke.json
-return [ 'version' => 1, 'defaultRegion' => 'us-east-1', 'testCases' => [ [ 'operationName' => 'DescribeServices', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'CreateCase', 'input' => [ 'subject' => 'subject', 'communicationBody' => 'communication', 'categoryCode' => 'category', 'serviceCode' => 'amazon-dynamodb', 'severityCode' => 'low', ], 'errorExpectedFromService' => true, ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:ea713285244e78dddddaaaf463af251185f26aee7cdb833f1b61f94a20658fb3
+size 511

@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/voice-id/2021-09-27/paginators-1.json
-return [ 'pagination' => [ 'ListDomains' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListFraudsterRegistrationJobs' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListSpeakerEnrollmentJobs' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListSpeakers' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:c7a6d6a2e4cee57d1bff160cc161b20e07189f35a1a5a20ff0d16c8df7384427
+size 612

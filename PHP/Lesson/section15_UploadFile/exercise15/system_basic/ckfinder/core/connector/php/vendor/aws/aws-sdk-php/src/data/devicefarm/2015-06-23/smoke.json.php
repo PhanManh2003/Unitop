@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/devicefarm/2015-06-23/smoke.json
-return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListDevices', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'GetDevice', 'input' => [ 'arn' => 'arn:aws:devicefarm:us-west-2::device:000000000000000000000000fake-arn', ], 'errorExpectedFromService' => true, ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:55226a53d07b1eb5bd8356d1cd3f6d6333181bc6213c6c108325ed5ac174e5f1
+size 435

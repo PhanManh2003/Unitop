@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/sagemaker-a2i-runtime/2019-11-07/paginators-1.json
-return [ 'pagination' => [ 'ListHumanLoops' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', 'result_key' => 'HumanLoopSummaries', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:4fc210f6e8038caa5f85c710c7225e096bb4d38f6be4546941e6d5eadf8589b7
+size 297

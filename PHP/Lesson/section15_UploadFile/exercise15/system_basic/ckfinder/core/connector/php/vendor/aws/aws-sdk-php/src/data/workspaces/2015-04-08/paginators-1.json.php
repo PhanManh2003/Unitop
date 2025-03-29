@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/workspaces/2015-04-08/paginators-1.json
-return [ 'pagination' => [ 'DescribeWorkspaceBundles' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'result_key' => 'Bundles', ], 'DescribeWorkspaceDirectories' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'result_key' => 'Directories', ], 'DescribeWorkspaces' => [ 'input_token' => 'NextToken', 'limit_key' => 'Limit', 'output_token' => 'NextToken', 'result_key' => 'Workspaces', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:92986901f0aa0cc88894296a85f026275d69e35ba262bc164ca28172d29b54e0
+size 531

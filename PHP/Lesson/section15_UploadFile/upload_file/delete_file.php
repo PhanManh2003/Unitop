@@ -1,10 +1,3 @@
-<?php
-
-$file_url = 'uploads/cmnd.jpg';
-// thêm @ vào trước hàm unlink để nếu có lỗi gì thì nó ko thông báo lên page
-if (@unlink($file_url)) {
-    echo "Xóa file {$file_url} thành công";
-} else {
-    echo "File {$file_url} không tồn tại trên server";
-}
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:3e8639d7ddca4785a55f706243d9c7cd1e1fcf3b23ac8b8b97c43f41cdd03350
+size 283

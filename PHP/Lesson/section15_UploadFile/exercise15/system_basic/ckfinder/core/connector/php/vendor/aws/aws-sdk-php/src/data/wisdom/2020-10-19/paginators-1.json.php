@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/wisdom/2020-10-19/paginators-1.json
-return [ 'pagination' => [ 'ListAssistantAssociations' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'assistantAssociationSummaries', ], 'ListAssistants' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'assistantSummaries', ], 'ListContents' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'contentSummaries', ], 'ListKnowledgeBases' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'knowledgeBaseSummaries', ], 'QueryAssistant' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'results', ], 'SearchContent' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'contentSummaries', ], 'SearchSessions' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'sessionSummaries', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:9c4cc11a2c135e1b535509b5ed6d87389f94abfe8caf3e9a84bedf1bd38f0116
+size 1210

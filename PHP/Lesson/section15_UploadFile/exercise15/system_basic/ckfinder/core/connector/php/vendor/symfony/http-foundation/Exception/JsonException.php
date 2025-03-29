@@ -1,21 +1,3 @@
-<?php
-
-/*
- * This file is part of the Symfony package.
- *
- * (c) Fabien Potencier <fabien@symfony.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Symfony\Component\HttpFoundation\Exception;
-
-/**
- * Thrown by Request::toArray() when the content cannot be JSON-decoded.
- *
- * @author Tobias Nyholm <tobias.nyholm@gmail.com>
- */
-final class JsonException extends \UnexpectedValueException implements RequestExceptionInterface
-{
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ed922357e813b44d33e6c010e19ae96dbd67663d8cc560ffe72bd71c00bd6e4c
+size 529

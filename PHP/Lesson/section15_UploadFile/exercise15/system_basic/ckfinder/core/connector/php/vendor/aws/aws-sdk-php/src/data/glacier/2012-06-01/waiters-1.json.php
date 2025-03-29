@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/glacier/2012-06-01/waiters-1.json
-return [ 'waiters' => [ '__default__' => [ 'interval' => 3, 'max_attempts' => 15, ], '__VaultState' => [ 'operation' => 'DescribeVault', ], 'VaultExists' => [ 'extends' => '__VaultState', 'ignore_errors' => [ 'ResourceNotFoundException', ], 'success_type' => 'output', ], 'VaultNotExists' => [ 'extends' => '__VaultState', 'success_type' => 'error', 'success_value' => 'ResourceNotFoundException', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:6947d3911e98edde5a26e87f6ca41dbbed38ed2f6c4997d16d56a9de5d358dda
+size 501

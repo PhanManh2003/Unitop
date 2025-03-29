@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/secretsmanager/2017-10-17/paginators-1.json
-return [ 'pagination' => [ 'ListSecretVersionIds' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListSecrets' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:69ac185ec6129535fb8362d67eb2da2aa6b6c42bcf2cb0f788ec93042dced645
+size 370

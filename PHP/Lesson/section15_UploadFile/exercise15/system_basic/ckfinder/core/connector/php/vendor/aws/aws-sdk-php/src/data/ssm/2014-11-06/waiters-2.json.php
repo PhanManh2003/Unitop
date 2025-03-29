@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/ssm/2014-11-06/waiters-2.json
-return [ 'version' => 2, 'waiters' => [ 'CommandExecuted' => [ 'delay' => 5, 'operation' => 'GetCommandInvocation', 'maxAttempts' => 20, 'acceptors' => [ [ 'expected' => 'Pending', 'matcher' => 'path', 'state' => 'retry', 'argument' => 'Status', ], [ 'expected' => 'InProgress', 'matcher' => 'path', 'state' => 'retry', 'argument' => 'Status', ], [ 'expected' => 'Delayed', 'matcher' => 'path', 'state' => 'retry', 'argument' => 'Status', ], [ 'expected' => 'Success', 'matcher' => 'path', 'state' => 'success', 'argument' => 'Status', ], [ 'expected' => 'Cancelled', 'matcher' => 'path', 'state' => 'failure', 'argument' => 'Status', ], [ 'expected' => 'TimedOut', 'matcher' => 'path', 'state' => 'failure', 'argument' => 'Status', ], [ 'expected' => 'Failed', 'matcher' => 'path', 'state' => 'failure', 'argument' => 'Status', ], [ 'expected' => 'Cancelling', 'matcher' => 'path', 'state' => 'failure', 'argument' => 'Status', ], [ 'state' => 'retry', 'matcher' => 'error', 'expected' => 'InvocationDoesNotExist', ], ], ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:9f93c1195916014b1b018a64b30d6c27fea268b3e3930186974a0a9e5b401380
+size 1121

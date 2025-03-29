@@ -1,16 +1,3 @@
-<?php
-
-$list_product = array(
-    1 => array(
-        "id" => 1,
-        "prod_name" => "Sản phẩm 1",
-        "prod_price" => "1000$",
-    ),
-    2 => array(
-        "id" => 2,
-        "prod_name" => "Sản phẩm 2",
-        "prod_price" => "2000$",
-    ),
-        //add new element: bôi đen phần cần thêm + CTRL SHIFT ↓s
-);
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:4214fa5a3e61bb44732c8e3184c90bb7f2f102e84b46b92cfc1eb976ac496fc9
+size 342

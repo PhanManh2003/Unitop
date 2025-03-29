@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/drs/2020-02-26/paginators-1.json
-return [ 'pagination' => [ 'DescribeJobLogItems' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'items', ], 'DescribeJobs' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'items', ], 'DescribeRecoveryInstances' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'items', ], 'DescribeRecoverySnapshots' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'items', ], 'DescribeReplicationConfigurationTemplates' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'items', ], 'DescribeSourceServers' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'items', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:4200717d649f133c22b5dd4bf5766eb019bea987b1fcd11027e4d54028729607
+size 1025

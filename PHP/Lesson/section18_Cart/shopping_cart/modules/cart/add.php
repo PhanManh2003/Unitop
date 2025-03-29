@@ -1,6 +1,3 @@
-<?php
-
-#1 Lấy thông tin sản phẩm vừa thêm vào giỏ hàng
-$id = (int)$_GET['id'];
-add_cart($id);
-redirect_to("?mod=cart&act=show");
+version https://git-lfs.github.com/spec/v1
+oid sha256:9e723b0d1d87ab8cd833ebdd148f39e0c4feaad5ef82227f3e11fbc281ba4f0c
+size 143

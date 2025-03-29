@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/ds/2015-04-16/smoke.json
-return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'DescribeDirectories', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'CreateDirectory', 'input' => [ 'Name' => '', 'Password' => '', 'Size' => '', ], 'errorExpectedFromService' => true, ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:0e8530e121e952548dcfbfa4965a8b6cbf97688fbfe444f662931645216490ca
+size 405

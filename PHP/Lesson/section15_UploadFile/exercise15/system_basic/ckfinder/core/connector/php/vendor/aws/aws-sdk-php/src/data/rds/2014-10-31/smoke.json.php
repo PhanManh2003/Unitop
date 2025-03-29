@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/rds/2014-10-31/smoke.json
-return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'DescribeDBEngineVersions', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'DescribeDBInstances', 'input' => [ 'DBInstanceIdentifier' => 'fake-id', ], 'errorExpectedFromService' => true, ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:f9b47abf968476de1276771ded8c5c2dc7e5c798d6dec4a93985bfb1379bfc35
+size 406

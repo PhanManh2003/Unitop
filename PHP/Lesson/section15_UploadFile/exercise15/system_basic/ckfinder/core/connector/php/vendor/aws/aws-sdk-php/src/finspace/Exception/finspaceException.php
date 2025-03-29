@@ -1,9 +1,3 @@
-<?php
-namespace Aws\finspace\Exception;
-
-use Aws\Exception\AwsException;
-
-/**
- * Represents an error interacting with the **FinSpace User Environment Management service** service.
- */
-class finspaceException extends AwsException {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e22691ea0195e9b8f46170443d5f484bd169ebac2fffb11b8ff79e9ffa87fb54
+size 232

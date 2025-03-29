@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/pricing/2017-10-15/paginators-1.json
-return [ 'pagination' => [ 'DescribeServices' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'GetAttributeValues' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'GetProducts' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:229d13bd56c273eef9c6b643bafd49149eb4bf5c6eb76a25f80cecbdbc6a413d
+size 478

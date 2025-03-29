@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/monitoring/2010-08-01/waiters-2.json
-return [ 'version' => 2, 'waiters' => [ 'AlarmExists' => [ 'delay' => 5, 'maxAttempts' => 40, 'operation' => 'DescribeAlarms', 'acceptors' => [ [ 'matcher' => 'path', 'expected' => true, 'argument' => 'length(MetricAlarms[]) > `0`', 'state' => 'success', ], ], ], 'CompositeAlarmExists' => [ 'delay' => 5, 'maxAttempts' => 40, 'operation' => 'DescribeAlarms', 'acceptors' => [ [ 'matcher' => 'path', 'expected' => true, 'argument' => 'length(CompositeAlarms[]) > `0`', 'state' => 'success', ], ], ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:4691d40fda9b58cd4abcbdf9db87629ac2fcc4abf58e2b06e4c50a0fb24a44e6
+size 603

@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/sqs/2012-11-05/smoke.json
-return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListQueues', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'GetQueueUrl', 'input' => [ 'QueueName' => 'fake_queue', ], 'errorExpectedFromService' => true, ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:d9cb58335f42380f21747edb87ac5a544e50688f22b463469666bb7d7e4ca7ef
+size 376

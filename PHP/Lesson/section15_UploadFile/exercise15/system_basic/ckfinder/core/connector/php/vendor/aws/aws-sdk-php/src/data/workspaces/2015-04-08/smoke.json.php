@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/workspaces/2015-04-08/smoke.json
-return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'DescribeWorkspaces', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'DescribeWorkspaces', 'input' => [ 'DirectoryId' => 'fake-id', ], 'errorExpectedFromService' => true, ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:52ebaea779ced1497a492e4793ba7a715d8e930888c7caff29df796994af7638
+size 397

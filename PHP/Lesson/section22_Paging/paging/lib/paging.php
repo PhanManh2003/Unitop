@@ -1,19 +1,3 @@
-<?php
-function get_paging($num_pages, $page, $base_url = "")
-{
-    $str_paging = "<ul class='paging'>";
-    if ($page > 1) {
-        $prev = $page - 1;
-        $str_paging .= " <li><a href=\"{$base_url}&page={$prev}\">Trước</a></li>";
-    }
-    for ($i = 1; $i <= $num_pages; $i++) {
-        $active = ($i == $page) ? "active" : "";
-        $str_paging .= "<li class = \"{$active}\"><a href=\"{$base_url}&page={$i}\">{$i}</a></li>";
-    }
-    if ($page < $num_pages) {
-        $next = $page + 1;
-        $str_paging .= " <li><a href=\"{$base_url}&page={$next}\">Sau</a></li>";
-    }
-    $str_paging .= "</ul>";
-    return $str_paging;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dd3f8cff823a3dea16fb9cb5e259a8999a1adb17e220929c20da756d940c8ced
+size 640

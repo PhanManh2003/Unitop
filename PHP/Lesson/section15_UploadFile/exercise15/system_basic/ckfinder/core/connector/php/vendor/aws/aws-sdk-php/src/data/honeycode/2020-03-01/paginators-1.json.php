@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/honeycode/2020-03-01/paginators-1.json
-return [ 'pagination' => [ 'ListTableColumns' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'result_key' => 'tableColumns', ], 'ListTableRows' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'rows', ], 'ListTables' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'tables', ], 'QueryTableRows' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'rows', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:9cb877fcace641805f3df9897f78ab7c8dd1f9f6f2248cb86c7ddabf9afb59f8
+size 666

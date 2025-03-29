@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/synthetics/2017-10-11/paginators-1.json
-return [ 'pagination' => [ 'DescribeCanaries' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', ], 'DescribeCanariesLastRun' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', ], 'DescribeRuntimeVersions' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', ], 'GetCanaryRuns' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:6c4450e645df35500911972d606439f2d75fdebb820a7bfc7a7b9766eb34b3c7
+size 612

@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/route53-recovery-cluster/2019-12-02/paginators-1.json
-return [ 'pagination' => [],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:741c1224457038da35802e5cca03dcf1e2a040a917a99b1bae27f3070571012d
+size 146

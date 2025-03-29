@@ -1,31 +1,3 @@
-<?php
-
-namespace League\Flysystem;
-
-/**
- * @deprecated
- */
-class Directory extends Handler
-{
-    /**
-     * Delete the directory.
-     *
-     * @return bool
-     */
-    public function delete()
-    {
-        return $this->filesystem->deleteDir($this->path);
-    }
-
-    /**
-     * List the directory contents.
-     *
-     * @param bool $recursive
-     *
-     * @return array|bool directory contents or false
-     */
-    public function getContents($recursive = false)
-    {
-        return $this->filesystem->listContents($this->path, $recursive);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b090b52ce52e0ac6fcb57f7654d0d74deeca1813c1149092375b0d6cc052c476
+size 554

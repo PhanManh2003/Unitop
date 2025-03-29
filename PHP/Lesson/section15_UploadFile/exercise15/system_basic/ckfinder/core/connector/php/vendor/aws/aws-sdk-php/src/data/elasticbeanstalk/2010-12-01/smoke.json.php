@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/elasticbeanstalk/2010-12-01/smoke.json
-return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListAvailableSolutionStacks', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'DescribeEnvironmentResources', 'input' => [ 'EnvironmentId' => 'fake_environment', ], 'errorExpectedFromService' => true, ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:1d6869ba2acfd808baab16d87ed41a28729df5e703aba24e3a0581210033a92d
+size 433

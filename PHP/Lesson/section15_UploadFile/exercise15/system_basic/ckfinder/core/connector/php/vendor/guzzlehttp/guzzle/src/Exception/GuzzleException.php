@@ -1,23 +1,3 @@
-<?php
-namespace GuzzleHttp\Exception;
-
-use Throwable;
-
-if (interface_exists(Throwable::class)) {
-    interface GuzzleException extends Throwable
-    {
-    }
-} else {
-    /**
-     * @method string getMessage()
-     * @method \Throwable|null getPrevious()
-     * @method mixed getCode()
-     * @method string getFile()
-     * @method int getLine()
-     * @method array getTrace()
-     * @method string getTraceAsString()
-     */
-    interface GuzzleException
-    {
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fbfa66902c7d435655717bdeaa2caabbbc27b40f8d4ab318cbfaec783c6a0f51
+size 471

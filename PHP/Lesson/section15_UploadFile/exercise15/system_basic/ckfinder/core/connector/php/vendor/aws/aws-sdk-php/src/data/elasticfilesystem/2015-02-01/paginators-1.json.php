@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/elasticfilesystem/2015-02-01/paginators-1.json
-return [ 'pagination' => [ 'DescribeAccessPoints' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'DescribeFileSystems' => [ 'input_token' => 'Marker', 'output_token' => 'NextMarker', 'limit_key' => 'MaxItems', ], 'DescribeTags' => [ 'input_token' => 'Marker', 'output_token' => 'NextMarker', 'limit_key' => 'MaxItems', ], 'ListTagsForResource' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:f224bc3d82c63e2247d3479c599b6cd3737ed311a73dfe18e3fbee6c7539085b
+size 606

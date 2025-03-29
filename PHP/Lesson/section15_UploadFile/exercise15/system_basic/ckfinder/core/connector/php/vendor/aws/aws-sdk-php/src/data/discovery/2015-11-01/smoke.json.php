@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/discovery/2015-11-01/smoke.json
-return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'DescribeAgents', 'input' => [], 'errorExpectedFromService' => false, ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:5091807bb50195ca2d3fbbab2c419f5fc43418ed5d61df2e2d7e02f6ba55071e
+size 266

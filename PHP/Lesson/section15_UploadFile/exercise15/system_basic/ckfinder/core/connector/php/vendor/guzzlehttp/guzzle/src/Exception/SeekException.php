@@ -1,27 +1,3 @@
-<?php
-namespace GuzzleHttp\Exception;
-
-use Psr\Http\Message\StreamInterface;
-
-/**
- * Exception thrown when a seek fails on a stream.
- */
-class SeekException extends \RuntimeException implements GuzzleException
-{
-    private $stream;
-
-    public function __construct(StreamInterface $stream, $pos = 0, $msg = '')
-    {
-        $this->stream = $stream;
-        $msg = $msg ?: 'Could not seek the stream to position ' . $pos;
-        parent::__construct($msg);
-    }
-
-    /**
-     * @return StreamInterface
-     */
-    public function getStream()
-    {
-        return $this->stream;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3b53e32b945ca567e2c944e406d0aba72a067f0fca0368fddee733518ff5818c
+size 588

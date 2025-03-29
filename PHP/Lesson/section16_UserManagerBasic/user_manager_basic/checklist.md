@@ -1,6 +1,3 @@
-1. Xây dựng database
-2. Xây dựng giao diện trang login, index
-3. Chuẩn hóa dữ liệu form_login
-4. Xây dựng chức năng login, logout với SESSION và COOKIE
-5. Hiển thị thông tin người dùng khi đăng nhập thành công
-6. Xử lí khi người dùng cố tình đăng nhập vào hệ thống
+version https://git-lfs.github.com/spec/v1
+oid sha256:70fb76d095babae1051d3addcbb4e511f4b6a34914a0590417345fe408d11362
+size 322

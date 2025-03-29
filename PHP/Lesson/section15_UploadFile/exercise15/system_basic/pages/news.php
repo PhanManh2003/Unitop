@@ -1,15 +1,3 @@
-<div id="content">
-    <h1>Tin tức</h1>
-    <ul>
-        <?php
-        if (!empty($list_post)) {
-            foreach ($list_post as $item) {
-                ?>
-                <li>
-                    <a href=""><?php echo $item['post_title'] ?></a>
-                    <p><?php echo $item['post_desc'] ?></p>
-                </li>
-            <?php } ?>
-        <?php } ?>
-    </ul>
-</div>
+version https://git-lfs.github.com/spec/v1
+oid sha256:c7d1e1d78f5b3fbe3cf8c8035e2b04cd60d7daff4ce848ae694ea80a1aedaaca
+size 392

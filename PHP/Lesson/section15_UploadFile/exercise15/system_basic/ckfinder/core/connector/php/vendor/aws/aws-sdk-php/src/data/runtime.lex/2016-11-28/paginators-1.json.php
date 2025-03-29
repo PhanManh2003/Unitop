@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/runtime.lex/2016-11-28/paginators-1.json
-return [ 'pagination' => [],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:8d99bb6d5e937a16782a300af2ec66dc7cd99b9ec0217b380b4a64f046375092
+size 133

@@ -1,21 +1,3 @@
-<?php
-
-/*
- * This file is part of the Monolog package.
- *
- * (c) Jordi Boggiano <j.boggiano@seld.be>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Monolog\Handler;
-
-/**
- * Exception can be thrown if an extension for an handler is missing
- *
- * @author  Christian Bergau <cbergau86@gmail.com>
- */
-class MissingExtensionException extends \Exception
-{
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4cb4dd1ecb944005d7912a58a5118bcee9f1e5b8d7eecf6447f357d543f9e31b
+size 450

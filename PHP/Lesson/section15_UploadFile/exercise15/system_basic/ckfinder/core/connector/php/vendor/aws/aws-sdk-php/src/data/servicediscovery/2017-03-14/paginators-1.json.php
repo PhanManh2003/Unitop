@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/servicediscovery/2017-03-14/paginators-1.json
-return [ 'pagination' => [ 'GetInstancesHealthStatus' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListInstances' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListNamespaces' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListOperations' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListServices' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:0a08200fb4f301675da18563d2a0986b9bafde0997c83414fbe9447b8242d7f4
+size 721

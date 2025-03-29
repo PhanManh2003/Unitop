@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/sns/2010-03-31/smoke.json
-return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'ListTopics', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'Publish', 'input' => [ 'Message' => 'hello', 'TopicArn' => 'fake_topic', ], 'errorExpectedFromService' => true, ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:30ae0189f4679695d406305ba689e777e630824f5df280d2f02063851d221ba3
+size 393

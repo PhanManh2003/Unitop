@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/resourcegroupstaggingapi/2017-01-26/paginators-1.json
-return [ 'pagination' => [ 'GetComplianceSummary' => [ 'input_token' => 'PaginationToken', 'limit_key' => 'MaxResults', 'output_token' => 'PaginationToken', 'result_key' => 'SummaryList', ], 'GetResources' => [ 'input_token' => 'PaginationToken', 'limit_key' => 'ResourcesPerPage', 'output_token' => 'PaginationToken', 'result_key' => 'ResourceTagMappingList', ], 'GetTagKeys' => [ 'input_token' => 'PaginationToken', 'output_token' => 'PaginationToken', 'result_key' => 'TagKeys', ], 'GetTagValues' => [ 'input_token' => 'PaginationToken', 'output_token' => 'PaginationToken', 'result_key' => 'TagValues', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:5ea13bb7388869d61d8e7696afa0a137fbefdcee799eead776dc06a86fa59751
+size 730

@@ -1,31 +1,3 @@
-<?php
-
-/*
- * This file is part of the Symfony package.
- *
- * (c) Fabien Potencier <fabien@symfony.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Symfony\Component\EventDispatcher;
-
-use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
-
-trigger_deprecation('symfony/event-dispatcher', '5.1', '%s is deprecated, use the event dispatcher without the proxy.', LegacyEventDispatcherProxy::class);
-
-/**
- * A helper class to provide BC/FC with the legacy signature of EventDispatcherInterface::dispatch().
- *
- * @author Nicolas Grekas <p@tchwork.com>
- *
- * @deprecated since Symfony 5.1
- */
-final class LegacyEventDispatcherProxy
-{
-    public static function decorate(?EventDispatcherInterface $dispatcher): ?EventDispatcherInterface
-    {
-        return $dispatcher;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b0a045f1ece2f71a7015db5f1870d3626b91489dd99e3fffa6938a86b1353df6
+size 882

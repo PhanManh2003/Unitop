@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/sts/2011-06-15/smoke.json
-return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [ [ 'operationName' => 'GetSessionToken', 'input' => [], 'errorExpectedFromService' => false, ], [ 'operationName' => 'GetFederationToken', 'input' => [ 'Name' => 'temp', 'Policy' => '{\\"temp\\":true}', ], 'errorExpectedFromService' => true, ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:2bff4efcc3d3f571178347d01cf8e12a9ca2a25a34d61cada156a9aac2129af7
+size 410

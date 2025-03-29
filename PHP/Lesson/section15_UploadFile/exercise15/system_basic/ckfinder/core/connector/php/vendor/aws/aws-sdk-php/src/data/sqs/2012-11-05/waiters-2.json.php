@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/sqs/2012-11-05/waiters-2.json
-return [ 'version' => 2, 'waiters' => [ 'QueueExists' => [ 'acceptors' => [ [ 'expected' => 200, 'matcher' => 'status', 'state' => 'success', ], [ 'expected' => 'QueueDoesNotExist', 'matcher' => 'error', 'state' => 'retry', ], ], 'delay' => 5, 'maxAttempts' => 40, 'operation' => 'GetQueueUrl', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:9e8c86b541ef27ce77272f5433d8d75e76ceaf7dd6f3e0ed580a529f82549d21
+size 394

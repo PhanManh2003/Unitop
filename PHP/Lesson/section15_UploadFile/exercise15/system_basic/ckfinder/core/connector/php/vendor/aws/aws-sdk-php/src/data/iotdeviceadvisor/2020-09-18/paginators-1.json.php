@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/iotdeviceadvisor/2020-09-18/paginators-1.json
-return [ 'pagination' => [ 'ListSuiteDefinitions' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListSuiteRuns' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:dcadd78a1385c79c3748cfcc3fe96783767020226e334d286bab92adaa582994
+size 374

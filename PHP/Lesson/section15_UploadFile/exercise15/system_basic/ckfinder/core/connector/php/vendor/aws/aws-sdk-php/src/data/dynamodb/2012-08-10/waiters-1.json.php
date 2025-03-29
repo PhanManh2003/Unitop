@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/dynamodb/2012-08-10/waiters-1.json
-return [ 'waiters' => [ '__default__' => [ 'interval' => 20, 'max_attempts' => 25, ], '__TableState' => [ 'operation' => 'DescribeTable', ], 'TableExists' => [ 'extends' => '__TableState', 'ignore_errors' => [ 'ResourceNotFoundException', ], 'success_type' => 'output', 'success_path' => 'Table.TableStatus', 'success_value' => 'ACTIVE', ], 'TableNotExists' => [ 'extends' => '__TableState', 'success_type' => 'error', 'success_value' => 'ResourceNotFoundException', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:974a27d6d76bba348dde4a11a563d6fe1271c9bc2b6ab6172599e69bb3d7998f
+size 571

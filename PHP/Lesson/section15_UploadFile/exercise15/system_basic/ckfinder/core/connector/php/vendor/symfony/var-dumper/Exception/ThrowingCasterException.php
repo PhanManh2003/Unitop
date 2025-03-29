@@ -1,26 +1,3 @@
-<?php
-
-/*
- * This file is part of the Symfony package.
- *
- * (c) Fabien Potencier <fabien@symfony.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Symfony\Component\VarDumper\Exception;
-
-/**
- * @author Nicolas Grekas <p@tchwork.com>
- */
-class ThrowingCasterException extends \Exception
-{
-    /**
-     * @param \Throwable $prev The exception thrown from the caster
-     */
-    public function __construct(\Throwable $prev)
-    {
-        parent::__construct('Unexpected '.\get_class($prev).' thrown from a caster: '.$prev->getMessage(), 0, $prev);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f62bf45b0b53c4184c26818a9d340c641c381c39f99d7ce6b799cd536005f46d
+size 655

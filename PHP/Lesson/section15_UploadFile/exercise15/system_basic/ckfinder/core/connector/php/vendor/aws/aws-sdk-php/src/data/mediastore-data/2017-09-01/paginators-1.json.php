@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/mediastore-data/2017-09-01/paginators-1.json
-return [ 'pagination' => [ 'ListItems' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:19ae114290b622f70aa0373e2cbf3d3d0a13c3b1e9a896a8113ebe671d422cfb
+size 248

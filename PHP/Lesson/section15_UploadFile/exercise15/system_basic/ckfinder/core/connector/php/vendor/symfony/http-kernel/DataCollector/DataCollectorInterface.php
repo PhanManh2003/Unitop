@@ -1,36 +1,3 @@
-<?php
-
-/*
- * This file is part of the Symfony package.
- *
- * (c) Fabien Potencier <fabien@symfony.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Symfony\Component\HttpKernel\DataCollector;
-
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Contracts\Service\ResetInterface;
-
-/**
- * DataCollectorInterface.
- *
- * @author Fabien Potencier <fabien@symfony.com>
- */
-interface DataCollectorInterface extends ResetInterface
-{
-    /**
-     * Collects data for the given Request and Response.
-     */
-    public function collect(Request $request, Response $response, \Throwable $exception = null);
-
-    /**
-     * Returns the name of the collector.
-     *
-     * @return string
-     */
-    public function getName();
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:af7d9b5873fe47b9de3b5bafa03290ef6058482eef7f3a49fe889210fde21114
+size 869

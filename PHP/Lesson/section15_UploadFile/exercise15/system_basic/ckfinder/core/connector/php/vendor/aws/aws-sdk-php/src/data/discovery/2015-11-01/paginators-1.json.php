@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/discovery/2015-11-01/paginators-1.json
-return [ 'pagination' => [ 'DescribeContinuousExports' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'DescribeImportTasks' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:d16f835b9dc5d0de9ddc819b33a0569b07c9e7bb0f8fe7482524134266a3e9eb
+size 378

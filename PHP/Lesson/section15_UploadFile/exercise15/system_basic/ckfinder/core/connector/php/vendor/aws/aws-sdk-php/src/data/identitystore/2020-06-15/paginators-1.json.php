@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/identitystore/2020-06-15/paginators-1.json
-return [ 'pagination' => [ 'ListGroups' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListUsers' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:e3533d43c2a17cf793db9c5ed441145a954792da144ebaa9d0f7d4c80c843e3c
+size 357

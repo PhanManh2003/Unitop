@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/customer-profiles/2020-08-15/paginators-1.json
-return [ 'pagination' => [],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:5f5f813a022585e7c173c4fc48ccfb55a6a923af98e8c201d860d61886a7442a
+size 139

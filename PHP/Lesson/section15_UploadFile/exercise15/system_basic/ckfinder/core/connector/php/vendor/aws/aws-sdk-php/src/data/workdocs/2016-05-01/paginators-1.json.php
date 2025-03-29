@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/workdocs/2016-05-01/paginators-1.json
-return [ 'pagination' => [ 'DescribeDocumentVersions' => [ 'input_token' => 'Marker', 'limit_key' => 'Limit', 'output_token' => 'Marker', 'result_key' => 'DocumentVersions', ], 'DescribeFolderContents' => [ 'input_token' => 'Marker', 'limit_key' => 'Limit', 'output_token' => 'Marker', 'result_key' => [ 'Folders', 'Documents', ], ], 'DescribeUsers' => [ 'input_token' => 'Marker', 'limit_key' => 'Limit', 'output_token' => 'Marker', 'result_key' => 'Users', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:43f3c3bc74fcaa6bf3f1af7e91d8d464d235c0534c9ed3f31789d99694f4827e
+size 566

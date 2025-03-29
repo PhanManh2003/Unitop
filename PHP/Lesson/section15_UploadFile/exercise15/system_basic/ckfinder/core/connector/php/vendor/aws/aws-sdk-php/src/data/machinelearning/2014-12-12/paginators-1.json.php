@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/machinelearning/2014-12-12/paginators-1.json
-return [ 'pagination' => [ 'DescribeBatchPredictions' => [ 'input_token' => 'NextToken', 'limit_key' => 'Limit', 'output_token' => 'NextToken', 'result_key' => 'Results', ], 'DescribeDataSources' => [ 'input_token' => 'NextToken', 'limit_key' => 'Limit', 'output_token' => 'NextToken', 'result_key' => 'Results', ], 'DescribeEvaluations' => [ 'input_token' => 'NextToken', 'limit_key' => 'Limit', 'output_token' => 'NextToken', 'result_key' => 'Results', ], 'DescribeMLModels' => [ 'input_token' => 'NextToken', 'limit_key' => 'Limit', 'output_token' => 'NextToken', 'result_key' => 'Results', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:c33455cf66d084c1a8695a6d8eabe32e64c575ee827b4b1c6250c40bc823ec65
+size 708

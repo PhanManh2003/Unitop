@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/glacier/2012-06-01/paginators-1.json
-return [ 'pagination' => [ 'ListJobs' => [ 'input_token' => 'marker', 'limit_key' => 'limit', 'output_token' => 'Marker', 'result_key' => 'JobList', ], 'ListMultipartUploads' => [ 'input_token' => 'marker', 'limit_key' => 'limit', 'output_token' => 'Marker', 'result_key' => 'UploadsList', ], 'ListParts' => [ 'input_token' => 'marker', 'limit_key' => 'limit', 'output_token' => 'Marker', 'result_key' => 'Parts', ], 'ListVaults' => [ 'input_token' => 'marker', 'limit_key' => 'limit', 'output_token' => 'Marker', 'result_key' => 'VaultList', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:45fd838bc08c1d5ba0bf79d205041826d93d8c6fed3793df517546e6adac599b
+size 649

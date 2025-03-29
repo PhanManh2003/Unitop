@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/email/2010-12-01/paginators-1.json
-return [ 'pagination' => [ 'ListCustomVerificationEmailTemplates' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', ], 'ListIdentities' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxItems', 'output_token' => 'NextToken', 'result_key' => 'Identities', ], 'ListVerifiedEmailAddresses' => [ 'result_key' => 'VerifiedEmailAddresses', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:abaf5d7f2d1af16e614089a29317b9b8fd006cc15cc89dd302d257dd24b699ec
+size 487

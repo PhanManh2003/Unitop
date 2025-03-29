@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/service-quotas/2019-06-24/paginators-1.json
-return [ 'pagination' => [ 'ListAWSDefaultServiceQuotas' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'Quotas', ], 'ListRequestedServiceQuotaChangeHistory' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'RequestedQuotas', ], 'ListRequestedServiceQuotaChangeHistoryByQuota' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'RequestedQuotas', ], 'ListServiceQuotaIncreaseRequestsInTemplate' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'ServiceQuotaIncreaseRequestInTemplateList', ], 'ListServiceQuotas' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'Quotas', ], 'ListServices' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'Services', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:63d4067eaf98f839ffc079d1c30679bde5a21153e7583e8a341d16d5e3162688
+size 1135

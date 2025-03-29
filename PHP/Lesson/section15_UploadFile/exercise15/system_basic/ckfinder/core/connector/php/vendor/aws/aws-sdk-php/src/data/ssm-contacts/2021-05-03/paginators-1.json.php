@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/ssm-contacts/2021-05-03/paginators-1.json
-return [ 'pagination' => [ 'ListContactChannels' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'ContactChannels', ], 'ListContacts' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'Contacts', ], 'ListEngagements' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'Engagements', ], 'ListPageReceipts' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'Receipts', ], 'ListPagesByContact' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'Pages', ], 'ListPagesByEngagement' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'Pages', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:3432680bebcf2a3dd295373e25d1fe7a3863f92dd3d60e664f38523351a8e9da
+size 1014

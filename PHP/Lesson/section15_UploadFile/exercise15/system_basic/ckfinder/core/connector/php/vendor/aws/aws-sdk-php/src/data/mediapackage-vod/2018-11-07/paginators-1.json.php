@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/mediapackage-vod/2018-11-07/paginators-1.json
-return [ 'pagination' => [ 'ListAssets' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'Assets', ], 'ListPackagingConfigurations' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'PackagingConfigurations', ], 'ListPackagingGroups' => [ 'input_token' => 'NextToken', 'limit_key' => 'MaxResults', 'output_token' => 'NextToken', 'result_key' => 'PackagingGroups', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:404b22c4c97e28ee80ffc4efcfb7fa1575c4fae029840857f7219a969d157e56
+size 602

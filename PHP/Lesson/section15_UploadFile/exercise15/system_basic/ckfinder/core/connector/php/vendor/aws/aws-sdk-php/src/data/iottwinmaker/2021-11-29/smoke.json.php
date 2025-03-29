@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/iottwinmaker/2021-11-29/smoke.json
-return [ 'version' => 1, 'defaultRegion' => 'us-west-2', 'testCases' => [],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:815ce919c4f62089db48e733a0207225147ea4e13a55bfc65a9609dc57e35a1a
+size 174

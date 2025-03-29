@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/schemas/2019-12-02/paginators-1.json
-return [ 'pagination' => [ 'ListDiscoverers' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'Limit', 'result_key' => 'Discoverers', ], 'ListRegistries' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'Limit', 'result_key' => 'Registries', ], 'ListSchemaVersions' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'Limit', 'result_key' => 'SchemaVersions', ], 'ListSchemas' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'Limit', 'result_key' => 'Schemas', ], 'SearchSchemas' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'Limit', 'result_key' => 'Schemas', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:6a60e63ce6b03b55c9a1237fc506923401b3771a71985489cff7ec5fbf6bdefa
+size 830

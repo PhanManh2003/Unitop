@@ -1,11 +1,3 @@
-<?php
-//CÁC HÀM QUAN TRỌNG XỬ LÍ FILE
-//bool file_exists($filename); kiểm tra 1 file hoặc đường dẫn có tồn tại ko
-//bool copy($source, $dest); copy 1 file đã tồn tại
-//int filesize($filename); xác định kích thước file
-
-//fileatime() — Gets last access time of file
-//filetype() — Gets file type
-//is_file() — Tells whether the filename is a regular file
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:0aea28bee223a315654702382cfc4eb043075646bb59f5c2d27cf104e10e0b0c
+size 398

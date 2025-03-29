@@ -1,25 +1,3 @@
-# Changelog
-
-## 1.9.0 - 2021-11-21
-
-### Updated
-
-- Updated lookup
-
-- ## 1.8.0 - 2021-09-25
-
-### Added
-
-- Added the decorator `OverridingExtensionToMimeTypeMap` which allows you to override values.
-
-## 1.7.0 - 2021-01-18
-
-### Added
-
-- Added a `bufferSampleSize` parameter to the `FinfoMimeTypeDetector` class that allows you to send a reduced content sample which costs less memory.
-
-## 1.6.0 - 2021-01-18
-
-### Changes
-
-- Updated generated mime-type map
+version https://git-lfs.github.com/spec/v1
+oid sha256:ebc8b24d5547186fb7c3f4bff3f053e3ae3817288872c11c85df6a63000147e1
+size 453

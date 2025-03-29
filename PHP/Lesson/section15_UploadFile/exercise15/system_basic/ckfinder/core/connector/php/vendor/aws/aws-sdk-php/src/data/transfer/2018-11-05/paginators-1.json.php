@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/transfer/2018-11-05/paginators-1.json
-return [ 'pagination' => [ 'ListAccesses' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListExecutions' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListSecurityPolicies' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListServers' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListTagsForResource' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListUsers' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], 'ListWorkflows' => [ 'input_token' => 'NextToken', 'output_token' => 'NextToken', 'limit_key' => 'MaxResults', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:539b10d7dda03b66f29ac7b1a7905dc87a18fa8bbe10f662a768349038ca5e81
+size 936

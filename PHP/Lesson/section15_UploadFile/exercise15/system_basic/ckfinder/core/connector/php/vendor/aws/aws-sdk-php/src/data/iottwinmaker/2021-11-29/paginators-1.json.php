@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/iottwinmaker/2021-11-29/paginators-1.json
-return [ 'pagination' => [ 'GetPropertyValueHistory' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListComponentTypes' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListEntities' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListScenes' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], 'ListWorkspaces' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:7ad6cbcb3e8978213428e49b04ccaca766e2f7e9690de2999a322b684173fec6
+size 717

@@ -1,25 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hệ thống điều hướng cơ bản</title>
-        <link href="public/css/reset.css" rel="stylesheet" type="text/css"/>
-        <link href="public/css/style.css" rel="stylesheet" type="text/css"/>
-        <link href="public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    </head>
-
-    <body>
-        <div id="wrapper">
-            <div id="header">
-                <ul id="main-menu">
-                    <li><a href="?">Trang chủ</a></li>
-                    <li><a href="?mod=page&act=detail&id=1">Giới thiệu</a></li>
-                    <li><a href="?mod=users&act=main">Thành viên</a></li>
-                    <li><a href="?mod=post&act=main">Tin tức</a></li>
-                    <li><a href="?mod=product&act=main&cat_id=1">Điện thoại</a></li>
-                    <li><a href="?mod=product&act=main&cat_id=2">Máy tính</a></li>
-                    <li><a href="?mod=page&act=detail&id=2">Liên hệ</a></li>
-                </ul>
-            </div>
+version https://git-lfs.github.com/spec/v1
+oid sha256:af54c967fb067a90d73ddee0525a0dbe326c70a891b231567a3ebd35dba13be2
+size 1179

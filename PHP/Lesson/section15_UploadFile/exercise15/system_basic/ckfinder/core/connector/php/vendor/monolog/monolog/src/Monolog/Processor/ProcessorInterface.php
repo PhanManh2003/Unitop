@@ -1,25 +1,3 @@
-<?php
-
-/*
- * This file is part of the Monolog package.
- *
- * (c) Jordi Boggiano <j.boggiano@seld.be>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Monolog\Processor;
-
-/**
- * An optional interface to allow labelling Monolog processors.
- *
- * @author Nicolas Grekas <p@tchwork.com>
- */
-interface ProcessorInterface
-{
-    /**
-     * @return array The processed records
-     */
-    public function __invoke(array $records);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1b5f86bbcc3e5a6ce24dd368aea4c65351e235dff93488f2d0a9b65d0d1f81c4
+size 521

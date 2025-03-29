@@ -1,10 +1,3 @@
-<?php
-// Kết nối PHP với MySQL
-// $conn = mysqli_connect('localhost', 'root', '', 'unitop');
-// if (!$conn) {
-//     echo "Kết nối không thành công" . mysqli_connect_error();
-//     die();
-// } 
-// else {
-//     echo "Kết nối thành công";
-// }
+version https://git-lfs.github.com/spec/v1
+oid sha256:225db58127692674ed6b8b9b35699192b89fea35867dd60c6d73936d2cb1f784
+size 262

@@ -1,21 +1,3 @@
-<div id="sidebar" class="fl-left">
-            <div id="main-menu-wp">
-                <ul class="list-item">
-                    <li class="active">
-                        <a href="?" title="Trang chủ">Trang chủ</a>
-                    </li>
-                    <li>
-                        <a href="?mod=page&act=detail&id=1" title="Giới thiệu">Giới thiệu</a>
-                    </li>
-                    <li>
-                        <a href="?mod=product&act=main&cat_id=2" title="">Macbook</a>
-                    </li>
-                    <li>
-                        <a href="?mod=product&act=main&cat_id=1" title="">Điện thoại</a>
-                    </li>
-                    <li>
-                        <a href="?mod=page&act=detail&id=2" title="Liên hệ">Liên hệ</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+version https://git-lfs.github.com/spec/v1
+oid sha256:a71c834cfdf3c86a8b877cacc3af29a1d6aee39901f5a7a215d428d015196b37
+size 883

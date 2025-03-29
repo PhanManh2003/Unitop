@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/wafv2/2019-07-29/smoke.json
-return [ 'version' => 1, 'defaultRegion' => 'us-east-1', 'testCases' => [ [ 'operationName' => 'ListWebACLs', 'input' => [ 'Scope' => 'REGIONAL', 'Limit' => 20, ], 'errorExpectedFromService' => false, ], [ 'operationName' => 'CreateRegexPatternSet', 'input' => [ 'Name' => 'fake_name', 'Scope' => 'fake_scope', ], 'errorExpectedFromService' => true, ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:8736343de11311f190054b15ec5f72e83c5c400e1978d1688c25b15370e44e63
+size 447

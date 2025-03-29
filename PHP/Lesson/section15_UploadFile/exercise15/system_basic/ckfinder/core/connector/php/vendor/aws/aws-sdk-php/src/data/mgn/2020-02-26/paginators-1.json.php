@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/mgn/2020-02-26/paginators-1.json
-return [ 'pagination' => [ 'DescribeJobLogItems' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'items', ], 'DescribeJobs' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'items', ], 'DescribeReplicationConfigurationTemplates' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'items', ], 'DescribeSourceServers' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'items', ], 'DescribeVcenterClients' => [ 'input_token' => 'nextToken', 'output_token' => 'nextToken', 'limit_key' => 'maxResults', 'result_key' => 'items', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:b05b1ebbb1714a83b878674715adf2237c446b04b60ffbfea6f47f9a9dc848f4
+size 871

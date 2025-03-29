@@ -1,33 +1,3 @@
-<?php
-
-/*
- * This file is part of the Symfony package.
- *
- * (c) Fabien Potencier <fabien@symfony.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Symfony\Component\ErrorHandler\Error;
-
-class UndefinedFunctionError extends \Error
-{
-    /**
-     * {@inheritdoc}
-     */
-    public function __construct(string $message, \Throwable $previous)
-    {
-        parent::__construct($message, $previous->getCode(), $previous->getPrevious());
-
-        foreach ([
-            'file' => $previous->getFile(),
-            'line' => $previous->getLine(),
-            'trace' => $previous->getTrace(),
-        ] as $property => $value) {
-            $refl = new \ReflectionProperty(\Error::class, $property);
-            $refl->setAccessible(true);
-            $refl->setValue($this, $value);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b448dd7b2513242631b946459c2f440b0babdee5560b0a06731fd199da1f8109
+size 897

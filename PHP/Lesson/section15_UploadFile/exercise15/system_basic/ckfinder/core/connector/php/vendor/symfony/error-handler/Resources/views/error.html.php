@@ -1,20 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="<?= $this->charset; ?>" />
-    <meta name="robots" content="noindex,nofollow,noarchive" />
-    <title>An Error Occurred: <?= $statusText; ?></title>
-    <style><?= $this->include('assets/css/error.css'); ?></style>
-</head>
-<body>
-<div class="container">
-    <h1>Oops! An Error Occurred</h1>
-    <h2>The server returned a "<?= $statusCode; ?> <?= $statusText; ?>".</h2>
-
-    <p>
-        Something is broken. Please let us know what you were doing when this error occurred.
-        We will fix it as soon as possible. Sorry for any inconvenience caused.
-    </p>
-</div>
-</body>
-</html>
+version https://git-lfs.github.com/spec/v1
+oid sha256:3292e24fe541f6b8a2f29eee4a1ba3711c7b866f15bc250dbd3f3753f06cb1d8
+size 633

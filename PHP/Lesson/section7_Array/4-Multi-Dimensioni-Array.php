@@ -1,35 +1,3 @@
-<?php
-// Mảng đa chiều là mảng chứa key-value mà value ở dạng mảng
-$list_user = array(
-    1 => array(
-        'id' => 1,
-        'fullname' => 'Phan Tiến Mạnh',
-        'email'    => 'manhamsterdam2003@',
-    ),
-    2 => array(
-        'id' => 2,
-        'fullname' => 'Nguyễn Khả Tùng',
-        'email'    => 'manhamsterdam2222@',
-    ),
-);
-
-// thêm phần tử cho mảng đa chiều: cách 1
-$list_user[3] = array(
-    'id' => 3,
-    'fullname' => 'Phan Văn Cương',
-    'email'    => 'manhamsterdam1111@',
-);
-
-// thêm phần tử cho mảng đa chiều: cách 2
-$list_user[4]['id'] = 4;
-$list_user[4]['fullname'] = 'Ronaldo';
-$list_user[4]['email'] = 'cr7@gmail.com';
-
-echo "<pre>";
-print_r($list_user);
-
-
-// Lấy phần tử mảng đa chiều
-$info_cr7 = $list_user[4];
-echo "<pre>";
-print_r($info_cr7);
+version https://git-lfs.github.com/spec/v1
+oid sha256:85d666db5a70ec7f34869ce2f67908275aab8b0e84ecb41c9737d3b7d49e600e
+size 841

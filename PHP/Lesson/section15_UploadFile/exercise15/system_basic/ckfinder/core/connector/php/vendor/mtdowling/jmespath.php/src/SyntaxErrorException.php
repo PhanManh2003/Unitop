@@ -1,36 +1,3 @@
-<?php
-namespace JmesPath;
-
-/**
- * Syntax errors raise this exception that gives context
- */
-class SyntaxErrorException extends \InvalidArgumentException
-{
-    /**
-     * @param string $expectedTypesOrMessage Expected array of tokens or message
-     * @param array  $token                  Current token
-     * @param string $expression             Expression input
-     */
-    public function __construct(
-        $expectedTypesOrMessage,
-        array $token,
-        $expression
-    ) {
-        $message = "Syntax error at character {$token['pos']}\n"
-            . $expression . "\n" . str_repeat(' ', max($token['pos'], 0)) . "^\n";
-        $message .= !is_array($expectedTypesOrMessage)
-            ? $expectedTypesOrMessage
-            : $this->createTokenMessage($token, $expectedTypesOrMessage);
-        parent::__construct($message);
-    }
-
-    private function createTokenMessage(array $token, array $valid)
-    {
-        return sprintf(
-            'Expected one of the following: %s; found %s "%s"',
-            implode(', ', array_keys($valid)),
-            $token['type'],
-            $token['value']
-        );
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:83a7a3a1916e13f234ff8c4aa1d8295bc90fab4776a9aad240bae9b2b8e3151f
+size 1134

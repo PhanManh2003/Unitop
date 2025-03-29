@@ -1,12 +1,3 @@
-<?php
-$cat_id = (int)$_GET['cat_id'];
-?>
-<?php
-get_header('product');
-?>
-<div id="content">
-    <h1>Danh sách sản phẩm - Danh mục <?php echo $cat_id ?></h1>
-</div>
-<?php
-get_footer();
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:129796bc064a0ec933da78432b31aa17c5cbabbcf0c58d46c52d18c13fbbf454
+size 193

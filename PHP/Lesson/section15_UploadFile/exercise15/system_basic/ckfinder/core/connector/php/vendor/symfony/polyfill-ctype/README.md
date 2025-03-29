@@ -1,12 +1,3 @@
-Symfony Polyfill / Ctype
-========================
-
-This component provides `ctype_*` functions to users who run php versions without the ctype extension.
-
-More information can be found in the
-[main Polyfill README](https://github.com/symfony/polyfill/blob/master/README.md).
-
-License
-=======
-
-This library is released under the [MIT license](LICENSE).
+version https://git-lfs.github.com/spec/v1
+oid sha256:f73dc46749a671dd03df4b317e1401072d164d5ed0c9272cbcf2092f2d11fb83
+size 352

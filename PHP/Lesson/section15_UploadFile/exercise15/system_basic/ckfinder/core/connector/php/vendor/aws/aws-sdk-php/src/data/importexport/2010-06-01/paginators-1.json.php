@@ -1,3 +1,3 @@
-<?php
-// This file was auto-generated from sdk-root/src/data/importexport/2010-06-01/paginators-1.json
-return [ 'pagination' => [ 'ListJobs' => [ 'input_token' => 'Marker', 'output_token' => 'Jobs[-1].JobId', 'more_results' => 'IsTruncated', 'limit_key' => 'MaxJobs', 'result_key' => 'Jobs', ], ],];
+version https://git-lfs.github.com/spec/v1
+oid sha256:daf498db9f04931b225e411f6cb8c87ccd8617b558a55d9d99009120b70c225b
+size 300
