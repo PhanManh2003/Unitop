@@ -1,30 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thay thế element trên DOM</title>
-</head>
-
-<body>
-    <h1>Thay thế element trên DOM</h1>
-    <ul id="langs">
-        <li>Html</li>
-        <li class="current">Css</li>
-        <li>Javascript</li>
-    </ul>
-
-    <script>
-        const langs = document.getElementById('langs');
-        const current = document.querySelector('li.current');
-        const liNew = document.createElement('li');
-        liNew.textContent = 'Php';
-
-        // replace
-        current.replaceWith(liNew);
-        langs.replaceChild(liNew, current);
-    </script>
-</body>
-
-</html>
+version https://git-lfs.github.com/spec/v1
+oid sha256:4e42593aa53fd3f7ccb0b3016e046af4c08c42f4255de73c42e9c04e6edf86e5
+size 903
